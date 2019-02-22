@@ -4,10 +4,15 @@
       "docset_name": "live-share",
       "build_source_folder": "docs",
       "build_output_subfolder": "vslivesharedocs",
-      "locale": "pt-BR",
+      "locale": "pt-br",
       "monikers": [],
       "moniker_ranges": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
       "build_entry_point": "docs",
       "template_folder": "_themes"
     }
@@ -19,11 +24,12 @@
     "joncart@microsoft.com"
   ],
   "branches_to_filter": [
-    "live-sxs",
-    "master-sxs"
+    "live",
+    "master-sxs",
+    "master"
   ],
-  "git_repository_url_open_to_public_contributors": "https://github.com/microsoftdocs/live-share",
-  "git_repository_branch_open_to_public_contributors": "master",
+  "git_repository_url_open_to_public_contributors": "https://github.com/microsoftdocs/live-share.pt-br",
+  "git_repository_branch_open_to_public_contributors": "live",
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
@@ -31,7 +37,7 @@
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft.pt-BR",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pt-br",
       "branch": "master",
       "branch_mapping": {}
     },
