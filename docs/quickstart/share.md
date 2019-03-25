@@ -1,6 +1,6 @@
 ---
-title: Compartilhar o guia de início rápido - Visual Studio Live Share | Microsoft Docs
-description: Uma explicação resumida sobre compartilhando seu primeiro projeto usando uma sessão de colaboração do Visual Studio Live Share.
+title: Início Rápido sobre como compartilhar – Visual Studio Live Share | Microsoft Docs
+description: Um passo a passo resumido sobre como compartilhar seu primeiro projeto usando uma sessão de colaboração do Visual Studio Live Share.
 ms.custom: ''
 ms.date: 03/22/2018
 ms.reviewer: ''
@@ -15,7 +15,7 @@ ms.workload:
 - liveshare
 ms.openlocfilehash: 3596b25dc0d08962d7813f52549dbe6fef4f00a0
 ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/02/2019
 ms.locfileid: "57255198"
@@ -32,14 +32,14 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 Bem-vindo ao Visual Studio Live Share! O Live Share permite que você edite e depure de forma colaborativa com outras pessoas em tempo real, sejam quais forem as linguagens de programação usadas ou os tipos de aplicativo criados. Ele permite que você compartilhe seu projeto atual de forma instantânea e segura e, em seguida, conforme necessário, compartilhe sessões de depuração, instâncias de terminal, aplicativos Web do localhost, chamadas de voz e muito mais!
 
-Pronto para começar?  Colaboração em equipe deve ser rápido e natural, que se torna mais difícil para não fazê-lo! Por esse motivo, o Visual Studio Live Share torna simples para começar a usar, para que você possa começar perfeitamente a compartilhar seu trabalho e ideias.
+Pronto para começar?  A colaboração em equipe será tão rápida e natural que será difícil não participar. Por esse motivo, o Visual Studio Live Share simplifica o início, para que você possa começar a compartilhar seu trabalho e suas ideias facilmente.
 
 > [!TIP]
-> Você sabia que pode *ingressar em sua própria sessão de colaboração*? Isso permite que você experimente o Live Share por conta própria ou crie uma instância do Visual Studio ou do VS Code e conecte-a remotamente. Você pode até usar a mesma identidade em ambas as instâncias. Confira!
+> Você sabia que pode *ingressar em sua própria sessão de colaboração*? Isso permite que você experimente o Live Share por conta própria ou crie uma instância do Visual Studio ou do VS Code e conecte-a remotamente. Você pode até mesmo usar a mesma identidade em ambas as instâncias. Confira!
 
 Basta seguir estas etapas para iniciar o compartilhamento.
 
-## <a name="1-install-the-extension"></a>1. Instalar a extensão
+## <a name="1-install-the-extension"></a>1. Instale a extensão
 
 É fácil instalar a extensão. Basta seguir estas etapas:
 
@@ -80,7 +80,7 @@ Ao baixar e usar o Visual Studio Live Share, você concorda com os [termos de li
 
 ## <a name="2-sign-in"></a>2. Entrar
 
-Depois de instalar a extensão de compartilhamento ao vivo, reiniciar e aguardando as dependências concluir a instalação (VS Code), você desejará entrar para permitir que outros participantes Saiba quem é você. Basta clicar o item de barra de status (VS Code) "Live Share" / "Entrar" botão (VS) para começar a usar.
+Após instalar a extensão do Live Share, reiniciar e aguardar as dependências terminarem a instalação (VS Code), entre para que os outros participantes conheçam você. Clique no item da barra de status "Live Share" (VS Code)/no botão "Entrar" (VS) para começar.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -93,27 +93,27 @@ Depois de instalar a extensão de compartilhamento ao vivo, reiniciar e aguardan
 </tr>
 </table>
 
-Na **VS Code**, seu navegador será iniciado enquanto uma notificação será exibida a inicialização, solicitando que você entrar. Concluir o processo em seu navegador de entrada e, em seguida, simplesmente fechar o navegador quando terminar.
+No **VS Code**, seu navegador será iniciado e uma notificação será exibida, solicitando que você entre. Conclua o processo de entrada no navegador e, em seguida, feche-o quando terminar.
 
-![Notificação do sistema pedindo para entrar usando um navegador da web](../media/vscode-sign-in-toast.png)
+![Notificação do sistema solicitando a entrada com um navegador da Web](../media/vscode-sign-in-toast.png)
 
-> **Usuários do Linux:** Você será solicitado a inserir um código de usuário, se você estiver usando uma versão mais antiga do Live Share (v0.3.295 ou abaixo). Atualizar para a versão mais recente da extensão ou clique no "tendo problemas?" Vincular depois de entrar para ver o código. Ver [aqui para obter detalhes](../use/vscode.md#sign-in-using-a-user-code).
+> **Usuários do Linux:** Talvez você seja solicitado a inserir um código do usuário se estiver usando uma versão mais antiga do Live Share (v0.3.295 ou anteriores). Atualize para a versão mais recente da extensão ou clique no link "Está com problemas?" depois de entrar para ver o código. Confira [aqui para mais detalhes](../use/vscode.md#sign-in-using-a-user-code).
 
-Na **Visual Studio**, Live Share usa automaticamente seu [conta de personalização](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio). Como resultado, você pode simplesmente entrar como você faria normalmente. No entanto, se você preferir usar um logon-in diferente de sua conta de personalização do Visual Studio, acesse **ferramentas &gt; opções &gt; Live Share &gt; conta de usuário** e selecione credenciais diferentes.
+No **Visual Studio**, o Live Share usa automaticamente sua [conta de personalização](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio). Como resultado, você pode simplesmente entrar como você faria normalmente. No entanto, se você preferir usar um logon diferente da sua conta de personalização do Visual Studio, acesse **Ferramentas &gt; Opções &gt; Live Share &gt; Conta de usuário** e selecione credenciais diferentes.
 
-Ver [solução de problemas](../troubleshooting.md#sign-in) se você ainda estiver tendo problemas.
+Confira [Solução de problemas](../troubleshooting.md#sign-in) se ainda tiver problemas.
 
-## <a name="3-open-a-folder-project-or-solution"></a>3. Abra uma pasta, projeto ou solução
+## <a name="3-open-a-folder-project-or-solution"></a>3. Abra uma pasta, um projeto ou uma solução
 
-Use o fluxo de trabalho normal para abrir uma pasta, projeto ou solução que você gostaria de compartilhar no Visual Studio ou Visual Studio Code.
+Use o fluxo de trabalho normal para abrir uma pasta, um projeto ou uma solução que você queira compartilhar no Visual Studio ou no Visual Studio Code.
 
-### <a name="4-optional-update-hidden-or-excluded-files"></a>4. [atualização opcional] oculto ou arquivos excluídos
+### <a name="4-optional-update-hidden-or-excluded-files"></a>4. [Opcional] Atualize os arquivos ocultos ou excluídos
 
-Por padrão, o Live Share **oculta** quaisquer arquivos/pastas referenciadas nos arquivos. gitignore em suas pastas compartilhadas de convidados. **Ocultando** um arquivo impede que ele apareça na árvore de arquivos do convidado. **Excluindo** um arquivo se aplica a uma regra mais rígida que impede que o Live Share abri-lo para o convidado em situações como ir para definição ou se você segue o arquivo durante a depuração ou sendo "seguido". Se você quiser ocultar/excluir arquivos diferentes, uma **. vsls.json** arquivo pode ser adicionado ao seu projeto com essas configurações. Ver [controlando o acesso a arquivos e visibilidade](../reference/security.md#controlling-file-access-and-visibility) para obter detalhes.
+Por padrão, o Live Share **oculta** quaisquer arquivos/pastas referenciados nos arquivos .gitignore em suas pastas compartilhadas de convidados. **Ocultar** um arquivo impede que ele apareça na árvore de arquivos do convidado. **Excluir** um arquivo aplica uma regra mais rigorosa que impede o Live Share de abri-lo para o convidado em situações como "Ir para Definição" ou se você intervir no arquivo durante a depuração ou ao ser "seguido". Se você quiser ocultar/excluir arquivos diferentes, um arquivo **.vsls.json** poderá ser adicionado ao seu projeto com essas configurações. Confira [Controlar o acesso a arquivos e visibilidade](../reference/security.md#controlling-file-access-and-visibility) para saber mais detalhes.
 
-## <a name="5-start-a-collaboration-session"></a>5. Iniciar uma sessão de colaboração
+## <a name="5-start-a-collaboration-session"></a>5. Inicie uma sessão de colaboração
 
-Em seguida, basta clicar em "Live Share" dentro de sua ferramenta e um link de convite é copiado automaticamente na área de transferência.
+Em seguida, basta clicar em "Live Share" na ferramenta e um link de convite será copiado automaticamente para sua área de transferência.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -127,13 +127,13 @@ Em seguida, basta clicar em "Live Share" dentro de sua ferramenta e um link de c
 </table>
 
 > [!NOTE]
-> Você poderá ser solicitado por seu software de firewall da área de trabalho para permitir que o agente Live Share abrir uma porta na primeira vez que você compartilha. Aceitar isso é totalmente opcional, mas permite que um seguro "modo direto" para melhorar o desempenho quando a pessoa que você está trabalhando com está na mesma rede que você esteja. Ver [alterar o modo de conexão](../reference/connectivity.md#changing-the-connection-mode) para obter detalhes.
+> Talvez o software de firewall do computador exija que o agente do Live Share tenha permissão para abrir uma porta no primeiro compartilhamento. Aceitar isso é totalmente opcional, mas habilita um "modo direto" seguro para melhorar o desempenho quando a pessoa com que você está trabalhando estiver na mesma rede que você. Confira [Alterar o modo de conexão](../reference/connectivity.md#changing-the-connection-mode) para saber mais detalhes.
 
-## <a name="6-optional-enable-read-only-mode"></a>6. [opcional] habilitar o modo de somente leitura
+## <a name="6-optional-enable-read-only-mode"></a>6. [Opcional] Habilite o modo somente leitura
 
-Depois de iniciar sua sessão de colaboração, você pode definir a sessão a ser somente leitura para impedir que os convidados façam edições no código que está sendo compartilhado.
+Após iniciar a sessão de colaboração, configure a sessão como somente leitura para impedir que os convidados façam edições no código compartilhado.
 
-Após o compartilhamento, você receberá uma notificação de que o link de convite foi copiado para a área de transferência. Em seguida, você pode selecionar a opção de fazer a sessão somente leitura.
+Após o compartilhamento, você receberá uma notificação de que o link de convite foi copiado para a área de transferência. Em seguida, você poderá selecionar a opção para definir a sessão como somente leitura.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -146,21 +146,21 @@ Após o compartilhamento, você receberá uma notificação de que o link de con
 </tr>
 </table>
 
-Na **VS Code**, você também pode iniciar uma sessão somente leitura a partir da guia de viewlet Live Share.
+No **VS Code**, você também pode iniciar uma sessão somente leitura na guia de viewlet do Live Share.
 
-![Notificação do sistema pedindo para entrar usando um navegador da web](../media/vscode-read-only-viewlet.png)
+![Notificação do sistema solicitando a entrada com um navegador da Web](../media/vscode-read-only-viewlet.png)
 
-### <a name="7-send-someone-the-invite-link"></a>7. Enviar a alguém o link de convite
+### <a name="7-send-someone-the-invite-link"></a>7. Envie o link de convite para alguém
 
-Enviar link por email, Slack, Skype, etc., para aqueles que deseja convidar. Abrindo o link em um navegador permite que eles ingressar na sessão de colaboração que está compartilhando o conteúdo da pasta, projeto ou solução que você abriu. Observe que, considerando o nível de acesso Live Share sessões podem fornecer aos convidados, **você só deve compartilhar com pessoas confiáveis** e considere as implicações do que você está compartilhando.
+Envie o link por email, pelo Slack, pelo Skype etc. para as pessoas que você quer convidar. Abrir o link em um navegador permite que elas ingressem na sessão de colaboração que está compartilhando o conteúdo da pasta, do projeto ou da solução que você abriu. Observe que, considerando o nível de acesso que as sessões do Live Share podem conceder aos convidados, **você só deve compartilhar com pessoas em que confia** e considerar as implicações do que você está compartilhando.
 
-> **Dica de segurança:** Deseja entender as implicações de segurança de alguns dos recursos do Live Share? Confira a [segurança](../reference/security.md) artigo.
+> **Dica de segurança:** Quer entender as implicações de segurança de alguns recursos do Live Share? Confira o artigo sobre [segurança](../reference/security.md).
 
-Se o convidado é convidado tiver perguntas, o [guia de início rápido: Junte-se a primeira sessão](join.md) artigo fornece algumas informações sobre colocar em execução como convidado.
+Se o convidado tiver dúvidas, o artigo [Início Rápido: Ingressar na primeira sessão](join.md) oferece algumas informações sobre como começar a trabalhar como convidado.
 
-## <a name="8-optional-approve-the-guest"></a>8. [opcional] aprovar o convidado
+## <a name="8-optional-approve-the-guest"></a>8. [Opcional] Aprove o convidado
 
-Por padrão, os convidados automaticamente ingressarem em sua sessão de colaboração e você será notificado quando eles estiverem prontos para trabalhar com você.
+Por padrão, os convidados ingressam automaticamente na sessão de colaboração e você recebe uma notificação quando eles estiverem prontos para trabalhar com você.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -173,31 +173,31 @@ Por padrão, os convidados automaticamente ingressarem em sua sessão de colabor
 </tr>
 </table>
 
-Você pode optar por exigir uma "aprovação" explícita para ingressar em vez disso, qualquer pessoa que. Se você tiver essa configuração ativada, uma notificação solicita que você aprovar o convidado quando tentarem ingressar em sua sessão.
+Em vez disso, você pode optar por exigir uma "aprovação" explícita para todos que solicitarem ingresso. Se essa configuração estiver ativada, uma notificação solicitará que você aprove o convidado quando este tentar ingressar em sua sessão.
 
-Ver [exigir aprovação do convidado](../reference/security.md#requiring-guest-approval) para obter detalhes sobre como ativar esse recurso.
+Confira [Exigir aprovação do convidado](../reference/security.md#requiring-guest-approval) para saber mais detalhes sobre como ativar esse recurso.
 
 ## <a name="9-collaborate"></a>9. Colabore!
 
-É só isso! Aqui estão algumas coisas para experimentar depois que um convidado ingressou:
+É só isso! Algumas coisas para experimentar quando um convidado ingressar:
 
-1. Mova para diferentes arquivos no projeto independentemente e fazer algumas modificações
-1. Siga o convidado e observe como Role, fazer edições e navegar para diferentes arquivos
-1. Iniciar uma sessão de depuração junto com eles
-1. Compartilhar um servidor para que você pode fazer check-out de algo como um aplicativo web em execução no seu computador
-1. Compartilhar um terminal e execute alguns comandos
+1. Navegue pelos diferentes arquivos do projeto de maneira independente e faça algumas edições
+1. Siga o convidado e observe como ele navega, faz edições e acessa diferentes arquivos
+1. Inicie uma sessão de codepuração com o convidado
+1. Compartilhe um servidor para conferir algo como um aplicativo Web em execução no computador
+1. Compartilhe um terminal e execute alguns comandos
 
-Confira a [Visual Studio Code](../use/vscode.md) e [Visual Studio](../use/vs.md) docs de extensão para obter informações sobre como realizar essas ações e muito mais.
+Confira a documentação de extensão do [Visual Studio Code](../use/vscode.md) e do [Visual Studio](../use/vs.md) para saber como realizar essas ações e muito mais.
 
 Está tendo problemas? Confira [Solução de problemas](../troubleshooting.md) ou [envie comentários](../support.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Confira estes artigos adicionais para obter mais informações.
+Confira estes outros artigos para saber mais.
 
-- [Início Rápido: Junte-se a primeira sessão de colaboração](join.md)
-- [Como: Colaborar usando o Visual Studio Code](../use/vscode.md)
-- [Como: Colaborar usando o Visual Studio](../use/vs.md)
+- [Início Rápido: Ingressar na sua primeira sessão de colaboração](join.md)
+- [Como colaborar usando o Visual Studio Code](../use/vscode.md)
+- [Como colaborar usando o Visual Studio](../use/vs.md)
 
 Referência
 

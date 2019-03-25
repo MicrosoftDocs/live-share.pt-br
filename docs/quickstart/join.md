@@ -1,6 +1,6 @@
 ---
-title: Ingressar em início rápido – Visual Studio Live Share | Microsoft Docs
-description: Uma explicação resumida a estiver ingressando em sua primeira sessão de colaboração do Visual Studio Live Share.
+title: Início Rápido sobre como ingressar – Visual Studio Live Share | Microsoft Docs
+description: Um passo a passo resumido sobre como ingressar na sua primeira sessão de colaboração do Visual Studio Live Share.
 ms.custom: ''
 ms.date: 03/22/2018
 ms.reviewer: ''
@@ -15,7 +15,7 @@ ms.workload:
 - liveshare
 ms.openlocfilehash: d4280484aaa3fd4ac204588bf4aefc4e3ac51871
 ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/02/2019
 ms.locfileid: "57255253"
@@ -26,20 +26,20 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# <a name="quickstart-join-your-first-collaboration-session"></a>Início Rápido: Junte-se a primeira sessão de colaboração
+# <a name="quickstart-join-your-first-collaboration-session"></a>Início Rápido: Ingressar na sua primeira sessão de colaboração
 
 > **Observação: Atualmente, o Visual Studio Live Share está em versão prévia. A experiência do usuário e as funcionalidades não são definitivas.**
 
-Bem-vindo ao Visual Studio Live Share! O Live Share permite que você edite e depure de forma colaborativa com outras pessoas em tempo real, sejam quais forem as linguagens de programação usadas ou os tipos de aplicativo criados. Ele permite que você instantaneamente e segura ingressar projeto atual de um colega de equipe, o e, em seguida, conforme necessário, insira na depuração de sessões, exibir e editar instâncias de terminal, consulte aplicativos de web do localhost, chamadas de voz de junção e muito mais!
+Bem-vindo ao Visual Studio Live Share! O Live Share permite que você edite e depure de forma colaborativa com outras pessoas em tempo real, sejam quais forem as linguagens de programação usadas ou os tipos de aplicativo criados. Ele permite que você ingresse em um projeto atual de um colega de equipe de forma instantânea e segura e, em seguida, conforme necessário, entre em sessões de depuração, exiba e edite instâncias de terminal, veja aplicativos Web do localhost, participe de chamadas de voz e muito mais.
 
-Pronto para começar? Colaboração em equipe deve ser rápido e natural, que se torna mais difícil para não fazê-lo! Por esse motivo, o Visual Studio Live Share torna simples para começar a usar, para que você possa começar perfeitamente a compartilhar seu trabalho e ideias.
+Pronto para começar? A colaboração em equipe será tão rápida e natural que será difícil não participar. Por esse motivo, o Visual Studio Live Share simplifica o início, para que você possa começar a compartilhar seu trabalho e suas ideias facilmente.
 
 > [!TIP]
 > Você sabia que pode *ingressar em sua própria sessão de colaboração*? Isso permite que você experimente o Live Share por conta própria ou crie uma instância do Visual Studio ou do VS Code e conecte-a remotamente. Você pode até mesmo usar a mesma identidade em ambas as instâncias. Confira!
 
 Basta seguir estas etapas para ingressar em uma sessão de colaboração.
 
-## <a name="1-install-the-extension"></a>1. Instalar a extensão
+## <a name="1-install-the-extension"></a>1. Instale a extensão
 
 É fácil instalar a extensão. Basta seguir estas etapas:
 
@@ -78,32 +78,32 @@ Basta seguir estas etapas para ingressar em uma sessão de colaboração.
 
 Ao baixar e usar o Visual Studio Live Share, você concorda com os [termos de licença](https://aka.ms/vsls-license) e a [política de privacidade](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). Confira [Solução de problemas](../troubleshooting.md) caso tenha problemas.
 
-## <a name="2-optional-join-as-a-read-only-guest-in-vs-code"></a>2. [junção de opcional] como um convidado somente-leitura no VS Code
+## <a name="2-optional-join-as-a-read-only-guest-in-vs-code"></a>2. [Opcional] Ingresse como um convidado somente leitura no VS Code
 
-No VS Code, depois de instalar a extensão de compartilhamento ao vivo, reiniciar e aguardando as dependências para concluir a instalação, você pode entrar e ingressar em uma sessão de colaboração como um convidado de somente leitura.
-
-> [!NOTE]
-> Se você quiser fazer edições no código que você está ingressando, você precisará [entrar](../quickstart/join.md#3-Sign-in).
-
-Abra (ou abre novamente) no link de convite em um navegador, e você receberá uma notificação de que deseja que o navegador iniciar o VS Code. Permita que ele inicie e começará a se conectar à sessão de colaboração.
-
-Quando inicia o VS Code, você obterá uma notificação pedindo para entrar. Selecione "Continuar como convidado somente leitura" para ingressar na sessão.
-
-![Junte-se como sessão como uma notificação do sistema do convidado de somente leitura](../media/vscode-read-only-guest.png)
-
-Você será solicitado a inserir um nome de exibição para ajudar a identificá-lo na sessão de participantes.
-
-![Nome do convidado de somente leitura](../media/vscode-read-only-guest-name.png)
-
-Depois disso, você vai ser Unido para a sessão como somente leitura. Você poderá exibir e navegar em torno do código, depuração de colegas e servidores de modo compartilhado e terminais (somente leitura).
+No VS Code, após instalar a extensão do Live Share, reiniciar e aguardar as dependências finalizarem a instalação, é possível ingressar em uma sessão de colaboração como convidado somente leitura.
 
 > [!NOTE]
-> Se você quiser mais tarde, obtenha acesso de leitura/gravação para o código, você pode entrar. Clique em seu nome de exibição no status, barra e selecione a opção "entrar".
-![Entrada convidado somente-leitura](../media/vscode-read-only-guest-signin.png) isso iniciará o navegador e você pode escolher uma conta da Microsoft ou GitHub para entrar.
+> Se você quiser editar o código em que está ingressando, precisará [entrar](../quickstart/join.md#3-Sign-in).
+
+Abra (ou reabra) o link de convite em um navegador para receber uma notificação de que o navegador quer iniciar o VS Code. Permita a inicialização e o navegador começará a se conectar com a sessão de colaboração.
+
+Quando o VS Code for inicializado, você receberá uma notificação do sistema solicitando a entrada. Selecione "Continuar como convidado somente leitura" para ingressar na sessão.
+
+![Notificação do sistema "Ingressar na sessão como convidado somente leitura"](../media/vscode-read-only-guest.png)
+
+Você será solicitado a inserir um nome de exibição para ajudar os participantes a identificá-lo na sessão.
+
+![Nome do convidado somente leitura](../media/vscode-read-only-guest-name.png)
+
+Depois disso, você será ingressado na sessão como somente leitura. Você poderá ver e navegar pelo código, fazer codepuração e exibir os servidores compartilhados e terminais (somente leitura).
+
+> [!NOTE]
+> Se você quiser ter acesso de leitura/gravação ao código posteriormente, faça logon. Clique no seu nome de exibição na barra de status e selecione a opção "Entrar".
+![Entrada de convidado somente leitura](../media/vscode-read-only-guest-signin.png) Isso iniciará o navegador e você poderá escolher uma conta Microsoft ou GitHub para entrar.
 
 ## <a name="3-sign-in"></a>3. Entrar
 
-Depois de instalar a extensão de compartilhamento ao vivo, reiniciar e aguardando as dependências concluir a instalação (VS Code), você desejará entrar para permitir que outros participantes Saiba quem é você. Se você ignorar essa etapa, você será solicitado a entrar durante o processo de junção ou poderão ingressar na sessão como um convidado de somente leitura. Clique no item de barra de status (VS Code) "compartilhamento" / "entrar" botão (VS) para começar a usar.
+Após instalar a extensão do Live Share, reiniciar e aguardar as dependências terminarem a instalação (VS Code), entre para que os outros participantes conheçam você. Se você ignorar essa etapa, será solicitado a entrar durante o processo de ingresso ou poderá ingressar na sessão como convidado somente leitura. Clique no item da barra de status "Compartilhar" (VS Code)/no botão "Entrar" para começar.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -116,55 +116,55 @@ Depois de instalar a extensão de compartilhamento ao vivo, reiniciar e aguardan
 </tr>
 </table>
 
-Na **VS Code**, seu navegador será iniciado enquanto uma notificação será exibida a inicialização, solicitando que você entrar. Concluir o processo em seu navegador de entrada e, em seguida, simplesmente fechar o navegador quando terminar.
+No **VS Code**, seu navegador será iniciado e uma notificação será exibida, solicitando que você entre. Conclua o processo de entrada no navegador e, em seguida, feche-o quando terminar.
 
-![Notificação do sistema pedindo para entrar usando um navegador da web](../media/vscode-sign-in-toast.png)
+![Notificação do sistema solicitando a entrada com um navegador da Web](../media/vscode-sign-in-toast.png)
 
-> **Usuários do Linux:** Você será solicitado a inserir um código de usuário, se você estiver usando uma versão mais antiga do Live Share (v0.3.295 ou abaixo). Atualizar para a versão mais recente da extensão ou clique no "tendo problemas?" Vincular depois de entrar para ver o código. Ver [aqui para obter detalhes](../use/vscode.md#sign-in-using-a-user-code).
+> **Usuários do Linux:** Talvez você seja solicitado a inserir um código do usuário se estiver usando uma versão mais antiga do Live Share (v0.3.295 ou anteriores). Atualize para a versão mais recente da extensão ou clique no link "Está com problemas?" depois de entrar para ver o código. Confira [aqui para mais detalhes](../use/vscode.md#sign-in-using-a-user-code).
 
-Na **Visual Studio**, Live Share usa automaticamente seu [conta de personalização](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio). Como resultado, você pode simplesmente entrar como você faria normalmente. No entanto, se você preferir usar um logon-in diferente de sua conta de personalização do Visual Studio, acesse **ferramentas &gt; opções &gt; Live Share &gt; conta de usuário** e selecione credenciais diferentes.
+No **Visual Studio**, o Live Share usa automaticamente sua [conta de personalização](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio). Como resultado, você pode simplesmente entrar como você faria normalmente. No entanto, se você preferir usar um logon diferente da sua conta de personalização do Visual Studio, acesse **Ferramentas &gt; Opções &gt; Live Share &gt; Conta de usuário** e selecione credenciais diferentes.
 
-Ver [solução de problemas](../troubleshooting.md#sign-in) se você ainda estiver tendo problemas.
+Confira [Solução de problemas](../troubleshooting.md#sign-in) se ainda tiver problemas.
 
-## <a name="4-openre-open-the-invite-link-in-a-browser"></a>4. Abrir/re-open o convite do link em um navegador
+## <a name="4-openre-open-the-invite-link-in-a-browser"></a>4. Abra/reabra o link de convite em um navegador
 
-Agora, basta abrir (ou abrir novamente) no link de convite em um navegador.
+Agora, basta abrir (ou reabrir) o link de convite em um navegador.
 
-> **Observação**: Se você ainda não tiver instalado a extensão de compartilhamento ao vivo, você verá com links para o marketplace de extensão. Instalar a extensão e reinicie sua ferramenta e tente novamente.
+> **Observação**: Se você ainda não tiver instalado a extensão do Live Share, verá com links para o marketplace da extensão. Instale a extensão, reinicie a ferramenta e tente novamente.
 
-Você deve ser notificado que o navegador deseja iniciar uma ferramenta de Live Share habilitado. Se você permitir que ele inicie a ferramenta selecionada, você estará conectado à sessão de colaboração, depois que ele for iniciado.
+Você receberá uma notificação de que o navegador quer iniciar uma ferramenta habilitada para o Live Share. Se você permitir a inicialização da ferramenta selecionada, será conectado à sessão de colaboração quando ela começar.
 
-![Página de junção](../media/join-page.png)
+![Ingressar na página](../media/join-page.png)
 
-Se o host estiver offline, você será notificado no momento em vez disso. Você pode, em seguida, entre em contato com o host e peça-lhe para compartilhar novamente.
+Se o host estiver offline, você receberá uma notificação. Em seguida, poderá entrar em contato com o host e pedir para compartilhar novamente.
 
-> **Dica de solução de problemas:** Ao usar o VS Code, certifique-se de que você já **iniciado a ferramenta de pelo menos uma vez** depois de instalar a extensão e aguardaram para as dependências concluir a instalação (consulte a barra de status) antes de abertura/re-opening a página de convite. Ainda está com problemas? Ver [unir manualmente](../reference/manual-join.md) para obter detalhes.
+> **Dica de solução de problemas:** Ao usar o VS Code, não se esqueça de **iniciar a ferramenta ao menos uma vez** após instalar a extensão e aguardar as dependências terminarem a instalação (confira a barra de status) antes de abrir/reabrir a página de convite. Ainda está com problemas? Confira [Ingressar manualmente](../reference/manual-join.md) para saber mais detalhes.
 
 ## <a name="5-collaborate"></a>5. Colabore!
 
-É só isso! Em alguns instantes, você estará conectado à sessão de colaboração de seu colega. Por padrão, o host automático-aceita as pessoas que unem, mas se o host estiver configurado para [exigir aprovação do convidado](../reference/security.md#requiring-guest-approval) você irá ver a barra de status / unir menção de caixa de diálogo que Live Share está aguardando o host para aprovar sua solicitação para ingressar.
+É só isso! Em alguns instantes, você será conectado à sessão de colaboração do seu colega. Por padrão, o host aceita automaticamente as pessoas que ingressam. No entanto, se o host estiver configurado para [exigir aprovação do convidado](../reference/security.md#requiring-guest-approval), você verá a barra de status/menção da caixa de diálogo de ingresso de que o Live Share está aguardando o host aprovar sua solicitação de ingresso.
 
-> **Dica de segurança:** Como um convidado a ingressar em uma sessão de colaboração, é importante entender que os hosts podem restringir o acesso a determinados arquivos ou recursos. Deseja entender as implicações de segurança de alguns dos recursos e configurações de compartilhamento ao vivo? Confira a [segurança](../reference/security.md) artigo.
+> **Dica de segurança:** Como um convidado que ingressa em uma sessão de colaboração, é importante entender que os hosts podem restringir seu acesso a determinados arquivos ou recursos. Quer entender as implicações de segurança de alguns recursos e configurações do Live Share? Confira o artigo sobre [segurança](../reference/security.md).
 
-Aqui estão algumas coisas para experimentar:
+Algumas coisas para experimentar:
 
-1. Mover-se o projeto de forma independente e fazer algumas modificações
-2. Check-out de trabalho intellisense para JavaScript, TypeScript, e/ou C# código
-3. Editar algo junto com o host
-4. Siga o host e mover-se com eles como navegar e fazer edições em arquivos diferentes
-5. Iniciar uma sessão de depuração junto com o host
-6. Solicitar que o host para compartilhar um servidor, para que você pode fazer check-out de algo como um aplicativo web em execução no seu computador
-7. Solicitar que o host para compartilhar um terminal e executar alguns comandos
+1. Navegue pelo projeto de maneira independente e faça algumas edições
+2. Confira como trabalhar com o IntelliSense para JavaScript, TypeScript e/ou código C#
+3. Edite algo junto com o host
+4. Siga o host e navegue com ele conforme ele navega e faz edições em arquivos diferentes
+5. Inicie uma sessão de codepuração com o host
+6. Solicite ao host que compartilhe um servidor para você conferir algo como um aplicativo Web em execução no computador
+7. Solicite ao host que compartilhe um terminal e execute alguns comandos
 
 Está tendo problemas? Confira [Solução de problemas](../troubleshooting.md) ou [envie comentários](../support.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Confira estes artigos adicionais para obter mais informações.
+Confira estes outros artigos para saber mais.
 
 - [Início Rápido: Compartilhar seu primeiro projeto](share.md)
-- [Como: Colaborar usando o Visual Studio Code](../use/vscode.md)
-- [Como: Colaborar usando o Visual Studio](../use/vs.md)
+- [Como colaborar usando o Visual Studio Code](../use/vscode.md)
+- [Como colaborar usando o Visual Studio](../use/vs.md)
 
 Referência
 
