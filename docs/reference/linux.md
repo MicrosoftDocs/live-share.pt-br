@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 10/6/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: reference
 author: chuxel
 ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 013eb234e5acca02a39e90f0697a146039bb2a89
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: 9ac16b0e598fb07446c2b682397684b7e2e4709a
+ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57255218"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58640127"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -28,17 +26,17 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="linux-installation-details"></a>Detalhes de instalação do Linux
 
-Linux é um ambiente altamente variável e com o enorme número de distribuições e ambientes de desktop pode ser complicado para começar a trabalhar. Se você continuar com as versões com suporte do **área de trabalho do Ubuntu** (16.04 +), **CentOS 7**, ou **estação de trabalho do Fedora** (27 +) e usar apenas **distribuições oficiais do VS Código**, você deve encontrar o processo muito simples. No entanto, se você estiver usando uma configuração não padrão ou a distribuição de downstream, você pode ou não podem ser executadas em algumas dificuldades. Este documento fornece algumas informações sobre requisitos e alguns detalhes de solução de problemas que podem ajudá-lo a começar a trabalhar e suporte para a execução, mesmo se você configuração é somente comunidade. Observe que o Live Share só dá suporte a **Linux de 64 bits**.
+Linux é um ambiente altamente variável e, com o grande número de ambientes de desktop e distribuições, pode ser complicado trabalhar. Se você continuar com as versões com suporte do **área de trabalho do Ubuntu** (16.04 +), **CentOS 7**, ou **estação de trabalho do Fedora** (27 +) e usar apenas **distribuições oficiais do VS Código**, você deve encontrar o processo muito simples. No entanto, se estiver usando uma configuração não padrão ou distribuição downstream, pode ser que você passe por alguns contratempos. Este documento fornece algumas informações sobre requisitos e alguns detalhes de solução de problemas que podem ajudá-lo a começar a trabalhar e suporte para a execução, mesmo se você configuração é somente comunidade. Observe que o Live Share só dá suporte a **Linux de 64 bits**.
 
-## <a name="install-linux-prerequisites"></a>Instale os pré-requisitos do Linux
+## <a name="install-linux-prerequisites"></a>Instalar pré-requisitos do Linux
 
-Algumas distribuições do Linux não têm bibliotecas que Live Share precisa para funcionar. Por padrão, Live Share tenta detectar e instalar os pré-requisitos do Linux para você. Você verá uma notificação quando o Live Share encontra um problema que pode ser originado de bibliotecas ausentes solicitando sua permissão para instalá-los.
+Algumas distribuições do Linux têm bibliotecas que o Live Share precisa para funcionar. Por padrão, o Live Share tenta detectar e instalar os pré-requisitos do Linux para você. Uma notificação será exibida quando o Live Share encontrar um problema que tenha sido originado pela ausência das bibliotecas, solicitando a você permissão para instalá-las.
 
 ![Mostrando mensagem de notificação de notificação do sistema que pré-requisitos do Linux estão ausentes](../media/vscode-linux-prereq-missing.png)
 
-Quando você clica em "Instalar", aparecerá uma janela de terminal em que o seu sistema operacional solicitará que você insira seu administrador / raiz (sudo) senha para continuar. Supondo que o script for concluído com êxito, recarregue o Visual Studio Code, quando solicitado, você deve ser tudo pronto! Talvez você queira fazer check-out **[dicas de distribuição](#tips-by-distribution)** para outras dicas e soluções alternativas, se existir alguma.
+Quando você clica em "Instalar", aparecerá uma janela de terminal em que o seu sistema operacional solicitará que você insira seu administrador / raiz (sudo) senha para continuar. Supondo que o script for concluído com êxito, recarregue o Visual Studio Code, quando solicitado, você deve ser tudo pronto! Talvez você também queira conferir as **[dicas por distribuição](#tips-by-distribution)** para ver outras dicas e soluções alternativas, caso haja alguma.
 
-Se você vir uma mensagem indicando que o script não dá suporte a sua distribuição, consulte **[dicas para distribuições de suporte da comunidade](#tips-for-unsupported-distros)** para obter informações a comunidade tiver compartilhado conosco.
+Caso seja exibida uma mensagem indicando que o script não dá suporte à sua distribuição, confira **[dicas para distribuição suportada pela comunidade](#tips-for-unsupported-distros)** para obter informações compartilhadas conosco pela comunidade.
 
 Se você **prefere não ter o VS Code, execute o comando para você**, você também pode para executar novamente a versão mais recente deste script a qualquer momento manualmente usando o seguinte comando em uma janela de Terminal:
 
@@ -147,13 +145,13 @@ Como uma **solução alternativa**, você pode adicionar o seguinte para o produ
 
 Ver [acima](#tips-for-community-supported-distros) para obter detalhes adicionais sobre se a distribuição que você está usando é conhecida por funcionar.
 
-## <a name="linux-browser-integration"></a>Integração de navegador do Linux
+## <a name="linux-browser-integration"></a>Integração do navegador do Linux
 
-Live do Visual Studio normalmente compartilham **não exige etapas adicionais de instalação** para habilitar a integração de navegador no Linux.
+Geralmente, o Visual Studio Live Share **não exige etapas de instalação adicionais** para permitir a integração do navegador no Linux.
 
 Para fazer isso, o Live Share coloca automaticamente um arquivo da área de trabalho no `~/.local/share/applications` e o próprio iniciador necessário em `~/.local/share/vsliveshare` quando primeiro inicializa a extensão. Nenhuma ação é necessária de sua parte, se isso for bem-sucedido.
 
-Em alguns casos, distribuições não dar suporte a esse local ou exigir ajustes para fazê-lo funcionar com suas instalações de baunilha. Nesses casos, Live Share voltará a usar `/usr/local/share` em vez disso. Como resultado, **poderá ser notificado de que sua senha de administrador (sudo) é necessária** para concluir o processo de instalação. Uma janela do terminal será exibida informando a você onde o iniciador do navegador será instalado. Basta digitar a senha quando solicitado e pressione enter após a conclusão da instalação para fechar a janela do terminal.
+Em alguns casos, distribuições não dar suporte a esse local ou exigir ajustes para fazê-lo funcionar com suas instalações de baunilha. Nesses casos, Live Share voltará a usar `/usr/local/share` em vez disso. Como resultado, **poderá ser notificado de que sua senha de administrador (sudo) é necessária** para concluir o processo de instalação. Uma janela do terminal será exibida informando a você onde o inicializador do navegador será instalado. Basta digitar a senha quando solicitado e pressionar enter assim que a instalação for concluída para fechar janela do terminal.
 
 Se você preferir executar o comando por conta própria em vez disso, você pode clicar em "Copiar em vez disso," que irá copiar o comando de terminal na área de transferência em vez disso.
 
@@ -161,7 +159,7 @@ Por fim, se você optar por ignorar esta etapa inteiramente, você ainda poderá
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Colaborar usando o Visual Studio Code](../use/vscode.md)
+- [Como colaborar usando o Visual Studio Code](../use/vscode.md)
 - [Requisitos de conectividade do Live Share](connectivity.md)
 - [Funcionalidades de segurança do Live Share](security.md)
 

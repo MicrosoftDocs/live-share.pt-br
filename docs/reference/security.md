@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 12/17/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: reference
 author: chuxel
 ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 0bc97691ca7733f694190e86140b930e68657ade
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: 754a740118ef9e6de2463fb3bb0537af350409aa
+ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57255224"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58640192"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -223,7 +221,7 @@ Saiba Mais: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#co-deb
 
 Durante a codepuração, pode ser muito útil obter acesso a diferentes partes do aplicativo que está sendo fornecido pelo host para a sessão de depuração. Você talvez queira acessar o aplicativo em um navegador, acessar um banco de dados local ou um ponto de extremidade REST de suas ferramentas de ocorrências. Compartilhamento ao vivo permite que você "compartilhamento de um servidor" que mapeia uma porta local na máquina do host para a mesma porta exata na máquina do convidado. Como um convidado, você pode interagir com o aplicativo exatamente como se fosse executado localmente em seu computador (por exemplo, o host e convidado podem ambos acessar um aplicativo web em execução no http://localhost:3000).
 
-No entanto, como um host, você deve **ser muito seletiva com as portas que você compartilhe** com convidados e apenas o compartilhamento em vez disso, as portas do sistema de portas de aplicativo. Para convidados, portas compartilhadas se comportará exatamente como fariam se o serviço do servidor/estava em execução no seu próprio computador. Isso é muito útil, mas se a porta errada for compartilhada também pode ser arriscado. Por esse motivo, o Live Share não faz nenhuma suposição sobre o que deve ou não deve ser compartilhado sem uma definição de configuração e o host executando uma ação.
+No entanto, como um host, você deve **ser muito seletiva com as portas que você compartilhe** com convidados e apenas o compartilhamento em vez disso, as portas do sistema de portas de aplicativo. Para convidados, as portas compartilhadas se comportarão exatamente como fariam se o servidor/serviço estivesse em execução em seu próprio computador. Isso é muito útil, mas se a porta errada for compartilhada, isso também poderá ser um risco. Por esse motivo, o Live Share não faz nenhuma suposição sobre o que deve ou não deve ser compartilhado sem uma definição de configuração e o host executando uma ação.
 
 No Visual Studio, o **porta do aplicativo de web** especificado em projetos do ASP.NET é **compartilhadas automaticamente durante a depuração somente** para facilitar o acesso de convidado para o aplicativo web durante a execução. No entanto, você pode desativar essa automação definindo Ferramentas > Opções > Live Share > "Compartilhamento web app em debug" como "False" Se você preferir.
 
@@ -237,9 +235,9 @@ Você pode aprender mais sobre como configurar o recurso aqui: [![VS Code](../me
 
 ## <a name="sharing-a-terminal"></a>Um terminal de compartilhamento
 
-O desenvolvimento moderno faz uso frequente de uma ampla gama de ferramentas de linha de comando. Felizmente, o Live Share permite que você, como host, opcionalmente, "compartilhe um terminal" com os convidados. Terminal compartilhado pode ser somente leitura ou totalmente colaborativo para que você e os convidados possam executar comandos e ver os resultados. Como o host, você é capaz de permitir que outros colaboradores como apenas ver a saída ou para usar qualquer número de linha de comando de ferramentas para executar testes, compilações, ou até mesmo triagem problemas específicos do ambiente.
+O desenvolvimento moderno faz uso frequente de uma ampla gama de ferramentas de linha de comando. Felizmente, o Live Share permite que você, como host, opcionalmente, "compartilhe um terminal" com os convidados. O terminal compartilhado pode ser somente leitura ou totalmente colaborativo, de modo que você e os convidados possam executar comandos e ver os resultados. Como o host, você é capaz de permitir que outros colaboradores como apenas ver a saída ou para usar qualquer número de linha de comando de ferramentas para executar testes, compilações, ou até mesmo triagem problemas específicos do ambiente.
 
-Somente os hosts podem começar a terminais compartilhados para impedir que os convidados da inicialização de um e fazendo algo não estiver esperando ou assistindo. Quando você inicia um terminal compartilhado como um host, você pode especificar se ele deve ser somente leitura ou leitura/gravação. Quando o terminal é leitura/gravação, todas as pessoas podem digitar no terminal, incluindo o que torna mais fácil interfira, se um convidado está fazendo algo que você não gosta do host. No entanto, para ser seguro, você deve **conceda acesso de leitura/gravação para os convidados somente quando você sabe que eles realmente precisam** e permanecer fiel a terminais de somente leitura para cenários em que você deseja apenas convidado para ver a saída de qualquer comando executado.
+Somente os hosts podem começar a terminais compartilhados para impedir que os convidados da inicialização de um e fazendo algo não estiver esperando ou assistindo. Quando você inicia um terminal compartilhado como um host, você pode especificar se ele deve ser somente leitura ou leitura/gravação. Quando o terminal for leitura/gravação, todos poderão digitar no terminal, incluindo o host, o que facilita a intervenção caso um convidado faça algo indesejável. No entanto, para que seja seguro, você deve **dar somente acesso de leitura/gravação aos convidados quando tiver ciência de que eles realmente precisam** e continuar com os terminais somente leitura para cenários em que deseja que o convidado veja apenas a saída dos comandos que você executa.
 
 No Visual Studio, os terminais não são compartilhadas por padrão. No VS Code, terminais são compartilhadas automaticamente **somente leitura** por padrão. No entanto, é possível desabilitar isso adicionando o seguinte para Settings:
 
@@ -266,8 +264,8 @@ Isso só precisa ser feito uma vez para qualquer pessoa que usar o Live Share. V
 
 ## <a name="see-also"></a>Consulte também
 
-* [Como: Colaborar usando o Visual Studio Code](../use/vscode.md)
-* [Como: Colaborar usando o Visual Studio](../use/vs.md)
+* [Como colaborar usando o Visual Studio Code](../use/vscode.md)
+* [Como colaborar usando o Visual Studio](../use/vs.md)
 * [Requisitos de conectividade do Live Share](connectivity.md)
 
 Está tendo problemas? Confira [Solução de problemas](../troubleshooting.md) ou [envie comentários](../support.md).

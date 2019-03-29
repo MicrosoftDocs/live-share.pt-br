@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 04/25/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: reference
 author: lostintangent
 ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 5c8429779bcfe39842ba298c3b6371daa1cf7fe4
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: 91e80df324a0b2f49fdf37a5270cf7b86fca5c7c
+ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57255221"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58640218"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -192,7 +190,7 @@ Embora a maioria das linguagens tenha algum suporte ao Intellisense de arquivo �
 - [Suporte de extensão](extensions.md)
 - [Requisitos de conectividade do Live Share](connectivity.md)
 - [Funcionalidades de segurança do Live Share](security.md)
-- [Todos os bugs importantes, solicitações de recursos e limitações](https://aka.ms/vsls-issues)
+- [Todos os bugs, solicitações de recursos e limitações importantes](https://aka.ms/vsls-issues)
 - [Todas as solicitações de recursos e limitações](https://aka.ms/vsls-feature-requests)
 
 Está tendo problemas? Confira [Solução de problemas](../troubleshooting.md) ou [envie comentários](../support.md).

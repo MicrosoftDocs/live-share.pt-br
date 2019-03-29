@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 05/05/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: reference
 author: lostintangent
 ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 7e9151d513127fa46c3936b359afd0127e4a5fca
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: a97ca693a0a60125c5376e444c9fba1ee7442d67
+ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57255235"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58640153"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -98,7 +96,7 @@ Você pode exibir o conjunto de problemas conhecidos e itens de roteiro [aqui](h
 - [Suporte de idioma e plataforma](platform-support.md)
 - [Requisitos de conectividade do Live Share](reference/connectivity.md)
 - [Funcionalidades de segurança do Live Share](reference/security.md)
-- [Todos os bugs importantes, solicitações de recursos e limitações](https://aka.ms/vsls-issues)
+- [Todos os bugs, solicitações de recursos e limitações importantes](https://aka.ms/vsls-issues)
 - [Todas as solicitações de recursos e limitações](https://aka.ms/vsls-feature-requests)
 
 Está tendo problemas? Confira [Solução de problemas](troubleshooting.md) ou [envie comentários](support.md).

@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 03/22/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: reference
 author: chuxel
 ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 57d26c2c63bd5b92e62a72368f97bb8aee63313c
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: 8ec4bac1c169c17de5e5ec8d26352cc13d62683b
+ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57255220"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58640062"
 ---
 # <a name="join-a-session-manually"></a>Ingressar em uma sessão manualmente
 
@@ -32,13 +30,13 @@ As instruções exatas variam entre [Visual Studio](#join-from-visual-studio) e 
 
 >**Observação:** Se você quiser ingressar em uma sessão de colaboração como um convidado de somente leitura, você poderá ignorar a entrar. Você será têm acesso para exibir e navegar em todo o código que é compartilhado, mas não conseguir fazer edições.
 
-![Notificação do sistema pedindo para entrar usando um navegador da web](../media/vscode-sign-in-toast.png)
+![Notificação do sistema solicitando a entrada com um navegador da Web](../media/vscode-sign-in-toast.png)
 
-Para colaborar, você precisará entrar no Visual Studio Live Share para que todo mundo sabe quem é você. **Clique em** sobre o status de "Live Share" barra item ou pressione **Ctrl + Shift + P / Cmd + Shift + P** e selecione o "compartilhamento ao vivo: Comando entrar com navegador".
+Para colaborar, é preciso entrar no Visual Studio Live Share para que todos saibam quem é você. **Clique em** sobre o status de "Live Share" barra item ou pressione **Ctrl + Shift + P / Cmd + Shift + P** e selecione o "compartilhamento ao vivo: Entrar com Navegador".
 
-![No botão entrar de código do VS](../media/vscode-sign-in-button.png)
+![Botão Entrar do VS Code](../media/vscode-sign-in-button.png)
 
-Seu navegador será iniciado enquanto uma notificação será exibida a inicialização, solicitando que você entrar. Concluir o processo em seu navegador de entrada e, em seguida, simplesmente fechar o navegador quando terminar.
+Seu navegador será iniciado enquanto uma notificação será exibida a inicialização, solicitando que você entrar. Conclua o processo de entrada no navegador e, em seguida, feche-o quando terminar.
 
 Se você estiver encontrando problemas com o VS Code não pegar um entrar com êxito, clique no link "Problemas" na tela de sucesso no navegador e siga as instruções. Fazer check-out [solução de problemas](../troubleshooting.md#sign-in) para obter mais dicas.
 
@@ -46,7 +44,7 @@ Se você estiver encontrando problemas com o VS Code não pegar um entrar com ê
 
 Abra o Live Share viewlet na barra de atividade do VS Code e selecione "junção sessão de colaboração..." ícone ou entrada.
 
-![Ícone de viewlet de junção](../media/vscode-join-viewlet.png)
+![Ícone do viewlet Ingressar](../media/vscode-join-viewlet.png)
 
 >**Observação:** Se você estiver unindo como um convidado de somente leitura, em seguida, será solicitado a inserir um nome de exibição para ajudar a identificá-lo na sessão de participantes.
 
@@ -54,7 +52,7 @@ Abra o Live Share viewlet na barra de atividade do VS Code e selecione "junção
 
 Cole a URL de convite foram enviadas e pressionar 'Enter' para confirmar.
 
-É só isso! Você deve estar conectado à sessão de colaboração momentaneamente.
+É só isso! Em breve, você deverá estar conectado à sessão de colaboração.
 
 ## <a name="join-from-visual-studio"></a>Junte-se do Visual Studio
 
@@ -70,26 +68,26 @@ Ainda está com problemas? Ver [solução de problemas](../troubleshooting.md#si
 
 Basta ir para **arquivo > Junte-se a sessão de colaboração**.
 
-![Menu de junção do VS](../media/vs-join.png)
+![Menu de ingresso do VS](../media/vs-join.png)
 
 ### <a name="3-paste-the-invite-link"></a>3. Cole o link de convite
 
 Cole a URL de convite foram enviadas e pressionar 'Enter' para confirmar.
 
-É só isso! Você deve estar conectado à sessão de colaboração momentaneamente.
+É só isso! Em breve, você deverá estar conectado à sessão de colaboração.
 
 ## <a name="see-also"></a>Consulte também
 
 Guias de Início Rápido
 
 - [Início Rápido: Compartilhar seu primeiro projeto](../quickstart/share.md)
-- [Início Rápido: Junte-se a primeira sessão](../quickstart/join.md)
+- [Início Rápido: Ingressar em sua primeira sessão](../quickstart/join.md)
 
 Instruções
 
-- [Como: Colaborar usando o Visual Studio Code](../use/vscode.md)
-- [Como: Colaborar usando o Visual Studio](../use/vs.md)
-- [Como: Fornecer comentários](../support.md)
+- [Como colaborar usando o Visual Studio Code](../use/vscode.md)
+- [Como colaborar usando o Visual Studio](../use/vs.md)
+- [Como Fornecer comentários](../support.md)
 
 Referência
 

@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 05/222/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: reference
 author: lostintangent
 ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 7ef7c48b94222969409a0f26111e2b9b99efddc5
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: 38fb6fada1030bddac8f3437f19f0ae259f5626e
+ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57255201"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58640023"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -60,7 +58,7 @@ Caso contrário, o Visual Studio Live Share excluirá automaticamente seu perfil
 - [Suporte de idioma e plataforma](reference/platform-support.md)
 - [Requisitos de conectividade do Live Share](reference/connectivity.md)
 - [Funcionalidades de segurança do Live Share](reference/security.md)
-- [Todos os bugs importantes, solicitações de recursos e limitações](https://aka.ms/vsls-issues)
+- [Todos os bugs, solicitações de recursos e limitações importantes](https://aka.ms/vsls-issues)
 - [Todas as solicitações de recursos e limitações](https://aka.ms/vsls-feature-requests)
 
 Está tendo problemas? Confira [Solução de problemas](troubleshooting.md) ou [envie comentários](support.md).

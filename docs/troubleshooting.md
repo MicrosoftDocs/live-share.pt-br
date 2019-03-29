@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 03/22/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: troubleshooting
 author: chuxel
 ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 8d20ec73d9cadfefced65c04b1ef18f6e844167d
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: 5fc611714d148a9ba1d5a6848e0399af753d1a37
+ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57255205"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58640205"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -28,7 +26,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="troubleshooting-visual-studio-live-share"></a>Solução de problemas de compartilhamento ao vivo do Visual Studio
 
-Este artigo aborda as dicas de solução de problemas, soluções alternativas e respostas para perguntas e problemas comuns. Talvez você queira dar uma olhada a [perguntas frequentes sobre](faq.md).
+Este artigo aborda as dicas de solução de problemas, soluções alternativas e respostas para perguntas e problemas comuns. Talvez você queira dar uma olhada a [perguntas frequentes sobre](faq.md). 
 
 ## <a name="installation--tool-requirements"></a>Instalação / ferramenta requisitos
 
@@ -66,8 +64,8 @@ A seguir é dicas de solução de problemas de entrada.
 |------|----------------|------------|
 | Todos | <strong>Share/Join:</strong> Você está recebendo um erro informando que não é capaz de se conectar ou o tempo limite. | Ver [solução de problemas de conectividade](#connectivity). |
 | VS Code | <strong>Junte-se:</strong> Você estava <strong>não solicitadas / capaz de iniciar o VS Code</strong> após abrir a página de junção em um navegador. |  Dicas: <ul><li>Certifique-se de que você já <i>iniciado do VS Code pelo menos uma vez e aguardaram para a instalação ser concluída na barra de status.</i></li><li>Se isso não funcionar, tente executar o "compartilhamento ao vivo: Comando de instalação do iniciador".</li><li>**Os usuários do Linux**: Se for solicitado a inserir sua senha de administrador (sudo) ao executar o comando acima, faça isso.</li><li>Por fim, veja [unindo manualmente](reference/manual-join.md) como uma solução alternativa.</li></ul> Se você atingir esse problema, adoraríamos saber o que pode estar acontecendo, isso por favor [registrar um bug](https://aka.ms/vsls-new-issue). |
-| VS | <strong>Junte-se:</strong> Você estava <strong>não solicitadas / capaz de iniciar o VS</strong>  após abrir a página de junção em um navegador. |  Ver [unir manualmente](reference/manual-join.md).<br /><br /> Também Gostaríamos muito ver os logs, portanto, por favor [registrar um bug](https://aka.ms/vsls-problem) usando "Relatório de problema..." do Visual Studio recurso. |
-| Todos | <strong>Junte-se:</strong> Você prefere <strong>cole o link de associação diretamente no Visual Studio / VS Code</strong> em vez de clicar no link da web. | Ver [unir manualmente](reference/manual-join.md). |
+| VS | <strong>Junte-se:</strong> Você estava <strong>não solicitadas / capaz de iniciar o VS</strong>  após abrir a página de junção em um navegador. |  Confira [ingressar manualmente](reference/manual-join.md).<br /><br /> Também Gostaríamos muito ver os logs, portanto, por favor [registrar um bug](https://aka.ms/vsls-problem) usando "Relatório de problema..." do Visual Studio recurso. |
+| Todos | <strong>Junte-se:</strong> Você prefere <strong>cole o link de associação diretamente no Visual Studio / VS Code</strong> em vez de clicar no link da web. | Confira [ingressar manualmente](reference/manual-join.md). |
 | Todos | <strong>Junte-se:</strong> Você verá uma mensagem dizendo que "**o proprietário do espaço de trabalho parece estar offline**," ao serem unidas por meio do navegador. | Possíveis soluções alternativas:<br /><ul><li>Tente [unindo manualmente](reference/manual-join.md). Temos visto problemas com entre regiões (por exemplo, Leste e Oeste dos EUA) junções devido a problemas de serviço que não afetam junções manuais.</li><li>Compartilhamento ao vivo pode ser não foi possível rotear diretamente ao host durante a execução no modo de conexão "auto". Tente [modo de retransmissão](reference/connectivity.md).</li></ul>Ver [solução de problemas de conectividade](#connectivity) mais possibilidades |
 | VS Code | <strong>Junte-se:</strong> Unidas por meio do navegador <strong>antes de entrar no</strong>, não foi solicitado a entrar no</strong>e a associação não foi concluída. |  Esse é um [bug conhecido](https://github.com/MicrosoftDocs/live-share/issues/167). Clique no item da barra de status para entrar e, em seguida, ingressar novamente de entrada. |
 
@@ -102,7 +100,7 @@ Instruções
 
 Referência
 
-- [Todos os bugs importantes, solicitações de recursos e limitações](https://aka.ms/vsls-issues)
+- [Todos os bugs, solicitações de recursos e limitações importantes](https://aka.ms/vsls-issues)
 - [Todas as solicitações de recursos e limitações](https://aka.ms/vsls-feature-requests)
 - [Requisitos de conectividade do Live Share](reference/connectivity.md)
 - [Detalhes de instalação do Linux](reference/linux.md)
