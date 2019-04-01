@@ -5,8 +5,6 @@ ms.custom: null
 ms.date: 04/26/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-  - liveshare
 ms.topic: overview
 author: chuxel
 ms.author: clantz
