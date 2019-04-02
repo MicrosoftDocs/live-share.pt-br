@@ -11,12 +11,12 @@ ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: d4dc3f2a6dfd8e0951a944cf4f487cedc49e4370
-ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
+ms.openlocfilehash: 1b6ecafc933c6521f6c21ec0dcd38c25e889a0e2
+ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58640140"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58853567"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -26,7 +26,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="common-use-cases"></a>Casos de uso comuns
 
-O objetivo principal do Visual Studio Live Share é permitir que os desenvolvedores colaborem uns com os outros mais facilmente, sem introduzir qualquer opinião sobre quando e como fazê-lo (por exemplo, qual ferramenta de comunicação usar, a metodologia de software "certo" ou o fluxo de trabalho do SCM). Dessa forma, suas ferramentas podem dar suporte a interações que ocorrem **naturalmente**e como **frequentemente*conforme necessário, mas de uma maneira que **cumprimentos*como já você preferir trabalhar.
+O objetivo principal do Visual Studio Live Share é permitir que os desenvolvedores colaborem uns com os outros mais facilmente, sem introduzir qualquer opinião sobre quando e como fazê-lo (por exemplo, qual ferramenta de comunicação usar, a metodologia de software "certo" ou o fluxo de trabalho do SCM). Dessa forma, suas ferramentas podem dar suporte a interações que ocorrem **naturalmente**e assim como acontece **frequentemente** conforme necessário, mas de uma maneira que **cumprimentos** como já você preferir trabalhar.
 
 Este destaques do documento alguns casos que já está sendo usado para Visual Studio Live Share e descreve quão bem suportamos-los e maneiras planejamos para otimizá-los ainda mais (com base no feedback!) de uso. Se você estiver usando o Live Share para algo que já não é abordado abaixo, ou você acha que podemos fazer melhor para dar suporte a um caso de uso específico, por favor [Fale conosco](https://github.com/MicrosoftDocs/live-share/issues/new).
 
@@ -71,21 +71,23 @@ Um dos mais comumente usado cenários para Visual Studio Live Share é "programa
 
 Compartilhamento ao vivo foi projetado para ser independente de todas as preocupações mencionado anteriormente e, em vez disso, se esforça para dar suporte à programação de par que está completamente "oportunista" e fornecido para sua situação. Dito isso, ao contrário de dois desenvolvedores compartilhando um único teclado e tela, Live Share permite que um formulário de programação de par que permite aos desenvolvedores trabalhar em uma meta compartilhada, sem remover seus autonomia individual ou preferências de ambiente. Você pode trabalhar de forma independente ou em conjunto, permitindo que cada participante trazer suas próprias o processo pensado para a colaboração.
 
-Para dar suporte à programação de par e permitem que cada "convidado" executar ações exigidas normalmente, temos trabalho em nosso roteiro para continuar aumentando o contexto e os recursos que são compartilhados em uma sessão do Live Share: tarefas ([40 #](https://github.com/MicrosoftDocs/live-share/issues/40)), saída de compilação ([#48](https://github.com/MicrosoftDocs/live-share/issues/48)), depuração controlada por convidado ([#32](https://github.com/MicrosoftDocs/live-share/issues/32)) e muito mais. Queremos sabe que uma dessas experiências são importantes para você!
-
 Para dividir esse caso de uso ainda mais, os itens a seguir representam os formulários de par de programação que observamos as pessoas que usam o compartilhamento ao vivo para:
 
 ### <a name="mob-programming"></a>Programação MOB
 
 [MOB programação](https://en.wikipedia.org/wiki/Mob_programming) (ou swarm programação) é, essencialmente, o par de programação, mas com mais de duas pessoas. Portanto, todos os benefícios do Live Share para programação de par se aplicam igualmente bem. Além disso, algumas equipes fazer "swarming" em uma base conforme necessário (por exemplo, a equipe rallying em torno de uma simulação de incêndio) em vez de em tempo integral.
 
-Atualmente, o Live Share dá suporte a até cinco convidados dentro de uma sessão, que pode ou não pode acomodar o tamanho da sua equipe. No entanto, isso é algo que podemos planejar o aumento (para vários casos de uso) e à procura de feedback ([voto 👍 aqui](https://github.com/MicrosoftDocs/live-share/issues/229))
+Atualmente, o Live Share dá suporte a até 30 convidados dentro de uma sessão.
+> [!TIP]
+> Para habilitar 30 convidados em uma sessão:
+> - **VS Code:** adicionar "liveshare.increasedGuestLimit":"true" ao Settings
+> - **VS:** Conjunto de ferramentas > Opções > Live Share > maior limite de convidado como "True" 
 
 ### <a name="coding-competitions--hack-a-thons"></a>Competições de codificação / Hack-A-Thons
 
 Codificação competições e hack um thons são variações de curto prazo com eficiência, a única tarefa de programação mob. Os membros da equipe e sua função atual, também são potencialmente dinâmicos. Como esse caso de uso normalmente também é sensível ao tempo, a capacidade de colaborar em tempo real sem a necessidade de adotar uma ferramenta completamente nova e a capacidade de trabalhar em conjunto, sem ficar limitado a uma única tela ou o teclado, pode ir uma maneira de log em crescente velocidade.
 
-Uma vez que os participantes nesse ambiente podem não ser sempre totalmente "confiáveis", ouvimos as solicitações para permitir removendo (e de bloqueio) um convidado de uma sessão a qualquer momento, o que é algo que planejamos habilitar ([398 #](https://github.com/MicrosoftDocs/live-share/issues/398)) e dá suporte a o objetivo de fornecer "hosts" com controle completo sobre seu ambiente.
+Uma vez que os participantes nesse ambiente podem não ser sempre totalmente "confiáveis", você pode remover (e bloquear) um convidado de uma sessão a qualquer momento. Isso fornece "hosts" controle total sobre seu ambiente.
 
 ### <a name="school-group-projects"></a>Projetos do grupo de escola
 
@@ -117,14 +119,14 @@ Quando o instrutor está ensinando uma lição, eles podem usar o Live Share par
 
 Para auxiliar nas configurações de sala de aula, o Live Share permite o compartilhamento no modo somente leitura. Os instrutores podem usar modo somente leitura para que eles possam compartilhar seus projetos com os alunos sem precisar se preocupar sobre edições acidentais ou desnecessárias que estão sendo feitas.
 
-Além disso, o Live Share tem suporte experimental para habilitar o ingresso em uma sessão de colaboração de convidados até 30. Dessa forma, os instrutores podem ter sua classe inteira ingressar em uma sessão e exibir o código juntos.
+Além disso, o Live Share tem suporte para habilitar a convidados até 30 ingressar em uma sessão de colaboração. Dessa forma, os instrutores podem ter sua classe inteira ingressar em uma sessão e exibir o código juntos.
 
-Para habilitar esse recurso experimental:
+Para habilitar esse recurso:
 
-- **VS Code:** Adicione "liveshare.features":"experimental" para o Settings.
-- **VS:** Conjunto de ferramentas > Opções > Live Share > recursos para "Experimental"
+- **VS Code:** Adicione "liveshare.increasedGuestLimit":"true" para o Settings.
+- **VS:** Conjunto de ferramentas > Opções > Live Share > maior limite de convidado como "True"
 
-Para otimizar totalmente Live Share para esse cenário, é preciso aumentar ainda mais o limite atual de convidado ([#229](https://github.com/MicrosoftDocs/live-share/issues/229)) e simplificar a forma que as sessões são iniciadas ([#422](https://github.com/MicrosoftDocs/live-share/issues/422)).
+Para otimizar totalmente Live Share para esse cenário, é necessário simplificar a maneira que as sessões são iniciadas ([422 #](https://github.com/MicrosoftDocs/live-share/issues/422)).
 
 ## <a name="code-reviews"></a>Revisões de código
 
@@ -144,10 +146,10 @@ Além disso, o desenvolvimento no mundo real é mais do que simplesmente escreve
 
 ## <a name="see-also"></a>Consulte também
 
-- [Suporte de idioma e plataforma](platform-support.md)
-- [Requisitos de conectividade do Live Share](connectivity.md)
-- [Funcionalidades de segurança do Live Share](security.md)
-- [Todos os bugs, solicitações de recursos e limitações importantes](https://aka.ms/vsls-issues)
+- [Suporte de linguagem e plataforma](platform-support.md)
+- [Requisitos de conectividade para o compartilhamento ao vivo](connectivity.md)
+- [Recursos de segurança do Live Share](security.md)
+- [Todos os bugs importantes, solicitações de recursos e limitações](https://aka.ms/vsls-issues)
 - [Todas as solicitações de recursos e limitações](https://aka.ms/vsls-feature-requests)
 
 Está tendo problemas? Confira [Solução de problemas](../troubleshooting.md) ou [envie comentários](../support.md).
