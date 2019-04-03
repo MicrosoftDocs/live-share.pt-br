@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 04/27/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: conceptual
 author: chuxel
 ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 9285fef38fea9bb164892775521ed2a28fe9ef1b
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: ed96ba572a58b8d3bfda7b634f1052a1b4e73051
+ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57255227"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58853632"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -32,7 +30,7 @@ Pronto para receber colaboração com o Live Share no VS Code?  Nesse caso, voc�
 
 Observe que todas as atividades de colaboração descritas aqui envolvem um único **host da sessão de colaboração** e um ou mais **convidados**. O host é a pessoa que iniciou a sessão de colaboração, e qualquer pessoa que ingressa na sessão é um convidado.
 
-*Procurando uma versão resumida? É só conferir os guias de início rápido [compartilhar](../quickstart/share.md) ou [ingressar](../quickstart/join.md).*
+*Procurando uma versão compacta? Confira os guias de início rápido [compartilhar](../quickstart/share.md) ou [ingressar](../quickstart/join.md).*
 
 > [!TIP]
 > Você sabia que pode *ingressar em sua própria sessão de colaboração*? Isso permite que você experimente o Live Share por conta própria ou crie uma instância do Visual Studio ou do VS Code e conecte-a remotamente. Você pode até mesmo usar a mesma identidade em ambas as instâncias. Confira!
@@ -44,12 +42,12 @@ Antes de começar, será preciso confirmar se você tem uma versão do Visual St
 - **Windows**: 7, 8.1 ou 10
 
 - **macOS**: apenas Sierra (10.12) e superiores.
-    - _El Capitan (10.11) e inferiores não são aceitos atualmente devido aos [requisitos do .NET Core 2.0](https://go.microsoft.com/fwlink/?linkid=872315)._
+    - _No momento, El Capitan (10.11) e anteriores não são compatíveis devido aos [requisitos do .NET Core 2.0](https://go.microsoft.com/fwlink/?linkid=872315)._
 
 - **Linux**: Ubuntu Desktop 16.04+ de 64 bits, Fedora Workstation 27+, CentOS 7
 
     - O Live Share exige vários [pré-requisitos de Linux](#linux-install-steps) que talvez você tenha que instalar.
-    - _O Linux de 32 bits não é aceito devido aos [requisitos do .NET Core 2.0](https://go.microsoft.com/fwlink/?linkid=872314)._
+    - _O Linux de 32 bits não é compatível devido aos [requisitos do .NET Core 2.0](https://go.microsoft.com/fwlink/?linkid=872314)._
     - ARM também não é aceito no momento.
     - Confira o artigo com [detalhes de instalação do Linux](../reference/linux.md) para saber como usar o downstream e outras distribuições.
 
@@ -67,7 +65,7 @@ Depois disso, o download e a instalação da extensão do Visual Studio Live Sha
 
 Ao baixar e usar o Visual Studio Live Share, você concorda com os [termos de licença](https://aka.ms/vsls-license) e a [política de privacidade](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). Confira [Solução de problemas](../troubleshooting.md) caso tenha problemas.
 
-[![Baixar](../media/download.png)](https://aka.ms/vsls-dl/vscode)
+[![Daixe](../media/download.png)](https://aka.ms/vsls-dl/vscode)
 
 ### <a name="linux-install-steps"></a>Etapas de instalação do Linux
 
@@ -99,7 +97,7 @@ Você pode ler **[aqui](../reference/linux.md#linux-browser-integration)** mais 
 
 Para colaborar, é preciso entrar no Visual Studio Live Share para que todos saibam quem é você. Trata-se apenas de uma medida de segurança e **não** inscreve você para receber marketing nem em outras atividades de pesquisa. Você pode entrar usando uma conta pessoal da Microsoft (por exemplo, @outlook.com), a AAD (conta corporativa ou de estudante) da Microsoft ou uma conta do GitHub. Entrar é fácil.
 
-**Clique** no item da barra de status "Compartilhar" ou pressione **Ctrl+Shift+P / Cmd+Shift+P** e selecione o comando "Live Share: Entrar com Navegador".
+**Clique** no item da barra de status "Live Share" ou pressione **Ctrl+Shift+P / Cmd+Shift+P** e selecione o comando "Live Share: Entrar com Navegador".
 
 ![Botão Entrar do VS Code](../media/vscode-sign-in-button.png)
 
@@ -172,9 +170,9 @@ Depois de baixar e instalar o Visual Studio Live Share, siga estas etapas para i
 
     Por padrão, o Live Share **oculta** dos convidados quaisquer arquivos/pastas referenciados nos arquivos .gitignore em suas pastas compartilhadas. **Ocultar** um arquivo impede que ele apareça na árvore de arquivos do convidado. **Excluir** um arquivo aplica uma regra mais rigorosa que impedirá o Live Share de abri-lo para o convidado em situações como "Ir para Definição" ou se você intervir no arquivo durante a depuração ou ao ser "seguido". Se você quiser ocultar/excluir arquivos diferentes, um arquivo **.vsls.json** poderá ser adicionado ao seu projeto com essas configurações. Confira o tópico sobre como [controlar a visibilidade e o acesso a arquivos](../reference/security.md#controlling-file-access-and-visibility) para saber mais detalhes.
 
-4. **Iniciar uma sessão de colaboração**
+4. **Inicie uma sessão de colaboração**
 
-    Agora, basta **clicar** na barra de status "Compartilhar" ou pressionar **Ctrl+Shift+P/Cmd+Shift+P** e selecionar "Live Share: Iniciar uma sessão de colaboração (Compartilhar)".
+    Agora, basta **clicar** no item da barra de status "Live Share" ou pressionar **Ctrl+Shift+P/Cmd+Shift+P** e selecionar "Live Share: Iniciar uma sessão de colaboração (Compartilhar)".
 
     ![Botão Compartilhar](../media/vscode-share-button.png)
 
@@ -183,7 +181,7 @@ Depois de baixar e instalar o Visual Studio Live Share, siga estas etapas para i
 
     Um link de convite será copiado automaticamente para a área de transferência. Quando aberto em um navegador, esse link permite que outras pessoas ingressem em uma nova sessão de colaboração que compartilha o conteúdo dessas pastas com elas.
 
-    Você também verá a transição do item da barra de status "Compartilhar" para representar o estado de sessão. Confira as informações do [estado de sessão](#session-states) abaixo para ver sua aparência.
+    Você também verá a transição do item da barra de status "Live Share" para representar o estado de sessão. Confira as informações do [estado de sessão](#session-states) abaixo para ver sua aparência.
 
     Observe que, se precisar obter o link de convite novamente depois de ter iniciado o compartilhamento, você o acessa novamente clicando no ícone da barra de status do estado de sessão e seleciona "Convidar Outras Pessoas (Copiar Link)".
 
@@ -201,7 +199,7 @@ Depois de baixar e instalar o Visual Studio Live Share, siga estas etapas para i
 
     > **Dica de segurança:** quer entender as implicações de segurança de alguns recursos do Live Share? Confira o artigo sobre [segurança](../reference/security.md).
 
-    Se o convidado tiver dúvidas, o artigo "[Início Rápido: Ingressar na primeira sessão](../quickstart/join.md)" oferece algumas informações sobre como começar a trabalhar como convidado.
+    Se o convidado tiver dúvidas, o artigo "[Início Rápido: Ingressar na primeira sessão](../quickstart/join.md)" oferece mais algumas informações sobre como começar a trabalhar como convidado.
 
 7. **[Opcional] Aprovar o convidado**
 
@@ -258,11 +256,11 @@ A maneira mais fácil de ingressar em uma sessão de colaboração é simplesmen
     > [!NOTE]
     > Certifique-se de que você já **iniciou a ferramenta pelo menos uma vez** após a instalação da extensão Visual Studio Live Share e de que permitiu que a instalação finalizasse antes de abrir/reabrir a página de convite. Ainda está com problemas? Confira [ingressar manualmente](#join-manually).
 
-3. **Colaborar**
+3. **Colaboração**
 
     É só isso! Em poucos instantes você será conectado e poderá iniciar a colaboração.
 
-    Você verá a transição do botão "Compartilhar" para transmitir um "Estado de Sessão". Confira as informações do [estado de sessão](#session-states) abaixo para ver sua aparência.
+    Você verá a transição do botão "Live Share" para transmitir um "Estado de Sessão". Confira as informações do [estado de sessão](#session-states) abaixo para ver sua aparência.
 
     Você será automaticamente levado para o arquivo que o host está editando no momento assim que o ingresso for concluído.
 
@@ -274,7 +272,7 @@ Também é possível ingressar manualmente sem usar um navegador da Web, o que p
 
     Depois de instalar a extensão Live Share, recarregar e aguardar o término da instalação das dependências, convém entrar para permitir que outros colaboradores saibam quem é você. Confira o tópico [Entrar](#sign-in) para obter mais detalhes.
 
-2. **Usar o comando de ingresso**
+2. **Usar o comando Ingressar**
 
     Abra a guia personalizada Live Share na barra de atividade do VS Code e selecione o ícone ou a entrada "Ingressar na sessão de colaboração...".
 
@@ -288,7 +286,7 @@ Também é possível ingressar manualmente sem usar um navegador da Web, o que p
 
     É só isso! Em breve, você deverá estar conectado à sessão de colaboração.
 
-    Você verá a transição do botão "Compartilhar" para transmitir um "Estado de Sessão". Confira as informações do [estado de sessão](#session-states) abaixo para ver sua aparência.
+    Você verá a transição do botão "Live Share" para transmitir um "Estado de Sessão". Confira as informações do [estado de sessão](#session-states) abaixo para ver sua aparência.
 
     Você será automaticamente levado para o arquivo que o host está editando no momento assim que o ingresso for concluído.
 
@@ -398,7 +396,7 @@ Eles poderão apenas clicar em "Seguir" diretamente na notificação quando esti
 
 ## <a name="co-debugging"></a>Codepuração
 
-O recurso de depuração colaborativa do Visual Studio Live Share é uma maneira exclusiva e avançada de depurar um problema. Além de proporcionar uma experiência colaborativa para a solução de problemas, ele também dá a você e aos outros participantes a capacidade de investigar problemas que possam ser específicos do ambiente, fornecendo uma sessão de depuração compartilhada no computador do host.
+O recurso de depuração colaborativa do Visual Studio Live Share é uma maneira exclusiva e avançada de depurar um problema. Além de proporcionar uma experiência colaborativa para a solução de problemas, ele também oferece a você e aos outros participantes a capacidade de investigar problemas que possam ser específicos do ambiente, fornecendo uma sessão de depuração compartilhada no computador do host.
 
 > **Dica de segurança:** uma vez que todos os participantes podem navegar e editar arquivos independentemente, como um host, talvez você queira restringir os arquivos que os convidados podem acessar no seu projeto por um arquivo .vsls.json. Você também deve estar ciente de que o acesso ao Console/REPL significa que os participantes podem executar comandos em seu computador, de modo que você só deve codepurar com as pessoas em quem confia. Como um convidado, também é importante entender que talvez você não possa seguir o depurador, uma vez que ele intervém em determinados arquivos que são restringidos como resultado dessas configurações. Confira o tópico sobre como [controlar a visibilidade e o acesso a arquivos](../reference/security.md#controlling-file-access-and-visibility) para saber mais detalhes.
 
@@ -534,11 +532,11 @@ Estes são os estados que você normalmente verá:
 
 ## <a name="guest-limitations"></a>Limitações do convidado
 
-Embora, no momento, existam algumas falhas com as quais os usuários vão se deparar enquanto estiverem usando os recursos descritos acima, os hosts da sessão de colaboração mantêm a funcionalidade completa de sua ferramenta de escolha. Confira mais informações em:
+Embora, no momento, existam algumas falhas com as quais os usuários vão se deparar enquanto estiverem usando os recursos descritos acima, os hosts da sessão de colaboração mantêm a funcionalidade completa de sua ferramenta de escolha. Para obter mais informações, consulte o seguinte:
 
 - [Suporte de idioma e plataforma](../reference/platform-support.md)
 - [Suporte de extensão](../reference/extensions.md)
-- [Todos os bugs, solicitações de recursos e limitações importantes](https://aka.ms/vsls-issues)
+- [Todos os principais bugs, solicitações de recursos e limitações](https://aka.ms/vsls-issues)
 - [Todas as solicitações de recursos e limitações](https://aka.ms/vsls-feature-requests)
 - [Solução de problemas](../troubleshooting.md)
 
@@ -548,9 +546,9 @@ Confira estes outros artigos para saber mais.
 
 - [Início Rápido: Compartilhar seu primeiro projeto](../quickstart/share.md)
 - [Início Rápido: Ingressar em sua primeira sessão](../quickstart/share.md)
-- [Como colaborar usando o Visual Studio](vs.md)
+- [Como: colaborar usando o Visual Studio](vs.md)
 - [Requisitos de conectividade do Live Share](../reference/connectivity.md)
-- [Funcionalidades de segurança do Live Share](../reference/security.md)
+- [Recursos de segurança do Live Share](../reference/security.md)
 - [Detalhes de Instalação do Linux](../reference/linux.md)
 
 Está tendo problemas? Confira [Solução de problemas](../troubleshooting.md) ou [envie comentários](../support.md).

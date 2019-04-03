@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 04/25/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: conceptual
 author: chuxel
 ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 995c9e16d24328bb2680deb99cd7e7d421af945c
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: 55eb4b0a5e819b00754d75e4682dd1aa97bbf576
+ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57255272"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58853619"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -32,24 +30,30 @@ Pronto para receber colaboração com o Live Share no Visual Studio? Nesse caso,
 
 Todas as atividades de colaboração descritas aqui envolvem um único **host da sessão de colaboração** e um ou mais **convidados**. O host é a pessoa que iniciou a sessão de colaboração, e qualquer pessoa que ingressa na sessão é um convidado.
 
-*Procurando uma versão resumida? É só conferir os guias de início rápido [compartilhar](../quickstart/share.md) ou [ingressar](../quickstart/join.md).*
+*Procurando uma versão compacta? Confira os guias de início rápido [compartilhar](../quickstart/share.md) ou [ingressar](../quickstart/join.md).*
 
 > [!TIP]
 > Você sabia que pode *ingressar em sua própria sessão de colaboração*? Isso permite que você experimente o Live Share por conta própria ou crie uma instância do Visual Studio ou do VS Code e conecte-a remotamente. Você pode até mesmo usar a mesma identidade em ambas as instâncias. Confira!
 
 ## <a name="installation"></a>Instalação
 
-Antes de começar, você precisará instalar o **Visual Studio 2017 15.6 ou posterior** no Windows 7, 8.1 ou 10. *No entanto, é recomendável o Visual Studio 15.7+, que permite o suporte local às ações desfazer/refazer.*
+Antes de começar, será preciso instalar o **Visual Studio 2019** ou o **Visual Studio 2017 15.6 ou posterior** no Windows 7, 8.1 ou 10. *No entanto, é recomendável o Visual Studio 15.7 ou posterior, já que ele oferece suporte local às ações desfazer/refazer.*
 
 Começar é simples:
 
-1. Instale qualquer edição do [Visual Studio 2017](https://visualstudio.microsoft.com/vs/) 15.6+.
+Para o Visual Studio 2019
+1. Instale qualquer edição do [Visual Studio 2019](https://visualstudio.microsoft.com/vs/).
+2. Instale uma [carga de trabalho compatível](../reference/platform-support.md). (por exemplo, ASP.NET, .NET Core, C++ e/ou Node.js)
+3. O Visual Studio Live Share é instalado por padrão com essas cargas de trabalho.
+
+Para o Visual Studio 2017
+1. Instale qualquer edição do [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/) 15.6+.
 2. Instale uma [carga de trabalho compatível](../reference/platform-support.md). (por exemplo, ASP.NET, .NET Core, C++ e/ou Node.js)
 3. [Baixe](https://aka.ms/vsls-dl/vs) e instale a extensão Visual Studio Live Share do marketplace.
 
 Ao baixar e usar o Visual Studio Live Share, você concorda com os [termos de licença](https://aka.ms/vsls-license) e a [política de privacidade](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). Confira [Solução de problemas](../troubleshooting.md) caso tenha problemas.
 
-[![Baixar](../media/download.png)](https://aka.ms/vsls-dl/vs)
+[![Daixe](../media/download.png)](https://aka.ms/vsls-dl/vs)
 
 ## <a name="sign-in"></a>Entrar
 
@@ -85,9 +89,9 @@ Depois de baixar e instalar o Visual Studio Live Share, siga estas etapas para i
 
     Por padrão, o Live Share **oculta** dos convidados todos os arquivos/pastas referenciados nos arquivos .gitignore do seu projeto. **Ocultar** um arquivo impede que ele apareça na árvore de arquivos, enquanto **excluí-lo** interrompe a sua transmissão mesmo durante operações como a depuração. Se você quiser ocultar/excluir arquivos diferentes, um arquivo **.vsls.json** poderá ser adicionado ao seu projeto com essas configurações. Confira o tópico sobre como [controlar a visibilidade e o acesso a arquivos](../reference/security.md#controlling-file-access-and-visibility) para saber mais detalhes.
 
-4. **Iniciar uma sessão de colaboração**
+4. **Inicie uma sessão de colaboração**
 
-    Agora, basta clicar no botão "Compartilhar" no canto superior direito.
+    Agora, basta clicar no botão "Live Share" no canto superior direito.
 
     ![Botão Compartilhar do VS](../media/vs-share-button.png)
 
@@ -96,11 +100,11 @@ Depois de baixar e instalar o Visual Studio Live Share, siga estas etapas para i
 
     Um link de convite será copiado automaticamente para a área de transferência. Quando aberto em um navegador, esse link permite que outras pessoas ingressem em uma nova sessão de colaboração que compartilha o conteúdo dessas pastas com elas.
 
-    Você também verá a transição do botão "Compartilhar" para transmitir um "Estado de Sessão". Confira abaixo as informações do [estado de sessão](#session-states) quanto à sua aparência.
+    Você também verá a transição do botão "Live Share" para transmitir um "Estado de Sessão". Confira abaixo as informações do [estado de sessão](#session-states) quanto à sua aparência.
 
     Observe que, se precisar receber o link de convite novamente depois de ter iniciado o compartilhamento, você poderá acessá-lo clicando no botão compartilhar/estado de sessão e selecionando "Copiar Link".
 
-5. **[Opcional] Habilitar modo somente leitura**
+5. **[Opcional] Habilitar o modo somente leitura**
 
     Após iniciar a sessão de colaboração, configure a sessão como somente leitura para impedir que os convidados façam edições no código compartilhado.
 
@@ -169,17 +173,17 @@ A maneira mais fácil de ingressar em uma sessão de colaboração é simplesmen
     > [!NOTE]
     > Ainda está com problemas? Confira [ingressar manualmente](#join-manually).
 
-3. **Colabore**
+3. **Colaboração**
 
     E pronto! Em poucos instantes você será conectado e poderá iniciar a colaboração.
 
-    Você verá a transição do botão "Compartilhar" para transmitir um "Estado de Sessão". Confira as informações do [estado de sessão](#session-states) abaixo para ver sua aparência.
+    Você verá a transição do botão "Live Share" para transmitir um "Estado de Sessão". Confira as informações do [estado de sessão](#session-states) abaixo para ver sua aparência.
 
     Você será automaticamente levado para o arquivo que o host está editando no momento assim que o ingresso for concluído.
 
 ### <a name="join-manually"></a>Ingressar manualmente
 
-Também é possível ingressar manualmente sem usar um navegador da Web, o que pode ser útil em situações em que a ferramenta que você quer usar já estiver em execução, se quiser usar uma ferramenta diferente do que usa normalmente ou se estiver tendo problemas em fazer os links de convite funcionarem por algum motivo. O processo é fácil:
+Também é possível ingressar manualmente sem usar um navegador da Web, o que pode ser útil nas situações em que a ferramenta que você quer usar já estiver em execução, se quiser usar uma ferramenta diferente do que usa normalmente ou se estiver tendo problemas em fazer os links de convite funcionarem por algum motivo. O processo é fácil:
 
 1. **Entrar**
 
@@ -187,9 +191,9 @@ Também é possível ingressar manualmente sem usar um navegador da Web, o que p
 
     Confira o tópico [Entrar](#sign-in) para obter mais detalhes.
 
-2. **Usar o comando de ingresso**
+2. **Usar o comando Ingressar**
 
-    Basta acessar **Arquivo > Ingressar na Sessão de Colaboração**
+    Basta acessar **Arquivo > Ingressar na Sessão de Live Share**
 
     ![Menu de ingresso do VS](../media/vs-join.png)
 
@@ -201,7 +205,7 @@ Também é possível ingressar manualmente sem usar um navegador da Web, o que p
 
     É só isso! Em breve, você deverá estar conectado à sessão de colaboração.
 
-    Você verá a transição do botão "Compartilhar" para transmitir um "Estado de Sessão". Confira as informações do [estado de sessão](#session-states) abaixo para ver sua aparência.
+    Você verá a transição do botão "Live Share" para transmitir um "Estado de Sessão". Confira as informações do [estado de sessão](#session-states) abaixo para ver sua aparência.
 
     Você será automaticamente levado para onde o host está editando no momento assim que o ingresso for concluído.
 
@@ -359,7 +363,7 @@ Se você atualizou as configurações para que não seja mais possível a anexa�
 
 De tempos em tempos, como um host da sessão de colaboração, você pode achar conveniente compartilhar serviços ou servidores locais adicionais com convidados. Isso pode variar de outros pontos de extremidade RESTful a bancos de dados ou outros servidores. O Visual Studio Live Share permite que você especifique um número de porta local, se desejar, dê um nome a ele e, em seguida, o compartilhe com todos os convidados.
 
-Os convidados poderão então acessar o servidor compartilhado por você nessa porta dos respectivos computadores locais nessa mesma porta. Por exemplo, se você compartilhou um servidor Web **em execução na porta 3000**, o convidado poderá acessar esse mesmo servidor Web em execução nos **próprios computadores** em http://localhost:3000! Isso é feito por meio de um túnel SSH ou SSL seguro entre o host e os convidados e autenticado por meio do serviço, de modo que você possa ter certeza de que apenas as pessoas na sessão de colaboração têm acesso.
+Os convidados poderão então acessar o servidor compartilhado por você nessa porta dos respectivos computadores locais nessa mesma porta. Por exemplo, se você compartilhou um servidor Web **em execução na porta 3000**, o convidado poderá acessar esse mesmo servidor Web em execução nos **próprios computadores** em http://localhost:3000! Isso é feito por meio de um túnel SSH ou SSL seguro entre o host e os convidados e autenticado por meio do serviço, de modo que você possa ter certeza de que apenas as pessoas na sessão de colaboração tenham acesso.
 
 > **Dica de segurança:** como um host, você deve ser muito seletivo com as portas que compartilha com convidados e seguir com as porta de aplicativo (em vez de compartilhar uma porta do sistema). Para convidados, as portas compartilhadas se comportarão exatamente como fariam se o servidor/serviço estivesse em execução em seu próprio computador. Isso é muito útil, mas se a porta errada for compartilhada, isso também poderá ser um risco.
 
@@ -406,7 +410,7 @@ Para encerrar a sessão de terminal, basta digitar sair (exit) ou fechar a janel
 
 ## <a name="session-states"></a>Estados de sessão
 
-Depois de iniciar ou ingressar em uma sessão de colaboração e ter acesso ao conteúdo compartilhado, o botão "Compartilhar" no canto superior direito atualizará a sua aparência para refletir o estado da sessão de colaboração ativa.
+Depois de iniciar ou ingressar em uma sessão de colaboração e ter acesso ao conteúdo compartilhado, a aparência do botão "Live Share", no canto superior direito, será atualizada para refletir o estado da sessão de colaboração ativa.
 
 Estes são os estados que você normalmente verá:
 
@@ -422,11 +426,11 @@ Estes são os estados que você normalmente verá:
 
 ## <a name="guest-limitations"></a>Limitações do convidado
 
-Embora, no momento, existam algumas falhas com as quais os usuários vão se deparar enquanto estiverem usando os recursos descritos acima, os hosts da sessão de colaboração mantêm a funcionalidade completa de sua ferramenta de escolha. Confira mais informações em:
+Embora, no momento, existam algumas falhas com as quais os usuários vão se deparar enquanto estiverem usando os recursos descritos acima, os hosts da sessão de colaboração mantêm a funcionalidade completa de sua ferramenta de escolha. Para obter mais informações, consulte o seguinte:
 
 - [Suporte de idioma e plataforma](../reference/platform-support.md)
 - [Suporte de extensão](../reference/extensions.md)
-- [Todos os bugs, solicitações de recursos e limitações importantes](https://aka.ms/vsls-issues)
+- [Todos os principais bugs, solicitações de recursos e limitações](https://aka.ms/vsls-issues)
 - [Todas as solicitações de recursos e limitações](https://aka.ms/vsls-feature-requests)
 
 ## <a name="next-steps"></a>Próximas etapas
@@ -435,8 +439,8 @@ Confira estes outros artigos para saber mais.
 
 - [Início Rápido: Compartilhar seu primeiro projeto](../quickstart/share.md)
 - [Início Rápido: Ingressar em sua primeira sessão](../quickstart/join.md)
-- [Como colaborar usando o Visual Studio Code](vscode.md)
+- [Como: colaborar usando o Visual Studio Code](vscode.md)
 - [Requisitos de conectividade do Live Share](../reference/connectivity.md)
-- [Funcionalidades de segurança do Live Share](../reference/security.md)
+- [Recursos de segurança do Live Share](../reference/security.md)
 
 Está tendo problemas? Confira [Solução de problemas](../troubleshooting.md) ou [envie comentários](../support.md).
