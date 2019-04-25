@@ -15,7 +15,7 @@ ms.openlocfilehash: b25158970f325bbc55618909315a8ed09d6f50a8
 ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58853606"
 ---
 <!--
@@ -44,9 +44,9 @@ Basta seguir estas etapas para iniciar o compartilhamento.
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-code.svg" width="128px" alt="Visual Studio Code logo"/></td>
     <td style="border:none;">
         <strong>Visual Studio Code (1.22.0 ou posterior)</strong><br />
-        1. Instale o <a href="https://code.visualstudio.com/">Visual Studio Code</a> para Windows (7, 8.1 ou 10), macOS <b>(Sierra ou posterior)</b> e Linux de 64 bits <b>(<a href="../use/vscode.md#installation">detalhes</a>)</b><br />
-        2. Baixe e instale a extensão Visual Studio Live Share do marketplace. <br />
-        3. Recarregue e aguarde até que as dependências sejam baixadas e instaladas (veja a barra de status).<br />
+        1. Instale o <a href="https://code.visualstudio.com/">Visual Studio Code</a> para Windows (7, 8.1 ou 10), macOS <b>(Serra ou posterior)</b> e Linux de 64 bits <b>(<a href="../use/vscode.md#installation">detalhes</a>)</b><br />
+        2. Baixe e instale a extensão do Visual Studio Live Share por meio do marketplace. <br />
+        3. Recarregue-a e aguarde até as dependências serem baixadas e instaladas (veja a barra de status).<br />
         4. <strong>Linux</strong>: Se precisar <a href="../reference/linux.md#install-linux-prerequisites">instalar bibliotecas</a>, clique em Instalar, insira a senha e reinicie o VS Code quando terminar.<br />
         <a href="https://aka.ms/vsls-dl/vscode"><img src="../media/download.png" alt="Download button"></a>
     </td>
@@ -66,7 +66,7 @@ Basta seguir estas etapas para iniciar o compartilhamento.
         <strong>Visual Studio 2017 15.6 ou posterior</strong><br />
         1. Instale a última versão do <a href="https://visualstudio.microsoft.com/vs/older-downloads/">Visual Studio 2017</a> (15.6 ou posterior) no Windows (7, 8.1 ou 10).<br/>
         2. Instale uma <a href="../reference/platform-support.md">carga de trabalho compatível</a>. (por exemplo, ASP.NET, .NET Core, C++ e/ou Node.js)<br />
-        3. Baixe e instale a extensão Visual Studio Live Share do marketplace. <br />
+        3. Baixe e instale a extensão do Visual Studio Live Share por meio do marketplace. <br />
         <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="../media/download.png" alt="Download button" ></a><br />
     </td>
 </tr>
@@ -105,7 +105,7 @@ Use o fluxo de trabalho normal para abrir uma pasta, um projeto ou uma solução
 
 ### <a name="4-optional-update-hidden-or-excluded-files"></a>4. [Opcional] Atualize os arquivos ocultos ou excluídos
 
-Por padrão, o Live Share **oculta** dos convidados quaisquer arquivos/pastas referenciados nos arquivos .gitignore em suas pastas compartilhadas. **Ocultar** um arquivo impede que ele apareça na árvore de arquivos do convidado. **Excluir** um arquivo aplica uma regra mais rigorosa que impede o Live Share de abri-lo para o convidado em situações como "Ir para Definição" ou se você intervir no arquivo durante a depuração ou ao ser "seguido". Se você quiser ocultar/excluir arquivos diferentes, um arquivo **.vsls.json** poderá ser adicionado ao seu projeto com essas configurações. Confira [Controlar o acesso a arquivos e visibilidade](../reference/security.md#controlling-file-access-and-visibility) para saber mais detalhes.
+Por padrão, o Live Share **oculta** quaisquer arquivos/pastas referenciados nos arquivos .gitignore em suas pastas compartilhadas de convidados. **Ocultar** um arquivo impede que ele apareça na árvore de arquivos do convidado. **Excluir** um arquivo aplica uma regra mais rigorosa que impede o Live Share de abri-lo para o convidado em situações como "Ir para Definição" ou se você intervir no arquivo durante a depuração ou ao ser "seguido". Se você quiser ocultar/excluir arquivos diferentes, um arquivo **.vsls.json** poderá ser adicionado ao seu projeto com essas configurações. Confira [Controlar o acesso a arquivos e visibilidade](../reference/security.md#controlling-file-access-and-visibility) para saber mais detalhes.
 
 ## <a name="5-start-a-collaboration-session"></a>5. Inicie uma sessão de colaboração
 
@@ -192,12 +192,12 @@ Está tendo problemas? Confira [Solução de problemas](../troubleshooting.md) o
 Confira estes outros artigos para saber mais.
 
 - [Início Rápido: Ingressar na sua primeira sessão de colaboração](join.md)
-- [Como: colaborar usando o Visual Studio Code](../use/vscode.md)
-- [Como: colaborar usando o Visual Studio](../use/vs.md)
+- [Como colaborar usando o Visual Studio Code](../use/vscode.md)
+- [Como colaborar usando o Visual Studio](../use/vs.md)
 
 Referência
 
 - [Requisitos de conectividade do Live Share](../reference/connectivity.md)
-- [Recursos de segurança do Live Share](../reference/security.md)
+- [Funcionalidades de segurança do Live Share](../reference/security.md)
 - [Suporte de idioma e plataforma](../reference/platform-support.md)
 - [Suporte de extensão](../reference/extensions.md)

@@ -15,7 +15,7 @@ ms.openlocfilehash: ed96ba572a58b8d3bfda7b634f1052a1b4e73051
 ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58853632"
 ---
 <!--
@@ -30,7 +30,7 @@ Pronto para receber colaboração com o Live Share no VS Code?  Nesse caso, voc�
 
 Observe que todas as atividades de colaboração descritas aqui envolvem um único **host da sessão de colaboração** e um ou mais **convidados**. O host é a pessoa que iniciou a sessão de colaboração, e qualquer pessoa que ingressa na sessão é um convidado.
 
-*Procurando uma versão compacta? Confira os guias de início rápido [compartilhar](../quickstart/share.md) ou [ingressar](../quickstart/join.md).*
+*Procurando uma versão resumida? É só conferir os guias de início rápido [compartilhar](../quickstart/share.md) ou [ingressar](../quickstart/join.md).*
 
 > [!TIP]
 > Você sabia que pode *ingressar em sua própria sessão de colaboração*? Isso permite que você experimente o Live Share por conta própria ou crie uma instância do Visual Studio ou do VS Code e conecte-a remotamente. Você pode até mesmo usar a mesma identidade em ambas as instâncias. Confira!
@@ -42,12 +42,12 @@ Antes de começar, será preciso confirmar se você tem uma versão do Visual St
 - **Windows**: 7, 8.1 ou 10
 
 - **macOS**: apenas Sierra (10.12) e superiores.
-    - _No momento, El Capitan (10.11) e anteriores não são compatíveis devido aos [requisitos do .NET Core 2.0](https://go.microsoft.com/fwlink/?linkid=872315)._
+    - _El Capitan (10.11) e inferiores não são aceitos atualmente devido aos [requisitos do .NET Core 2.0](https://go.microsoft.com/fwlink/?linkid=872315)._
 
 - **Linux**: Ubuntu Desktop 16.04+ de 64 bits, Fedora Workstation 27+, CentOS 7
 
     - O Live Share exige vários [pré-requisitos de Linux](#linux-install-steps) que talvez você tenha que instalar.
-    - _O Linux de 32 bits não é compatível devido aos [requisitos do .NET Core 2.0](https://go.microsoft.com/fwlink/?linkid=872314)._
+    - _O Linux de 32 bits não é aceito devido aos [requisitos do .NET Core 2.0](https://go.microsoft.com/fwlink/?linkid=872314)._
     - ARM também não é aceito no momento.
     - Confira o artigo com [detalhes de instalação do Linux](../reference/linux.md) para saber como usar o downstream e outras distribuições.
 
@@ -65,7 +65,7 @@ Depois disso, o download e a instalação da extensão do Visual Studio Live Sha
 
 Ao baixar e usar o Visual Studio Live Share, você concorda com os [termos de licença](https://aka.ms/vsls-license) e a [política de privacidade](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). Confira [Solução de problemas](../troubleshooting.md) caso tenha problemas.
 
-[![Daixe](../media/download.png)](https://aka.ms/vsls-dl/vscode)
+[![Baixar](../media/download.png)](https://aka.ms/vsls-dl/vscode)
 
 ### <a name="linux-install-steps"></a>Etapas de instalação do Linux
 
@@ -170,7 +170,7 @@ Depois de baixar e instalar o Visual Studio Live Share, siga estas etapas para i
 
     Por padrão, o Live Share **oculta** dos convidados quaisquer arquivos/pastas referenciados nos arquivos .gitignore em suas pastas compartilhadas. **Ocultar** um arquivo impede que ele apareça na árvore de arquivos do convidado. **Excluir** um arquivo aplica uma regra mais rigorosa que impedirá o Live Share de abri-lo para o convidado em situações como "Ir para Definição" ou se você intervir no arquivo durante a depuração ou ao ser "seguido". Se você quiser ocultar/excluir arquivos diferentes, um arquivo **.vsls.json** poderá ser adicionado ao seu projeto com essas configurações. Confira o tópico sobre como [controlar a visibilidade e o acesso a arquivos](../reference/security.md#controlling-file-access-and-visibility) para saber mais detalhes.
 
-4. **Inicie uma sessão de colaboração**
+4. **Iniciar uma sessão de colaboração**
 
     Agora, basta **clicar** no item da barra de status "Live Share" ou pressionar **Ctrl+Shift+P/Cmd+Shift+P** e selecionar "Live Share: Iniciar uma sessão de colaboração (Compartilhar)".
 
@@ -256,7 +256,7 @@ A maneira mais fácil de ingressar em uma sessão de colaboração é simplesmen
     > [!NOTE]
     > Certifique-se de que você já **iniciou a ferramenta pelo menos uma vez** após a instalação da extensão Visual Studio Live Share e de que permitiu que a instalação finalizasse antes de abrir/reabrir a página de convite. Ainda está com problemas? Confira [ingressar manualmente](#join-manually).
 
-3. **Colaboração**
+3. **Colaborar**
 
     É só isso! Em poucos instantes você será conectado e poderá iniciar a colaboração.
 
@@ -272,7 +272,7 @@ Também é possível ingressar manualmente sem usar um navegador da Web, o que p
 
     Depois de instalar a extensão Live Share, recarregar e aguardar o término da instalação das dependências, convém entrar para permitir que outros colaboradores saibam quem é você. Confira o tópico [Entrar](#sign-in) para obter mais detalhes.
 
-2. **Usar o comando Ingressar**
+2. **Usar o comando de ingresso**
 
     Abra a guia personalizada Live Share na barra de atividade do VS Code e selecione o ícone ou a entrada "Ingressar na sessão de colaboração...".
 
@@ -536,7 +536,7 @@ Embora, no momento, existam algumas falhas com as quais os usuários vão se dep
 
 - [Suporte de idioma e plataforma](../reference/platform-support.md)
 - [Suporte de extensão](../reference/extensions.md)
-- [Todos os principais bugs, solicitações de recursos e limitações](https://aka.ms/vsls-issues)
+- [Todos os bugs, solicitações de recursos e limitações importantes](https://aka.ms/vsls-issues)
 - [Todas as solicitações de recursos e limitações](https://aka.ms/vsls-feature-requests)
 - [Solução de problemas](../troubleshooting.md)
 
@@ -546,9 +546,9 @@ Confira estes outros artigos para saber mais.
 
 - [Início Rápido: Compartilhar seu primeiro projeto](../quickstart/share.md)
 - [Início Rápido: Ingressar em sua primeira sessão](../quickstart/share.md)
-- [Como: colaborar usando o Visual Studio](vs.md)
+- [Como colaborar usando o Visual Studio](vs.md)
 - [Requisitos de conectividade do Live Share](../reference/connectivity.md)
-- [Recursos de segurança do Live Share](../reference/security.md)
+- [Funcionalidades de segurança do Live Share](../reference/security.md)
 - [Detalhes de Instalação do Linux](../reference/linux.md)
 
 Está tendo problemas? Confira [Solução de problemas](../troubleshooting.md) ou [envie comentários](../support.md).
