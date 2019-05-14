@@ -2,7 +2,7 @@
 title: Visão geral – Visual Studio Live Share | Microsoft Docs
 description: Uma visão geral do Visual Studio Live Share e suas funcionalidades.
 ms.custom: ''
-ms.date: 04/26/2018
+ms.date: 05/01/2019
 ms.reviewer: ''
 ms.suite: ''
 ms.topic: overview
@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 5f67086e9040a477e082cbd3ef27a1789c6406c5
-ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
+ms.openlocfilehash: 6097d94b83f3c2370c87f1d27ba9fd51f24c9896
+ms.sourcegitcommit: cab8df5c29f9d91e702ef514def53944ee7701ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58853580"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "64987167"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -62,7 +62,7 @@ Depois disso, o download e a instalação da extensão do Visual Studio Live Sha
     <td  style="border:none;">
         <strong>Visual Studio 2019 </strong><br />
         1. Instale o <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a>.<br/>
-        2. Instale uma <a href="reference/platform-support.md">carga de trabalho compatível</a>. (por exemplo, ASP.NET, .NET Core, C++ e/ou Node.js)<br />
+        2. Instale uma <a href="reference/platform-support.md">carga de trabalho compatível</a>. (por exemplo, ASP.NET, .NET Core, C++, Python e/ou Node.js)<br />
         3. O Visual Studio Live Share é instalado por padrão com essas cargas de trabalho. <br />
     </td>
 </tr>
