@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: b25158970f325bbc55618909315a8ed09d6f50a8
-ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
+ms.openlocfilehash: 339fb176eed78ece2117ba645a84fafe4f4247f4
+ms.sourcegitcommit: cab8df5c29f9d91e702ef514def53944ee7701ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58853606"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "64987209"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -56,7 +56,7 @@ Basta seguir estas etapas para iniciar o compartilhamento.
     <td  style="border:none;">
         <strong>Visual Studio 2019 </strong><br />
         1. Instale o <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a>.<br/>
-        2. Instale uma <a href="../reference/platform-support.md">carga de trabalho compatível</a>. (por exemplo, ASP.NET, .NET Core, C++ e/ou Node.js)<br />
+        2. Instale uma <a href="../reference/platform-support.md">carga de trabalho compatível</a>. (por exemplo, ASP.NET, .NET Core, C++, Python e/ou Node.js)<br />
         3. O Visual Studio Live Share é instalado por padrão com essas cargas de trabalho. <br />
     </td>
 </tr>
