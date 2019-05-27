@@ -11,12 +11,12 @@ ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 1b68dc90f4bac5e21c04c555ab2d8fc7f59aad55
-ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
+ms.openlocfilehash: 91ffc42c06e70839dbadbd2487cd02970ded3346
+ms.sourcegitcommit: bfa1020882095fcc7d31cd71cf1f2e601e3bea06
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58853593"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "66224708"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -87,11 +87,7 @@ Compartilhamento ao vivo vai um passo além e permite que você compartilhe uma 
 Nosso objetivo é dar suporte a paisagem diversa de linguagens e plataformas, para garantir que podemos pode permite farta colaboração, independentemente do tipo de aplicativo que está sendo desenvolvido. Consulte a [linguagem e suporte de plataforma](reference/platform-support.md) para obter detalhes sobre o que funciona atualmente.
 
 ## <a name="how-many-developers-can-join-a-collaboration-session"></a>Como muitos desenvolvedores podem ingressar em uma sessão de colaboração?
-Atualmente suportamos 30 convidados simultâneos, além do desenvolvedor que está compartilhando ("hospedagem") seu projeto. Por padrão, habilitamos convidados até 5 em uma sessão. 
-
-Para habilitar o limite de aumento de convidado: 
-- **VS Code:** Adicione "liveshare.increasedGuestLimit":"true" para o Settings.
-- **VS:** Conjunto de ferramentas > Opções > Live Share > maior limite de convidado como "True"
+Atualmente suportamos 30 convidados simultâneos, além do desenvolvedor que está compartilhando ("hospedagem") seu projeto. 
 
 ## <a name="what-is-the-roadmap"></a>Qual é o roteiro?
 Você pode exibir o conjunto de problemas conhecidos e itens de roteiro [aqui](https://aka.ms/vsls-issues). Se você quiser ver somente solicitações de recurso em vez de todos os problemas, consulte [aqui](https://aka.ms/vsls-feature-requests). Recomendamos que você votar itens existentes, solicitações de novos recursos de arquivo e fazer relatórios de bugs para nos ajudar a forma a direção do produto mais adiante.
