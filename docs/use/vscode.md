@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: ed96ba572a58b8d3bfda7b634f1052a1b4e73051
-ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
+ms.openlocfilehash: bda0ca256af4a561724d96777e640eec1ca0f0fb
+ms.sourcegitcommit: bfa1020882095fcc7d31cd71cf1f2e601e3bea06
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58853632"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "66224721"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -91,7 +91,7 @@ Geralmente, o Visual Studio Live Share **não exige etapas de instalação adici
 
 Embora incomum, em determinadas distribuições, você **pode ser notificado de que a sua senha de administrador (sudo) é obrigatória** para conclusão do processo de instalação. Uma janela do terminal será exibida informando a você onde o inicializador do navegador será instalado. Basta digitar a senha quando solicitado e pressionar enter assim que a instalação for concluída para fechar janela do terminal.
 
-Você pode ler **[aqui](../reference/linux.md#linux-browser-integration)** mais sobre a necessidade disso e onde o Live Share coloca os arquivos. Observe que mesmo que não seja possível fazer a integração do navegador funcionar, você poderá **[ingressar nas sessões de colaboração manualmente](../use/vscode.md#join-manually)**.
+Você pode ler **[aqui](../reference/linux.md#linux-browser-integration)** mais sobre a necessidade disso e onde o Live Share coloca os arquivos. Observe que mesmo que não seja possível fazer a integração do navegador funcionar, você poderá **[ingressar nas sessões de colaboração manualmente](../use/vscode.md#join-manually)** .
 
 ## <a name="sign-in"></a>Entrar
 
@@ -106,6 +106,12 @@ Uma notificação será exibida solicitando que você entre usando o navegador d
 ![Notificação do sistema solicitando a entrada com um navegador da Web](../media/vscode-sign-in-toast.png)
 
 > **Usuários do Linux:** talvez você seja solicitado a inserir um código do usuário se estiver usando uma versão mais antiga do Live Share (v0.3.295 ou anteriores). Atualize para a versão mais recente da extensão ou clique no link "Está com problemas?" depois de entrar para ver o código. Veja [abaixo mais detalhes](#sign-in-using-a-user-code).
+
+#
+
+> **Dica avançada:** As configurações `liveshare.account` e `liveshare.accountProvider` permitem que você selecione qual conta deverá ser usada para conexão automática no caso de você ter credenciais armazenadas em cache para várias contas disponíveis. 
+
+> Por exemplo, imagine que você trabalha em dois projetos com os quais você deseja se conectar com identidades diferentes. Em suas configurações de workspace do VSCode, você define a configuração `liveshare.account` a diferentes endereços de email em cada diretório do projeto para garantir que cada um deles entre automaticamente com a conta correta. A configuração `liveshare.accountProvider` poderia ser definida como `"microsoft"` ou `"github"` no caso de você usar o mesmo endereço de email com vários provedores.
 
 Se o Visual Studio Code não estiver capturando sua entrada após a conclusão do processo de conexão no navegador, confira [entrar usando um código de usuário](#sign-in-using-a-user-code). Caso contrário, verifique [solução de problemas](../troubleshooting.md#sign-in) para obter mais dicas.
 
