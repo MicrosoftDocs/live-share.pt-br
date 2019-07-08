@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 657b5079ba5669b6d01d732257b40444a8fa82d2
-ms.sourcegitcommit: cab8df5c29f9d91e702ef514def53944ee7701ba
+ms.openlocfilehash: eb631d2f3fecb07cb16b02d1cd02127221b0183d
+ms.sourcegitcommit: 94a6ec64e0054fe4829d554b7023a17a8c58a462
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "64987200"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67501420"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -59,15 +59,18 @@ Ao baixar e usar o Visual Studio Live Share, você concorda com os [termos de li
 
 Para colaborar, é preciso entrar no Visual Studio Live Share para que todos saibam quem é você. Trata-se apenas de uma medida de segurança e **não** inscreve você para receber marketing nem em outras atividades de pesquisa. Você pode entrar usando uma conta pessoal da Microsoft (por exemplo, @outlook.com), a AAD (conta corporativa ou de estudante) da Microsoft ou uma conta do GitHub. Entrar é fácil.
 
-Por padrão o Visual Studio usa a sua [conta de personalização](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio), de modo que se você já estiver conectado no Visual Studio, pode pular essa etapa. Caso contrário, entre como de costume.
+Por padrão, o Visual Studio usa a sua [conta de personalização](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio), assim, se você já estiver conectado no Visual Studio, pode pular essa etapa. Caso contrário, entre como de costume.
 
 ![Botão de entrada do VS](../media/vs-sign-in-button.png)
 
+
 Se quiser usar uma credencial diferente da sua [conta de personalização](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) do Visual Studio, acesse **Ferramentas&gt; Opções &gt; Live Share &gt; Conta de usuário** para mudar as credenciais.
 
-![Ferramentas Opções Live Share do VS](../media/vs-tools-options.png)
+![Ferramentas Opções Live Share do VS](../media/vs-tools-options-new.png)
 
 Selecionar **Conta Externa** permite que você selecione uma conta incompatível com o recurso de personalização do Visual Studio, como o GitHub. Um navegador será exibido automaticamente na primeira vez que você usar um recurso do Live Share para que seja possível concluir a entrada.
+>[!Tip]
+>Você sabia que pode ir a **Ferramentas &gt; Opções &gt; Live Share &gt; Geral** para exibir todas as configurações do Live Share padrão? Personalize a experiência de colaboração de acordo com as suas necessidades! Você também pode experimentar os novos recursos do Live Share escolhendo **Avançado &gt; Recursos &gt; Insiders** nas configurações gerais do Live Share.  
 
 Em caso de problemas, confira a [solução de problemas](../troubleshooting.md#sign-in) para obter mais dicas.
 
@@ -77,9 +80,8 @@ Depois de baixar e instalar o Visual Studio Live Share, siga estas etapas para i
 
 1. **Entrar**
 
-    Depois de instalar a extensão Live Share, convém entrar para permitir que outros colaboradores saibam quem é você. Por padrão, o Visual Studio usa sua conta de personalização, de modo que você pode ignorar totalmente esta etapa.
-
-    Confira o tópico [Entrar](#sign-in) para obter mais detalhes.
+    Agora que você está conectado, está pronto para começar a sua própria sessão de colaboração.
+    Você não está conectado? Para obter mais detalhes, confira [Entrar](#sign-in).
 
 2. **Abrir uma solução, um projeto ou uma pasta**
 
@@ -91,18 +93,16 @@ Depois de baixar e instalar o Visual Studio Live Share, siga estas etapas para i
 
 4. **Iniciar uma sessão de colaboração**
 
-    Agora, basta clicar no botão "Live Share" no canto superior direito.
+    Agora basta clicar no botão "Live Share" no canto superior direito para começar a sessão Live Share.     O link compartilhável da sua sessão de colaboração será copiado automaticamente na área de transferência. 
 
     ![Botão Compartilhar do VS](../media/vs-share-button.png)
 
+    Assim que a sessão de colaboração iniciar pela primeira vez, você verá a janela de ferramentas do Live Share. Certifique-se de encaixar esta janela para garantir que seja exibida na próxima vez que você iniciar uma sessão do Live Share.
+
+   ![Janela de ferramentas do VS Live Share|72x561, 50%](../media/vs-live-share-tool-window.png)
+
     > [!NOTE]
     > Talvez o software de firewall do computador exija que o agente do Live Share tenha permissão para abrir uma porta no primeiro compartilhamento. Aceitar isso é totalmente opcional, mas habilita um "modo direto" seguro para melhorar o desempenho quando a pessoa com que você está trabalhando estiver na mesma rede que você. Confira o tópico sobre como [alterar o modo de conexão](../reference/connectivity.md#changing-the-connection-mode) para saber mais detalhes.
-
-    Um link de convite será copiado automaticamente para a área de transferência. Quando aberto em um navegador, esse link permite que outras pessoas ingressem em uma nova sessão de colaboração que compartilha o conteúdo dessas pastas com elas.
-
-    Você também verá a transição do botão "Live Share" para transmitir um "Estado de Sessão". Confira abaixo as informações do [estado de sessão](#session-states) quanto à sua aparência.
-
-    Observe que, se precisar receber o link de convite novamente depois de ter iniciado o compartilhamento, você poderá acessá-lo clicando no botão compartilhar/estado de sessão e selecionando "Copiar Link".
 
 5. **[Opcional] Habilitar modo somente leitura**
 
@@ -130,7 +130,16 @@ Depois de baixar e instalar o Visual Studio Live Share, siga estas etapas para i
 
     Confira o tópico [convites e acesso para ingressar](../reference/security.md#invitations-and-join-access) a fim de obter detalhes adicionais sobre considerações de segurança de convite.
 
-E pronto!
+8. **Gerenciar sua sessão do Live Share**
+    
+    Depois que o convidado abrir o link para sua sessão compartilhada no VS Code ou Visual Studio, você os verá listados como participantes na janela da ferramenta Live Share. Agora você consegue ver em qual arquivo o seu convidado está no momento ao lado do seu nome.  
+    
+    ![Janela de ferramentas do VS Live Share](../media/vs-live-share-tool-window-participant.png)
+
+    A janela de ferramentas do Live Share permite acessar todos os principais recursos em um único lugar para gerenciar suas sessões. 
+
+    > [!TIP]
+    > Não consegue mais ver a janela de ferramentas do Live Share durante as sessões? Você sempre pode ir a **Modo de exibição &gt; Outras Janelas &gt; Live Share** para encontrá-la!
 
 ### <a name="ending-the-collaboration-session"></a>Encerrando a sessão de colaboração
 
@@ -414,7 +423,7 @@ Depois de iniciar ou ingressar em uma sessão de colaboração e ter acesso ao c
 
 Estes são os estados que você normalmente verá:
 
-| Estado | Botão | Descrição |
+| Estado | Botão | DESCRIÇÃO |
 |-------|--------|-------------|
 | Inativo | ![Status do VS: inativo](../media/vs-status-share.png) | Nenhuma sessão de colaboração ativa e nada está compartilhado. |
 | Host: Compartilhamento em Andamento | ![Status do VS: compartilhar em andamento](../media/vs-status-sharing.png) | Uma sessão de colaboração está iniciando e o compartilhamento do conteúdo começará em breve. |
