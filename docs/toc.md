@@ -26,12 +26,15 @@
 ## [Codepurar](use/vs.md#co-debugging)
 ## [Compartilhar um servidor](use/vs.md#share-a-server)
 ## [Compartilhar um terminal](use/vs.md#share-a-terminal)
+# Guias de instruções: Entrevistas técnicas
+## [Entrevistas técnicas](use/technical-interviews.md)
 # Referência
 ## [Segurança](reference/security.md)
 ## [Conectividade](reference/connectivity.md)
 ## [Suporte a idiomas](reference/platform-support.md)
 ## [Suporte de extensão](reference/extensions.md)
 ## [Casos de uso comuns](reference/use-cases.md)
+
 ## [Detalhes de instalação do Linux](reference/linux.md)
 ## [Participante do Programa Windows Insider](reference/insiders.md)
 ## [Notas de Versão](https://aka.ms/vsls-releases)
