@@ -11,12 +11,12 @@ ms.author: fishah
 manager: JonathanCarter
 ms.workload:
 - liveshare
-ms.openlocfilehash: a3b4c9f2b469e937d958e82df28a04044abf38d3
-ms.sourcegitcommit: 50069912a317f8685976013e80738bbaa403a3fe
-ms.translationtype: HT
+ms.openlocfilehash: c1b3e71578ed3ffb306060cec3354f33423928be
+ms.sourcegitcommit: 24eb903744b837dcedff67d8179f06862bd2aa61
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72178460"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72250671"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -26,7 +26,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="contacts-in-live-share"></a>Contatos em Live Share 
 
-Você esteve usando Live Share e observou que o envio de links por meio de um aplicativo externo (como bate-papo ou email) pode ficar realmente mais velho? Sabemos que, se quisermos incentivar a colaboração, precisa haver a menor quantidade possível de fricção para você adorar. É por isso que Live Share agora tem **contatos** que agora como **status**.
+Você esteve usando Live Share e observou que o envio de links por meio de um aplicativo externo (como bate-papo ou email) pode ficar realmente mais velho? Sabemos que, se quisermos incentivar a colaboração, precisa haver a menor quantidade possível de fricção para você adorar. É por isso que Live Share agora tem **contatos** com **status** .
 
 >Os contatos serão habilitados automaticamente para todas as versões do **Live share v 1.0.950** em diante.
 
@@ -60,12 +60,17 @@ Seu status pode ser definido diretamente de dentro do editor para que você poss
 **4. Offline:**  Você estará offline quando estiver ausente por um longo período de tempo ou se optar por [recusar o status de compartilhamento](##ManagingPresence)
 
 
-## Gerenciando o<a name="ManagingPresence"> </a> status de contato
+## Gerenciando contatos e status<a name="ManagingPresence"> </a> de compartilhamento
 
-Se você quiser recusar esse recurso, simplesmente desabilite a configuração de status escolhendo ser `offline`. Depois de desabilitado, você ainda poderá ver o status de outro e convidá-los, mas seu status não será publicado e outros não poderão convidá-lo diretamente.
+Se você quiser recusar esse recurso, poderá fazê-lo de duas maneiras.
+1. Você pode desabilitar a configuração de status escolhendo ser `offline`. Depois de desabilitado, você ainda poderá ver o status de outro e convidá-los, mas seu status não será publicado e outros não poderão convidá-lo diretamente.
 Você pode optar por estar offline clicando no círculo de status que abrirá o seguinte menu suspenso:
 
 ![dropdownstatus @ no__t-1 <em>mostra a lista suspensa de Estados de presença</em>
+
+2. Você pode abrir `user settings` e ir para *Extensions > Visual Studio Live Share > Live Share: Presence @ no__t-0 e desabilite o serviço de presença. Depois de desabilitado, você ainda poderá ver o status de outro e convidá-los, mas seu status não será publicado e outros não poderão convidá-lo diretamente.
+
+![presencesettings](../media/vscode-presence-setting.png)
 
 ## <a name="faqs"></a>Perguntas frequentes 
 
