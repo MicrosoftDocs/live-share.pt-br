@@ -29,6 +29,7 @@
 # Guias de instruções: Entrevistas técnicas
 ## [Entrevistas técnicas](use/technical-interviews.md)
 # Referência
+## [Contatos](reference/contacts.md)
 ## [Segurança](reference/security.md)
 ## [Conectividade](reference/connectivity.md)
 ## [Suporte a idiomas](reference/platform-support.md)
