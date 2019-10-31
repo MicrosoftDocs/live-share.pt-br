@@ -1,6 +1,6 @@
 ---
-title: Notas de versão – compartilhamento ao vivo do Visual Studio | Microsoft Docs
-description: Uma análise das alterações pela versão do Visual Studio Live Share para Visual Studio e o VS Code.
+title: Notas de versão-Visual Studio Live Share | Microsoft Docs
+description: Uma análise das alterações por versão para Visual Studio Live Share para Visual Studio e VS Code.
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: b104605c7e40d05ffe7e3ea5cf84b739ec119d2b
-ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
+ms.openlocfilehash: d75680324d3325b96d3c3dd57b8a95b680b1d4eb
+ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58640166"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73170075"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -24,10 +24,10 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# <a name="visual-studio-live-share-release-notes"></a>Notas de versão do Visual Studio compartilhamento ao vivo
+# <a name="visual-studio-live-share-release-notes"></a>Notas de versão do Visual Studio Live Share
 
 <!-- Placeholder in the event anyone has bookmarked the direct link -->
-Notas de versão foram movidas para nosso [repositório GitHub](https://aka.ms/vsls-releases).
+As notas de versão foram movidas para nosso [repositório GitHub](https://aka.ms/vsls-releases).
 
 ## <a name="see-also"></a>Consulte também
 
@@ -38,8 +38,8 @@ Guias de Início Rápido
 
 Instruções
 
-- [Colaborar usando o Visual Studio Code](../use/vscode.md)
-- [Colaborar usando o Visual Studio](../use/vs.md)
+- [Colaborar usando o Visual Studio Code](../how-to-guides/vscode.md)
+- [Colaborar usando o Visual Studio](../how-to-guides/vs.md)
 
 Referência
 

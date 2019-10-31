@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: ec3c983e91f849c6e966d2e5d0ae688e98b2b3f1
-ms.sourcegitcommit: c702aafb65b0fc43cb210e1bb7340cef48b57f35
-ms.translationtype: HT
+ms.openlocfilehash: b550790fff3a5ed70db9e1256e020c1865215866
+ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67322826"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73170027"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -24,7 +24,7 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# <a name="quickstart-join-your-first-collaboration-session"></a>Início Rápido: Ingressar na sua primeira sessão de colaboração
+# <a name="quickstart-join-your-first-collaboration-session"></a>Início rápido: ingressar na sua primeira sessão de colaboração
 
 Bem-vindo ao Visual Studio Live Share! O Live Share permite que você edite e depure de forma colaborativa com outras pessoas em tempo real, sejam quais forem as linguagens de programação usadas ou os tipos de aplicativo criados. Ele permite que você ingresse em um projeto atual de um colega de equipe de forma instantânea e segura e, em seguida, conforme necessário, entre em sessões de depuração, exiba e edite instâncias de terminal, veja aplicativos Web do localhost, participe de chamadas de voz e muito mais.
 
@@ -35,7 +35,7 @@ Pronto para começar? A colaboração em equipe será tão rápida e natural que
 
 Basta seguir estas etapas para ingressar em uma sessão de colaboração.
 
-## <a name="1-install-the-extension"></a>1. Instale a extensão
+## <a name="1-install-the-extension"></a>1. instalar a extensão
 
 É fácil instalar a extensão. Basta seguir estas etapas:
 
@@ -44,10 +44,10 @@ Basta seguir estas etapas para ingressar em uma sessão de colaboração.
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-code.svg" width="128px" alt="Visual Studio Code logo"/></td>
     <td style="border:none;">
         <strong>Visual Studio Code (1.22.0 ou posterior)</strong><br />
-        1. Instale o <a href="https://code.visualstudio.com/">Visual Studio Code</a> para Windows (7, 8.1 ou 10), macOS <b>(Serra ou posterior)</b> e Linux de 64 bits <b>(<a href="../use/vscode.md#installation">detalhes</a>)</b><br />
+        1. Instale o <a href="https://code.visualstudio.com/">Visual Studio Code</a> para Windows (7, 8.1 ou 10), macOS <b>(Serra ou posterior)</b> e Linux de 64 bits <b>(<a href="../how-to-guides/vscode.md#installation">detalhes</a>)</b><br />
         2. Baixe e instale a extensão do Visual Studio Live Share por meio do marketplace. <br />
         3. Recarregue-a e aguarde até as dependências serem baixadas e instaladas (veja a barra de status).<br />
-        4. <strong>Linux</strong>: Se precisar <a href="../reference/linux.md#install-linux-prerequisites">instalar bibliotecas</a>, clique em Instalar, insira a senha e reinicie o VS Code quando terminar.<br />
+        4. <strong>Linux</strong>: se for solicitado a <a href="../reference/linux.md#install-linux-prerequisites">instalar bibliotecas</a>, clique em instalar, digite a senha, reinicie vs Code quando terminar.<br />
         <a href="https://aka.ms/vsls-dl/vscode" alt="Download button"><img src="../media/download.png"></a>
     </td>
 </tr>
@@ -97,7 +97,7 @@ Depois disso, você será ingressado na sessão como somente leitura. Você pode
 > Se você quiser ter acesso de leitura/gravação ao código posteriormente, faça logon. Clique no seu nome de exibição na barra de status e selecione a opção "Entrar".
 ![Entrada de convidado somente leitura](../media/vscode-read-only-guest-signin.png) Isso iniciará o navegador e você poderá escolher uma conta Microsoft ou GitHub para entrar.
 
-## <a name="3-sign-in"></a>3. Entrar
+## <a name="3-sign-in"></a>3. entrar
 
 Após instalar a extensão do Live Share, reiniciar e aguardar as dependências terminarem a instalação (VS Code), entre para que os outros participantes conheçam você. Se você ignorar essa etapa, será solicitado a entrar durante o processo de ingresso ou poderá ingressar na sessão como convidado somente leitura. Clique no item da barra de status "Live Share" (VS Code) ou no botão "Entrar" (VS) para começar.
 
@@ -116,31 +116,31 @@ No **VS Code**, seu navegador será iniciado e uma notificação será exibida, 
 
 ![Notificação do sistema solicitando a entrada com um navegador da Web](../media/vscode-sign-in-toast.png)
 
-> **Usuários do Linux:** talvez você seja solicitado a inserir um código do usuário se estiver usando uma versão mais antiga do Live Share (v0.3.295 ou anteriores). Atualize para a versão mais recente da extensão ou clique no link "Está com problemas?" depois de entrar para ver o código. Confira [aqui para mais detalhes](../use/vscode.md#sign-in-using-a-user-code).
+> **Usuários do Linux:** Você pode ser solicitado a inserir um código de usuário se estiver usando uma versão mais antiga do Live Share (v 0.3.295 ou inferior). Atualize para a versão mais recente da extensão ou clique no link "Está com problemas?" depois de entrar para ver o código. Confira [aqui para mais detalhes](../how-to-guides/vscode.md#sign-in-using-a-user-code).
 
 No **Visual Studio**, o Live Share usa automaticamente sua [conta de personalização](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio). Como resultado, você pode simplesmente entrar como você faria normalmente. No entanto, se você preferir usar um logon diferente da sua conta de personalização do Visual Studio, acesse **Ferramentas &gt; Opções &gt; Live Share &gt; Conta de usuário** e selecione credenciais diferentes.
 
 Confira [Solução de problemas](../troubleshooting.md#sign-in) se ainda tiver problemas.
 
-## <a name="4-openre-open-the-invite-link-in-a-browser"></a>4. Abra/reabra o link de convite em um navegador
+## <a name="4-openre-open-the-invite-link-in-a-browser"></a>4. abrir/reabrir o link de convite em um navegador
 
 Agora, basta abrir (ou reabrir) o link de convite em um navegador.
 
-> **Observação**: se a extensão Live Share ainda não tiver sido instalada, você verá links para o marketplace da extensão. Instale a extensão, reinicie a ferramenta e tente novamente.
+> **Observação**: se você ainda não instalou a extensão de Live share, você receberá links para o Marketplace de extensão. Instale a extensão, reinicie a ferramenta e tente novamente.
 
 Você receberá uma notificação de que o navegador quer iniciar uma ferramenta habilitada para o Live Share. Ao permitir a inicialização da ferramenta selecionada, você será conectado à sessão de colaboração quando ela começar.
 
 ![Página Ingressar](../media/join-page.png)
 
-Se o host estiver offline, você receberá uma notificação. Em seguida, poderá entrar em contato com o host e pedir para compartilhar novamente.
+Se o host estiver offline, você receberá uma notificação. Você pode entrar em contato com o host e solicitar o compartilhamento novamente.
 
-> **Dica de solução de problemas:** Ao usar o VS Code, não se esqueça de **iniciar a ferramenta ao menos uma vez** após instalar a extensão e aguardar as dependências terminarem a instalação (confira a barra de status) antes de abrir/reabrir a página de convite. Ainda está com problemas? Confira [Ingressar manualmente](../reference/manual-join.md) para saber mais detalhes.
+> **Dica de solução de problemas:** Ao usar VS Code, verifique se você **iniciou a ferramenta pelo menos uma vez** depois de instalar a extensão e esperou que as dependências concluíssem a instalação (consulte a barra de status) antes de abrir/abrir novamente a página de convite. Ainda está com problemas? Confira [Ingressar manualmente](../reference/manual-join.md) para saber mais detalhes.
 
-## <a name="5-collaborate"></a>5. Colabore!
+## <a name="5-collaborate"></a>5. colabore!
 
 É só isso! Em alguns instantes, você será conectado à sessão de colaboração do seu colega. Por padrão, o host aceita automaticamente as pessoas que ingressam. No entanto, se o host estiver configurado para [exigir aprovação do convidado](../reference/security.md#requiring-guest-approval), você verá a barra de status/menção da caixa de diálogo de ingresso de que o Live Share está aguardando o host aprovar sua solicitação de ingresso.
 
-> **Dica de segurança:** como um convidado que ingressa em uma sessão de colaboração, é importante entender que os hosts podem restringir seu acesso a determinados arquivos ou recursos. Quer entender as implicações de segurança de alguns recursos e configurações do Live Share? Confira o artigo sobre [segurança](../reference/security.md).
+> **Dica de segurança:** Como um convidado ingressando em uma sessão de colaboração, é importante entender que os hosts podem restringir o acesso a determinados arquivos ou recursos. Quer entender as implicações de segurança de alguns recursos e configurações do Live Share? Confira o artigo sobre [segurança](../reference/security.md).
 
 Algumas coisas para experimentar:
 
@@ -158,9 +158,9 @@ Está tendo problemas? Confira [Solução de problemas](../troubleshooting.md) o
 
 Confira estes outros artigos para saber mais.
 
-- [Início Rápido: Compartilhar seu primeiro projeto](share.md)
-- [Como colaborar usando o Visual Studio Code](../use/vscode.md)
-- [Como colaborar usando o Visual Studio](../use/vs.md)
+- [Início rápido: compartilhar seu primeiro projeto](share.md)
+- [Como colaborar usando o Visual Studio Code](../how-to-guides/vscode.md)
+- [Como colaborar usando o Visual Studio](../how-to-guides/vs.md)
 
 Referência
 

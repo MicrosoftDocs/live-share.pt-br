@@ -6,17 +6,17 @@ ms.date: 10/08/2019
 ms.reviewer: ''
 ms.suite: ''
 ms.topic: reference
-author: fishah
-ms.author: fishah
+author: fubaduba
+ms.author: fubaduba
 manager: JonathanCarter
 ms.workload:
 - liveshare
-ms.openlocfilehash: c1b3e71578ed3ffb306060cec3354f33423928be
-ms.sourcegitcommit: 24eb903744b837dcedff67d8179f06862bd2aa61
+ms.openlocfilehash: b95e5f837d044b2b069f73478da40461268bdf3d
+ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72250671"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73170004"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -38,26 +38,27 @@ Os contatos aparecerão na janela de Live Share como um painel separado, como mo
 ## <a name="who-shows-up-in-my-contacts"></a>Quem aparece em meus contatos?
 
 O painel contatos é exibido para exibir dois tipos de contatos que dão suporte a fluxos de trabalho naturais dos desenvolvedores enquanto trabalham.
-### <a name="1-recent-contacts"></a>1. Contatos recentes  
+### <a name="1-recent-contacts"></a>1. contatos recentes  
  Esses são os desenvolvedores com os quais você colaborau anteriormente usando Live Share. Na prática, a maioria dos desenvolvedores costuma colaborar com as mesmas pessoas e, portanto, a lista recente permite um meio mais reproduzível de trabalhar com sua equipe/sala de aula/etc.
-### <a name="2-suggested-contacts"></a>2. Contatos sugeridos
+### <a name="2-suggested-contacts"></a>2. contatos sugeridos
 Esses são os desenvolvedores que contribuíram para seu projeto aberto no momento nos últimos 30 dias. Na prática, esses são os colegas com os quais você provavelmente deseja colaborar e, portanto, nós os sugerimos para tornar mais fácil começar.
 
 ## <a name="direct-user-invitations"></a>Convites de usuário diretos 
 Todos os seus contatos podem ser convidados diretamente para uma sessão de Live Share de dentro de seu editor. Eles receberão uma notificação do sistema que lhes dá a opção de ingressar na sessão ou não. Isso elimina a necessidade de trocar totalmente as URLs de sessão.
-![DirectInvitationVSCode @ no__t-1<em>um host de Live share (esquerda) convidando diretamente um par (direito) em uma sessão</em>
+![DirectInvitationVSCode](https://user-images.githubusercontent.com/51928518/66443914-e59c5d00-e9f5-11e9-957a-b1a92949d660.gif)
+<em>um host Live share (à esquerda) convidando diretamente de um par (direito) em uma sessão</em>
 
 ## <a name="how-does-status-for-contacts-work"></a>Como o status dos contatos funciona?
 Depois que os desenvolvedores entrarem com Live Share, **seu status de disponibilidade será publicado em seus colegas.** Como resultado, você pode ver que alguém em sua equipe está online e, em seguida, começar a colaborar com eles imediatamente, usando o convite direto, como visto acima.
 Seu status pode ser definido diretamente de dentro do editor para que você possa sinalizar a disponibilidade para sua equipe, sem a necessidade de alternar o contexto. Os contatos do Live Share têm 4 status no momento:
 
-**1. Disponível:**  O status padrão será `Available` se você tiver a extensão Live Share e estiver usando o editor ativamente, enquanto não estiver em uma sessão.
+**1. disponível:** seu status padrão será `Available` se você tiver a extensão de Live share e estiver usando o editor ativamente, enquanto não estiver em uma sessão.
 
-**2. Não incomodar:**  Seu status será definido como `Do not disturb` se você estiver atualmente em uma sessão ativa do Live Share e todas as notificações de convite forem suprimidas.
+**2. não incomodar:** seu status será definido como `Do not disturb` se você estiver atualmente em uma sessão ativa do Live share e todas as notificações de convite forem suprimidas.
 
-**3. Ausente:**  Após 5 minutos de inatividade, seu status será alternado automaticamente para `Away`.
+**3. ausentes:** após 5 minutos de inatividade, seu status será alternado automaticamente para `Away`.
 
-**4. Offline:**  Você estará offline quando estiver ausente por um longo período de tempo ou se optar por [recusar o status de compartilhamento](##ManagingPresence)
+**4. offline:** você estará offline quando estiver ausente por um longo período de tempo ou se optar por [recusar o status de compartilhamento](##ManagingPresence)
 
 
 ## Gerenciando contatos e status<a name="ManagingPresence"> </a> de compartilhamento
@@ -66,19 +67,20 @@ Se você quiser recusar esse recurso, poderá fazê-lo de duas maneiras.
 1. Você pode desabilitar a configuração de status escolhendo ser `offline`. Depois de desabilitado, você ainda poderá ver o status de outro e convidá-los, mas seu status não será publicado e outros não poderão convidá-lo diretamente.
 Você pode optar por estar offline clicando no círculo de status que abrirá o seguinte menu suspenso:
 
-![dropdownstatus @ no__t-1 <em>mostra a lista suspensa de Estados de presença</em>
+![dropdownstatus](../media/vscode-presence-opt-out.png)
+<em>mostrando a lista suspensa dos Estados de presença</em>
 
-2. Você pode abrir `user settings` e ir para *Extensions > Visual Studio Live Share > Live Share: Presence @ no__t-0 e desabilite o serviço de presença. Depois de desabilitado, você ainda poderá ver o status de outro e convidá-los, mas seu status não será publicado e outros não poderão convidá-lo diretamente.
+2. Você pode abrir `user settings` e ir para *extensões > Visual Studio Live Share > Live share: presença* e desabilitar o serviço de presença. Depois de desabilitado, você ainda poderá ver o status de outro e convidá-los, mas seu status não será publicado e outros não poderão convidá-lo diretamente.
 
 ![presencesettings](../media/vscode-presence-setting.png)
 
 ## <a name="faqs"></a>Perguntas frequentes 
 
-###### <a name="1-will-i-be-automatically-opting-into-sharing-status-when-i-use-live-share-v10950-and-above"></a>1. Vou optar automaticamente por compartilhar o status quando usar Live Share v 1.0.950 e superior?
+###### <a name="1-will-i-be-automatically-opting-into-sharing-status-when-i-use-live-share-v10950-and-above"></a>1. vou optar automaticamente por compartilhar o status ao usar Live Share v 1.0.950 e superior?
 
 Na primeira vez que você vir contatos, você será notificado com um sistema de notificação e uma opção para recusar o compartilhamento do seu status. Depois disso, você será compartilhado automaticamente seu status com seus contatos, a menos que você opte por recusar, como mostrado acima.
 
-###### <a name="2-can-i-add-my-own-contacts"></a>2. Posso adicionar meus próprios contatos?
+###### <a name="2-can-i-add-my-own-contacts"></a>2. posso adicionar meus próprios contatos?
 
 Atualmente, nosso serviço de contatos detecta automaticamente os colaboradores com quem você compartilha código com frequência ou trabalha no lado e não fornece a opção de adicionar seus próprios contatos. 
 
