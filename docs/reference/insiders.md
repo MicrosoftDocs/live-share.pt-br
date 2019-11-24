@@ -37,7 +37,7 @@ Agora Live Share pode hospedar sessões reutilizáveis! As sessões reutilizáve
 
 Para criar uma sessão reutilizável, faça o seguinte:
 1. Vá para o `Command Palette` usando `Ctrl+Shift+P`
-1. Digite "Sha ao vivo..." e clique no compartilhamento ' ** @ no__t-1Live: Crie o comando link de sessão reutilizável @ no__t-0 @ no__t-1 '.
+1. Digite "Sha ao vivo..." e clique no comando ' **_Live share: criar link de sessão reutilizável_** '.
 
 ![vscode-reusablesessioncmd](../media/vscode-cmdpalette-createreusablelink.png)
 
@@ -54,9 +54,9 @@ Para criar uma sessão reutilizável, faça o seguinte:
 
 ## Torne-se <a name="BecomeanInsider"></a> um insider
 
-Por padrão, depois de instalar a extensão de Visual Studio Live Share, você está usando o conjunto de recursos `Stable`, que inclui todos os recursos prontos para produção (por exemplo, coedição, depuração compartilhada, terminais). No entanto, se você quiser obter acesso antecipado ao recurso no qual estamos trabalhando, você pode optar pelo conjunto de recursos `Insiders` alterando a seguinte configuração em seu IDE:
+Por padrão, depois de instalar a extensão de Visual Studio Live Share, você está usando o conjunto de recursos `Stable`, que inclui todos os recursos prontos para produção (por exemplo, coedição, depuração compartilhada, terminais). No entanto, se você quiser obter acesso antecipado ao recurso no qual estamos trabalhando, você pode aceitar o conjunto de recursos `Insiders` alterando a seguinte configuração em seu IDE:
 
-* Visual Studio
+* {1&gt;Visual Studio&lt;1}
 
     ![conjunto de recursos-vs](../media/feature-set-vs.png)
 
