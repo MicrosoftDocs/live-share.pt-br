@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 27a3d76f14cd3c8df312abe7ab36185109ac7e89
-ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
+ms.openlocfilehash: 69bc178ebb4052757f984d67482d216335f46dac
+ms.sourcegitcommit: 5180aab73c086cbded6aae01aa01f71fb991dee1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73170125"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76818070"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -26,7 +26,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="linux-installation-details"></a>Detalhes de Instalação do Linux
 
-Linux é um ambiente altamente variável e, com o grande número de ambientes de desktop e distribuições, pode ser complicado trabalhar. Se você tiver as versões com suporte do **Ubuntu Desktop** (16.04 +), **CentOS 7**ou **Fedora Workstation** (27 +) e usar somente as **distribuições oficiais do vs Code**, você deverá encontrar o processo diretamente em frente. No entanto, se estiver usando uma configuração não padrão ou distribuição downstream, pode ser que você passe por alguns contratempos. Este documento fornece algumas informações sobre os requisitos e alguns detalhes de solução de problemas que podem ajudá-lo a entrar em funcionamento mesmo que a configuração seja apenas compatível com a Comunidade. Observe que Live Share só dá suporte ao **Linux de 64 bits**.
+Linux é um ambiente altamente variável e, com o grande número de ambientes de desktop e distribuições, pode ser complicado trabalhar. Se você tiver as versões com suporte do **Ubuntu Desktop** (16.04 +), **CentOS 7**ou **Fedora Workstation** (27 +) e usar somente as **distribuições oficiais do vs Code**, você deverá encontrar o processo diretamente em frente. No entanto, se estiver usando uma configuração não padrão ou distribuição downstream, pode ser que você passe por alguns contratempos. Este documento fornece algumas informações sobre os requisitos e alguns detalhes de solução de problemas que podem ajudá-lo a entrar em funcionamento mesmo que sua configuração seja apenas compatível com a Comunidade. Observe que Live Share só dá suporte ao **Linux de 64 bits**.
 
 ## <a name="install-linux-prerequisites"></a>Instalar pré-requisitos do Linux
 
@@ -46,7 +46,7 @@ Se **preferir não ter vs Code executar o comando para você**, você também po
 
 Embora o script de instalação de pré-requisito acima cubra uma variedade de distribuições, você pode estar se perguntando o que normalmente está faltando nas instalações da baunilha. A lista a seguir mostra as principais bibliotecas que estavam ausentes em uma instalação nova de uma determinada distribuição. A lista também fornece algumas dicas que podem ajudá-lo a entrar em funcionamento se você clicar em um problema.
 
-| Distribuição | Bibliotecas ausentes da instalação da baunilha | Etapas adicionais |
+| Ponto de | Bibliotecas ausentes da instalação da baunilha | Etapas adicionais |
 |--------|-------------------|----|
 | Ubuntu Desktop 18, 4 (64 bits) | &lt;none&gt;  | &lt;none&gt; |
 | Ubuntu Desktop 16, 4 (64 bits) | &lt;none&gt; | &lt;none&gt; |
@@ -75,7 +75,7 @@ As distribuições fora das árvores Debian/Ubuntu ou RHL não são oficialmente
 
 > **PRS bem-vindo:** Se você estiver interessado em atualizar essas informações com sua distribuição favorita, envie uma PR para [esse arquivo](https://github.com/MicrosoftDocs/live-share/tree/master/docs/reference/linux.md) em nosso repositório GitHub de documentos. Melhor ainda, se você quiser obter o instalador de dependências que oferece suporte à sua distribuição favorita, você pode enviar uma PR [para esse arquivo](https://github.com/MicrosoftDocs/live-share/blob/master/scripts/linux-prereqs.sh).
 
-| Distribuição | Trabalhando? | Bibliotecas ausentes da instalação da baunilha | Etapas adicionais |
+| Ponto de | Trabalhando? | Bibliotecas ausentes da instalação da baunilha | Etapas adicionais |
 |--------------|----------|-------------------|------------------|
 | Arch Linux (64 bits) | Sim | Consoante. Bibliotecas possíveis: `gcr liburcu openssl-1.0 krb5 zlib icu gnome-keyring libsecret desktop-file-utils xorg-xprop` | <ul><li>Com suporte do [script de instalação de pré-requisito](#install-linux-prerequisites).</li><li>Use o pacote Aur do [Visual-Studio-Code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) para vs Code.</li><li>`sudo` precisará ser instalado para usar o script de instalação de pré-requisito automatizado.</li><li>`gnome-keyring` pode exigir [etapas de configuração](https://wiki.archlinux.org/index.php/GNOME/Keyring) adicionais em alguns ambientes de área de trabalho.</ul> |
 | Manjaro 17,1 (64 bits) | Sim | `xorg-xprop liburcu` | <ul><li>Com suporte do [script de instalação de pré-requisito](#install-linux-prerequisites).</li><li>Use o pacote Aur do [Visual-Studio-Code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) para vs Code.</li></ul> |
@@ -93,7 +93,7 @@ Bibliotecas típicas ausentes em instalações de baunilha podem ser encontradas
 
 Os requisitos da biblioteca nativa do Visual Studio Live Share vêm de seu uso do .NET Core 2,1, libsecret para manter as credenciais e sua integração com o navegador. A tabela a seguir resume esses requisitos para distribuições oficialmente suportadas pelo .NET Core.
 
-| Distribuição | Requisitos do .NET Core | Requisitos de armazenamento de credenciais| Requisitos de integração de navegador |
+| Ponto de | Requisitos do .NET Core | Requisitos de armazenamento de credenciais| Requisitos de integração de navegador |
 |--------------|-----------|--------------------|------------|
 | Distribuições do Ubuntu e downstream | `libssl1.0.0 libkrb5-3 zlib1g libicu55` (para Ubuntu 16, 4, menta 18,3) ou `libicu57` (para Ubuntu 17,10) ou `libicu60` (para Ubuntu 18, 4, menta 19) | `libsecret-1-0 gnome-keyring` (ou libsecret com suporte para keyring-KWallet não dá suporte a libsecret) | `desktop-file-utils x11-utils` |
 | Distribuições do Debian 9 e downstream | `libssl1.0.2 libkrb5-3 zlib1g libicu57` | `libsecret-1-0 gnome-keyring` (ou libsecret com suporte para keyring-KWallet não dá suporte a libsecret) | `desktop-file-utils x11-utils` |
@@ -114,7 +114,7 @@ Para distribuições downstream do Debian 9 e não do Ubuntu, execute:
 
     sudo apt install libssl1.0.2 libkrb5-3 zlib1g libicu57 gnome-keyring libsecret-1-0 desktop-file-utils x11-utils
 
-### <a name="fedora--centos--rhl"></a>Fedora/CentOS/RHL
+### <a name="fedora--centos--rhl"></a>Fedora / CentOS / RHL
 
 As bibliotecas podem ser instaladas em distribuições baseadas em Fedora/CentOS/RHL executando `sudo yum install <library-name>` em um terminal. Por exemplo, isso instalará tudo:
 
@@ -155,11 +155,11 @@ Em alguns casos, as distribuições não dão suporte a esse local ou exigem aju
 
 Se preferir executar o comando por conta própria, clique em "copiar", que copiará o comando de terminal para a área de transferência em vez disso.
 
-Por fim, se você optar por ignorar essa etapa por completo, ainda poderá [unir as sessões de colaboração manualmente](../how-to-guides/vscode.md#join-manually), mas não poderá ingressar abrindo um link de convite no navegador. Observe que você sempre pode acessar o comando mais tarde, pressionando **Ctrl + Shift + P/Cmd + Shift + P** e selecionando o comando "Live share: setup do Launcher".
+Por fim, se você optar por ignorar essa etapa por completo, ainda poderá [unir as sessões de colaboração manualmente](../use/vscode.md#join-manually), mas não poderá ingressar abrindo um link de convite no navegador. Observe que você sempre pode acessar o comando mais tarde, pressionando **Ctrl + Shift + P/Cmd + Shift + P** e selecionando o comando "Live share: setup do Launcher".
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
-- [Como colaborar usando o Visual Studio Code](../how-to-guides/vscode.md)
+- [Como colaborar usando o Visual Studio Code](../use/vscode.md)
 - [Requisitos de conectividade do Live Share](connectivity.md)
 - [Funcionalidades de segurança do Live Share](security.md)
 
