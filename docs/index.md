@@ -11,12 +11,12 @@ ms.author: fubaduba
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 3f6ad9fd00984abeca2b826addee54271eb1191a
-ms.sourcegitcommit: 3a1b22eac528b0f6a241f9fec7ec20264db24cfe
+ms.openlocfilehash: 10679c4ef44e2bdaeb4d8a8f25107b10b5f52243
+ms.sourcegitcommit: c2ff6f29393990e91390875bb065bb811c071353
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74019757"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76978895"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -39,7 +39,7 @@ Pronto para começar? Neste artigo, explicaremos alguns conceitos e como instala
 
 Antes de começar, você precisa confirmar se tem uma versão do Visual Studio ou do Visual Studio Code instalada que atenda aos requisitos principais do Live Share.
 
-- **Visual Studio Code 1.22.0 ou posterior** – Windows 7, 8.1 ou 10, macOS *(somente Serra 10.12 e posterior)* e Linux de 64 bits *(Ubuntu Desktop de 64 bits 16.04 ou posterior, Fedora 27 ou posterior, recomendado – [ver detalhes](use/vscode.md#installation))* .
+- **Visual Studio Code 1.22.0 ou posterior** – Windows 7, 8.1 ou 10, macOS *(somente High Sierra 10.13 ou posterior)* e Linux de 64 bits *(Ubuntu Desktop de 64 bits 16.04 ou posterior, Fedora 27 ou posterior, recomendado – [ver detalhes](use/vscode.md#installation))* .
 - **Visual Studio 2019** (qualquer edição) – Windows 7, 8.1 ou 10.
 - **Visual Studio 2017 15.6 ou posterior** (qualquer edição) – Windows 7, 8.1 ou 10.
 
@@ -50,7 +50,7 @@ Depois disso, o download e a instalação da extensão do Visual Studio Live Sha
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="media/vs-code.svg" width="128px" alt="Visual Studio Code logo"/></td>
     <td style="border:none;">
         <strong>Visual Studio Code (1.22.0 ou posterior)</strong><br />
-        1. Instale o <a href="https://code.visualstudio.com/">Visual Studio Code</a> para Windows (7, 8.1 ou 10), macOS <b>(Serra ou posterior)</b> e Linux de 64 bits <b>(<a href="use/vscode.md#installation">detalhes</a>)</b><br />
+        1.Instale o <a href="https://code.visualstudio.com/">Visual Studio Code</a> para Windows (7, 8.1 ou 10), macOS <b>(High Sierra 10.13 ou posterior)</b> e Linux 64 bits <b>(<a href="use/vscode.md#installation">detalhes</a>)</b><br />
         2. Baixe e instale a extensão do Visual Studio Live Share por meio do marketplace. <br />
         3. Recarregue-a e aguarde até as dependências serem baixadas e instaladas (veja a barra de status).<br />
         4. <strong>Linux</strong>: Se precisar <a href="reference/linux.md#install-linux-prerequisites">instalar bibliotecas</a>, clique em Instalar, insira a senha e reinicie o VS Code quando terminar.<br />
@@ -83,7 +83,7 @@ Ao baixar e usar o Visual Studio Live Share, você concorda com os [termos de li
 E isso é tudo! Agora você deverá ver uma barra de status de entrada no canto inferior esquerdo do VS Code e um botão de compartilhamento na parte superior direita do Visual Studio. Confira o restante da documentação para saber o que fazer em seguida.
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 Guias de Início Rápido
 
