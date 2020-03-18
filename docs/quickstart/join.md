@@ -11,18 +11,19 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: b550790fff3a5ed70db9e1256e020c1865215866
-ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
+ms.openlocfilehash: 7b8b3d9b566231f4b4205b559232ef1752fd9441
+ms.sourcegitcommit: 382f069abbd81ed258d497a974b30379be36b4f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73170027"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508566"
 ---
 <!--
-Copyright © Microsoft Corporation
+Copyright &copy; Microsoft Corporation
 All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
+
 
 # <a name="quickstart-join-your-first-collaboration-session"></a>Início rápido: ingressar na sua primeira sessão de colaboração
 
@@ -44,7 +45,7 @@ Basta seguir estas etapas para ingressar em uma sessão de colaboração.
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-code.svg" width="128px" alt="Visual Studio Code logo"/></td>
     <td style="border:none;">
         <strong>Visual Studio Code (1.22.0 ou posterior)</strong><br />
-        1. Instale o <a href="https://code.visualstudio.com/">Visual Studio Code</a> para Windows (7, 8.1 ou 10), macOS <b>(Serra ou posterior)</b> e Linux de 64 bits <b>(<a href="../how-to-guides/vscode.md#installation">detalhes</a>)</b><br />
+        1. Instale o <a href="https://code.visualstudio.com/">Visual Studio Code</a> para Windows (7, 8.1 ou 10), macOS <b>(Serra ou posterior)</b> e Linux de 64 bits <b>(<a href="../use/vscode.md#installation">detalhes</a>)</b><br />
         2. Baixe e instale a extensão do Visual Studio Live Share por meio do marketplace. <br />
         3. Recarregue-a e aguarde até as dependências serem baixadas e instaladas (veja a barra de status).<br />
         4. <strong>Linux</strong>: se for solicitado a <a href="../reference/linux.md#install-linux-prerequisites">instalar bibliotecas</a>, clique em instalar, digite a senha, reinicie vs Code quando terminar.<br />
@@ -116,7 +117,7 @@ No **VS Code**, seu navegador será iniciado e uma notificação será exibida, 
 
 ![Notificação do sistema solicitando a entrada com um navegador da Web](../media/vscode-sign-in-toast.png)
 
-> **Usuários do Linux:** Você pode ser solicitado a inserir um código de usuário se estiver usando uma versão mais antiga do Live Share (v 0.3.295 ou inferior). Atualize para a versão mais recente da extensão ou clique no link "Está com problemas?" depois de entrar para ver o código. Confira [aqui para mais detalhes](../how-to-guides/vscode.md#sign-in-using-a-user-code).
+> **Usuários do Linux:** Você pode ser solicitado a inserir um código de usuário se estiver usando uma versão mais antiga do Live Share (v 0.3.295 ou inferior). Atualize para a versão mais recente da extensão ou clique no link "Está com problemas?" depois de entrar para ver o código. Confira [aqui para mais detalhes](../use/vscode.md#sign-in-using-a-user-code).
 
 No **Visual Studio**, o Live Share usa automaticamente sua [conta de personalização](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio). Como resultado, você pode simplesmente entrar como você faria normalmente. No entanto, se você preferir usar um logon diferente da sua conta de personalização do Visual Studio, acesse **Ferramentas &gt; Opções &gt; Live Share &gt; Conta de usuário** e selecione credenciais diferentes.
 
@@ -132,7 +133,7 @@ Você receberá uma notificação de que o navegador quer iniciar uma ferramenta
 
 ![Página Ingressar](../media/join-page.png)
 
-Se o host estiver offline, você receberá uma notificação. Você pode entrar em contato com o host e solicitar o compartilhamento novamente.
+Se o host estiver offline, você receberá uma notificação. Em seguida, poderá entrar em contato com o host e pedir para compartilhar novamente.
 
 > **Dica de solução de problemas:** Ao usar VS Code, verifique se você **iniciou a ferramenta pelo menos uma vez** depois de instalar a extensão e esperou que as dependências concluíssem a instalação (consulte a barra de status) antes de abrir/abrir novamente a página de convite. Ainda está com problemas? Confira [Ingressar manualmente](../reference/manual-join.md) para saber mais detalhes.
 
@@ -159,8 +160,8 @@ Está tendo problemas? Confira [Solução de problemas](../troubleshooting.md) o
 Confira estes outros artigos para saber mais.
 
 - [Início rápido: compartilhar seu primeiro projeto](share.md)
-- [Como colaborar usando o Visual Studio Code](../how-to-guides/vscode.md)
-- [Como colaborar usando o Visual Studio](../how-to-guides/vs.md)
+- [Como colaborar usando o Visual Studio Code](../use/vscode.md)
+- [Como colaborar usando o Visual Studio](../use/vs.md)
 
 Referência
 
