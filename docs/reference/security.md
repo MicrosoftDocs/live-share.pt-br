@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 2f3a2adf0be13071f22a8ea7e33800af6f9099b5
-ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
+ms.openlocfilehash: 2d471a6d5ba84efb192073799444a13f2be62279
+ms.sourcegitcommit: 6bf13781dc42a2bf51a19312ede37dff98ab33ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73170108"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80295965"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -32,9 +32,21 @@ As sessões de colaboração no Visual Studio Live Share são poderosas, pois pe
 
 ## <a name="connectivity"></a>Conectividade
 
-Todas as conexões em Visual Studio Live Share são criptografadas por SSH ou SSL e autenticadas em relação a um serviço central para garantir que apenas aquelas na sessão de colaboração possam obter acesso ao seu conteúdo. Por padrão, o Live Share tenta uma conexão direta e retorna em uma retransmissão de nuvem se uma conexão entre o convidado e o host não puder ser estabelecida. Observe que a retransmissão de nuvem do Live Share não mantém nenhum tráfego roteado através dele e não "espiona" o tráfego de forma alguma. No entanto, se você preferir não usar a retransmissão, poderá alterar as configurações para sempre se conectar diretamente.
+Ao iniciar uma sessão entre os pares, Live Share tenta estabelecer uma conexão ponto a ponto e somente se isso não for possível (por exemplo, devido a firewalls/NATs), ele retornará ao uso de uma retransmissão de nuvem. No entanto, em ambos os tipos de conexão (P2P ou Relay), todos os dados transmitidos entre os pares são criptografados de ponta a ponta usando o protocolo SSH. No caso de uma conexão de retransmissão, a criptografia SSH é encaixada na parte superior dos WebSockets criptografados por TLS. Isso significa que Live Share não depende do serviço de retransmissão de nuvem para segurança. Mesmo que a retransmissão tenha sido comprometida, não foi possível descriptografar nenhuma das Live Share comunicação.
+
+A função do serviço de Live Share é limitada à autenticação de usuário e à descoberta de sessão. O serviço em si não armazena ou nunca tem acesso a qualquer conteúdo de uma sessão. Todo o conteúdo do usuário no Live Share é transmitido pela sessão SSH. Isso inclui código, terminais, servidores compartilhados e quaisquer outros recursos de colaboração fornecidos por Live Share ou extensões que se baseiam nele.
 
 Para saber mais sobre como alterar esses comportamentos e os requisitos de conectividade de Live Share, consulte **[requisitos de conectividade para Live share](connectivity.md)** .
+
+### <a name="wire-encryption"></a>Criptografia de transmissão 
+
+O protocolo SSH usa uma troca de chaves Diffie-Hellman para estabelecer um segredo compartilhado para a sessão e deriva de uma chave para a criptografia simétrica AES. A chave de criptografia é girada periodicamente durante a duração da sessão. O segredo da sessão compartilhada e todas as chaves de criptografia só são mantidas na memória por ambos os lados e só são válidas durante a sessão. Eles nunca são gravados em disco ou enviados a qualquer serviço (incluindo Live Share).
+
+### <a name="peer-authentication"></a>Autenticação de mesmo nível
+
+A sessão SSH também é autenticada duas vias. O host (função de servidor SSH) usa a autenticação de chave pública/privada como é o padrão para o protocolo SSH. Quando um host compartilha uma sessão de Live Share, ele gera um par de chaves pública/privada RSA exclusivo para a sessão. A chave privada do host é mantida somente na memória no processo do host; Ele nunca é gravado em disco ou enviado para qualquer serviço, incluindo o serviço Live Share. A chave pública do host é publicada no serviço de Live Share, juntamente com as informações de conexão da sessão (endereço IP e/ou ponto de extremidade de retransmissão), em que os convidados podem acessá-lo por meio do link de convite. Quando um convidado se conecta à sessão SSH do host, o convidado usa o protocolo de autenticação de host SSH para validar se o host contém a chave privada correspondente à chave pública publicada (sem que o convidado realmente Veja a chave privada).
+
+O convidado usa um token Live Share para se autenticar com o host. O token é um JWT assinado emitido pelo serviço de Live Share que inclui declarações sobre a identidade do usuário (obtida via MSA, AAD ou entrada do GitHub). O token também tem declarações que indicam que o convidado tem permissão para acessar essa sessão de Live Share específica (porque elas tinham o link de convite e/ou foram especificamente convidadas pelo host). O host valida esse token e verifica as declarações (e dependendo das opções podem solicitar o usuário host) antes de permitir que o convidado ingresse na sessão.
 
 ## <a name="invitations-and-join-access"></a>Convites e ingressar no acesso
 
@@ -138,7 +150,7 @@ Aqui está um exemplo de arquivo. vsls. JSON:
 
 Vamos examinar como essas propriedades mudam o que os convidados podem fazer.
 
-### <a name="properties"></a>Propriedades
+### <a name="properties"></a>{1&gt;Propriedades&lt;1}
 
 A propriedade **excludeFiles** permite que você especifique uma lista de padrões de arquivo glob (muito parecido com os encontrados arquivos. gitignore) que impede Live share de abrir determinados arquivos ou pastas para convidados. Lembre-se de que isso é inclusivo de cenários como um convidado _após ou saltando para o local de edição, passando para um arquivo durante a depuração colaborativa, quaisquer recursos de navegação de código como ir para a definição e muito mais._ Ele é destinado a arquivos que você nunca deseja compartilhar sob nenhuma circunstância, como aquelas que contêm segredos, certificados ou senhas. Por exemplo, como eles controlam a segurança, os arquivos. vsls. JSON são sempre excluídos.
 
@@ -146,7 +158,7 @@ A propriedade **hideFiles** é semelhante, mas não tão estrita. Esses arquivos
 
 A configuração **gitignore** estabelece como Live share deve processar o conteúdo de arquivos. gitignore em pastas compartilhadas. Por padrão, quaisquer globs encontradas nos arquivos. gitignore são tratados como se fossem especificados na propriedade "hideFiles". No entanto, você pode escolher um comportamento diferente usando um dos seguintes valores:
 
-| Opção    | Resultado                                                                                                                 |
+| {1&gt;Opção&lt;1}    | Resultado                                                                                                                 |
 | --------- | ---------------------------------------------------------------------------------------------------------------------- |
 | `none`    | os conteúdos. gitignore são visíveis para convidados na árvore de arquivos (supondo que eles não são filtrados por uma configuração de editor convidado). |
 | `hide`    | **O padrão.** Globs dentro de. gitignore são processados como se estivessem na propriedade "hideFiles".                   |
@@ -164,7 +176,7 @@ Uma desvantagem da configuração de `exclude` é que o conteúdo de pastas como
 }
 ```
 
-As regras ocultar e excluir são processadas separadamente, portanto, se você ainda quisesse ocultar node_modules para reduzir a desordem sem realmente excluí-la, basta editar o arquivo da seguinte maneira:
+As regras ocultar e excluir são processadas separadamente, portanto, se você ainda quisesse ocultar node_modules para reduzir a aglomeração sem realmente excluí-la, poderá simplesmente editar o arquivo da seguinte maneira:
 
 ```json
 {
@@ -205,7 +217,7 @@ Como um host, ao compartilhar, você tem a opção de habilitar o modo somente l
 
 Você ainda pode codepurar com convidados enquanto estiver no modo somente leitura. Os convidados não terão a capacidade de percorrer o processo de depuração, mas ainda poderão adicionar ou remover pontos de interrupção e inspecionar variáveis. Além disso, você ainda pode compartilhar servidores e terminais (somente leitura) com convidados.
 
-Você pode saber mais sobre como iniciar uma sessão de colaboração somente leitura: [![VS Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#share-a-project) [![vs](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#share-a-project)
+Você pode saber mais sobre como iniciar uma sessão de colaboração somente leitura: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-project) [![vs](../media/vs-icon-15x15.png)](../use/vs.md#share-a-project)
 
 ## <a name="co-debugging"></a>Codepuração
 
@@ -215,7 +227,7 @@ Como um host, você tem controle total sobre quando uma sessão de depuração �
 
 Consequentemente, você deve **apenas codepurar com aqueles confiáveis.**
 
-Saiba mais: [![VS Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#co-debugging) [![vs](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#co-debugging)
+Saiba mais: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#co-debugging) [![vs](../media/vs-icon-15x15.png)](../use/vs.md#co-debugging)
 
 ## <a name="sharing-a-local-server"></a>Compartilhando um servidor local
 
@@ -231,7 +243,7 @@ No Visual Studio Code, Live Share tenta **detectar as portas de aplicativo adequ
 
 Em ambos os casos, tome cuidado ao compartilhar portas adicionais.
 
-Você pode saber mais sobre como configurar o recurso aqui: [![VS Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#share-a-server) [![vs](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#share-a-server)
+Você pode saber mais sobre como configurar o recurso aqui: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-server) [![vs](../media/vs-icon-15x15.png)](../use/vs.md#share-a-server)
 
 ## <a name="sharing-a-terminal"></a>Compartilhando um terminal
 
@@ -245,7 +257,7 @@ No Visual Studio, os terminais não são compartilhados por padrão. No VS Code,
 "liveshare.autoShareTerminals": false
 ```
 
-Saiba mais: [![VS Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#share-a-terminal) [![vs](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#share-a-terminal)
+Saiba mais: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-terminal) [![vs](../media/vs-icon-15x15.png)](../use/vs.md#share-a-terminal)
 
 ## <a name="aad-admin-consent"></a>Consentimento do administrador do AAD
 
@@ -258,14 +270,14 @@ O administrador do AD precisaria resolver isso para você usando as seguintes in
 * **Status de aplicativos**: produção
 * **Permissões delegadas**: user. Read
 * **URL do aplicativo**: https://insiders.liveshare.vsengsaas.visualstudio.com/
-* **URL de resposta**: https://insiders.liveshare.vsengsaas.visualstudio.com/auth/redirect/windowslive/
+* **URL de Resposta**: https://insiders.liveshare.vsengsaas.visualstudio.com/auth/redirect/windowslive/
 
 Isso só precisaria ser feito uma vez para qualquer pessoa que estivesse usando Live Share. Consulte [aqui](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes) e [aqui](https://stackoverflow.com/questions/39861830/azure-ad-admin-consent-from-the-azure-portal) para obter detalhes.
 
 ## <a name="see-also"></a>Consulte também
 
-* [Como colaborar usando o Visual Studio Code](../how-to-guides/vscode.md)
-* [Como colaborar usando o Visual Studio](../how-to-guides/vs.md)
+* [Como colaborar usando o Visual Studio Code](../use/vscode.md)
+* [Como colaborar usando o Visual Studio](../use/vs.md)
 * [Requisitos de conectividade do Live Share](connectivity.md)
 
 Está tendo problemas? Confira [Solução de problemas](../troubleshooting.md) ou [envie comentários](../support.md).
