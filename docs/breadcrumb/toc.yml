@@ -1,18 +1,11 @@
-items:
 - name: Docs
   tocHref: /
   topicHref: /
   items:
-  - name: Visual Studio
-    tocHref: /visualstudio/products/
-    topicHref: /visualstudio/products
-    items:
-    - name: Live Share
-      tocHref: /visualstudio/liveshare/
-      topicHref: /visualstudio/liveshare
-ms.openlocfilehash: 1786dc678f0740b61bb596243bf35aa24cadc953
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
-ms.translationtype: HT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57254607"
+    - name: Visual Studio
+      tocHref: /visualstudio/products/
+      topicHref: /visualstudio/products
+      items:
+        - name: Live Share
+          tocHref: /visualstudio/liveshare/
+          topicHref: /visualstudio/liveshare
