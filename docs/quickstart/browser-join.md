@@ -1,6 +1,6 @@
 ---
 title: Unindo-se do navegador-Visual Studio Live Share | Microsoft Docs
-description: Introdução ao ingresso no navegador aos
+description: Introdução ao ingresso no navegador
 ms.date: 03/18/2020
 ms.reviewer: ''
 ms.suite: ''
@@ -10,12 +10,12 @@ ms.author: fishah
 manager: joncart
 ms.workload:
 - liveshare
-ms.openlocfilehash: 9544e1ad333903c663b9b4ecda35ca745020b4ae
-ms.sourcegitcommit: 6bf13781dc42a2bf51a19312ede37dff98ab33ea
+ms.openlocfilehash: 5e485397ff23be0fdab8449fad6237d829775c55
+ms.sourcegitcommit: d7f923c1bcd0430b48065ea2c0902b470f530987
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80295921"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83569529"
 ---
 <!--
 Copyright &copy; Microsoft Corporation
@@ -25,7 +25,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="preview-joining-a-live-share-session-from-the-browser"></a>✨ [Visualização] ✨ ingressando uma sessão de Live Share do navegador
 
-Todas as Live Share sessões de colaboração agora têm a capacidade de ser unida ao navegador. Isso significa que um convidado para sua sessão não precisa mais instalar VS Code ou o Visual Studio para ingressar na sua sessão. Isso é especialmente útil para todas essas instâncias quando você deseja que alguém entre em sua sessão rapidamente ou para alunos que geralmente não têm os clientes de desktop instalados.
+Todas as Live Share sessões de colaboração agora têm a capacidade de ser unida do navegador. Isso significa que um convidado para sua sessão não precisa mais instalar VS Code ou o Visual Studio para ingressar na sua sessão. Isso é especialmente útil para todas essas instâncias quando você deseja que alguém entre em sua sessão rapidamente ou para alunos que geralmente não têm os clientes de desktop instalados.
 
 
 # <a name="how-to-join-a-live-share-session-from-the-browser"></a>Como ingressar em uma sessão de Live Share do navegador 

@@ -11,12 +11,12 @@ ms.author: fubaduba
 manager: JonathanCarter
 ms.workload:
 - liveshare
-ms.openlocfilehash: 0ac1ba213c59df2dc3b1d05d89e4186c823a250f
-ms.sourcegitcommit: 6bf13781dc42a2bf51a19312ede37dff98ab33ea
+ms.openlocfilehash: db2365b92f5b18198a2f976e1c6ce3d5abb755c5
+ms.sourcegitcommit: d7f923c1bcd0430b48065ea2c0902b470f530987
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80295956"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83569516"
 ---
 <!--
 Copyright &copy; Microsoft Corporation
@@ -35,15 +35,15 @@ Para entrevistar um candidato com Live Share você deve primeiro um dos dois cli
 Instale o [Visual Studio](../use/vs.md) , que é criado com a extensão Live share
 
 >[!TIP] 
-> Certifique-se de ativar as pessoas para Live Share acessando *ferramentas > opções > Live Share > recursos > avançados*. Isso permitirá que você use nosso áudio interno chamando suporte para entrevistas.
+> Certifique-se de ativar as pessoas para Live Share acessando *ferramentas> opções > Live Share > recursos > avançados*. Isso permitirá que você use nosso áudio interno chamando suporte para entrevistas.
 
-Ou instale [Visual Studio Code](../.use/vscode.md) e baixe o [pacote de extensão Live share]() do Marketplace. O pacote de extensão fornecerá o nosso suporte de áudio para entrevistas. 
+Ou instale [Visual Studio Code](../use/vscode.md) e baixe o [pacote de extensão Live share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack) do Marketplace. O pacote de extensão fornecerá o nosso suporte de áudio para entrevistas. 
 
 ## <a name="scheduling-an-interview"></a>Agendando uma entrevista 
 
 **Live share no vs Code** fornece a capacidade de criar sessões de Live share com antecedência. Você pode usar as seguintes etapas para criar uma sessão com antecedência:
 
-1. Vá para o `Command Palette` usando `Ctrl+Shift+P`
+1. Vá para o `Command Palette` usando`Ctrl+Shift+P`
 1. Digite "Sha ao vivo..." e clique no comando '_Live share: criar link de sessão reutilizável_'.
 
 ![vscode-reusablesessioncmd](../media/vscode-cmdpalette-createreusablelink.png)
