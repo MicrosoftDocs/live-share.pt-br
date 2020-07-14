@@ -11,12 +11,12 @@ ms.author: fubaduba
 manager: JonathanCarter
 ms.workload:
 - liveshare
-ms.openlocfilehash: db2365b92f5b18198a2f976e1c6ce3d5abb755c5
-ms.sourcegitcommit: d7f923c1bcd0430b48065ea2c0902b470f530987
+ms.openlocfilehash: ff5dff3e6a88dba8e0d6f49c5bdcf52d1163ef1a
+ms.sourcegitcommit: 6b1c502ba1763527aa69bad2e0c919d60a47153d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83569516"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86300259"
 ---
 <!--
 Copyright &copy; Microsoft Corporation
@@ -26,22 +26,34 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="how-to-do-technical-interviews-using-live-share"></a>Como fazer: entrevistas técnicas usando Live Share
 
-Usando Live Share para entrevistas, permite que o entrevistador e o candidato tenham uma sessão de entrevista rápida e confiável, com um IDE ou editor de fidelidade total. 
+Usando Live Share para entrevistas, permite que o entrevistador e o candidato tenham uma sessão de entrevista rápida e confiável, com um IDE ou editor de fidelidade total. Este tutorial se concentrará no uso de ["sessões planejadas"](../reference/insiders.md) e [Live share Web Join](../quickstart/browser-join.md) para a experiência de entrevistas. 
 
+## <a name="setup-for-interviewer-vs-code"></a>Configuração do intervisor (VS Code)
 
-## <a name="setup-for-interviewer"></a>Configuração do intervisor 
-Para entrevistar um candidato com Live Share você deve primeiro um dos dois clientes de desktop:
+Instale [Visual Studio Code](../use/vscode.md) e baixe o [pacote de extensão Live share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack) do Marketplace. O pacote de extensão fornecerá o nosso suporte de áudio para entrevistas.
 
-Instale o [Visual Studio](../use/vs.md) , que é criado com a extensão Live share
+>[!TIP]
+>Para ter a melhor experiência de visualização usando Live Share no VS Code, certifique-se de ativar o sinalizador de recursos de Live Share de entrada. *Preferências: UserSettings > Extensions > Visual Studio Live Share conjunto de recursos >: pessoas*
 
->[!TIP] 
-> Certifique-se de ativar as pessoas para Live Share acessando *ferramentas> opções > Live Share > recursos > avançados*. Isso permitirá que você use nosso áudio interno chamando suporte para entrevistas.
-
-Ou instale [Visual Studio Code](../use/vscode.md) e baixe o [pacote de extensão Live share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack) do Marketplace. O pacote de extensão fornecerá o nosso suporte de áudio para entrevistas. 
+>[!NOTE]
+> Live Share o chat é criado com a extensão de Live Share no VS Code.
 
 ## <a name="scheduling-an-interview"></a>Agendando uma entrevista 
 
 **Live share no vs Code** fornece a capacidade de criar sessões de Live share com antecedência. Você pode usar as seguintes etapas para criar uma sessão com antecedência:
+
+### <a name="option-a-insider"></a>Opção A (insider)
+1. Vá para o `Planned Sessions` no Viewlet e crie uma nova sessão. Agora, isso criou uma sessão de Live Share com antecedência para você, que estará disponível no Viewlet para você no momento da entrevista. 
+
+![sessão planejada-CreateLink](../media/planned-session-creation-vscode.PNG)
+
+
+2. Copie o link de Viewlet e envie-o para o candidato. O link que você envia para o candidato pode ser usado por eles no momento da entrevista para ingressar na sessão.
+
+![COPYLINK-sessão planejada](../media/planned-session-copylink-vscode.PNG)
+
+
+### <a name="option-b-not-an-insider"></a>Opção B (não é um insider)
 
 1. Vá para o `Command Palette` usando`Ctrl+Shift+P`
 1. Digite "Sha ao vivo..." e clique no comando '_Live share: criar link de sessão reutilizável_'.
@@ -64,7 +76,6 @@ Quando você tiver esse link, basta compartilhá-lo com o intervisor por email o
 
 ## <a name="setup-for-candidate"></a>Configuração para candidato
 Embora um candidato sempre possa instalar o Visual Studio ou Visual Studio Code para ingressar na entrevista, ele não precisa fazer isso. **Live Share as sessões de entrevista podem ser unidas por candidatos sem nenhuma configuração anterior.** Eles podem clicar no link entrevista no momento da sessão e **ingressar no navegador**. Saiba mais [aqui.](../quickstart/browser-join.md)
-
 
 
 <!--

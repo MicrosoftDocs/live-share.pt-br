@@ -11,12 +11,12 @@ ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 308f3746bfcdd1f2a428106c1d3e579f49df0cf3
-ms.sourcegitcommit: 50069912a317f8685976013e80738bbaa403a3fe
+ms.openlocfilehash: b343fb129952003f9c9fcab7dcb9f5e3b28660a1
+ms.sourcegitcommit: 6b1c502ba1763527aa69bad2e0c919d60a47153d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72171998"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86300266"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -30,14 +30,35 @@ A equipe de Visual Studio Live Share se trata de iteração rápida, experimenta
 
 ## <a name="new-to-insiders"></a>✨ Novos para insideres ✨
 
+### <a name="planned-sessions-vs-code"></a>**Sessões planejadas (VS Code)**
+As sessões reutilizáveis agora têm um lugar no Live Share Viewlet. As sessões planejadas permitem que você como o host de uma sessão de Live Share para criar um link de sessão de Live Share com antecedência. 
+
+
+![imagem planejada-CreateLink-vscode ](../media/planned-session-creation-vscode.png)
+ *mostrando a criação de uma nova sessão planejada a partir do Viewlet*
+
+Isso permite que você compartilhe esse link como parte de suas reuniões agendadas regularmente com suas equipes, suas entrevistas ou suas sessões de emparelhamento.
+Assim que uma sessão for tão planejada antecipadamente, você poderá acessá-la do Live Share Viewlet diretamente. 
+
+![imagem planejada-vscode ](../media/planned-session-copylink-vscode.png) * mostrando "sessões planejadas" no Live share Viewlet
+
+>[!TIP]
+>Ative as pessoas para Live Share em VS Code para usar ' sessões de >planejadas '. Saiba como se tornar um insider abaixo. 
+
+"Sessões planejadas" no Visual Studio é atualmente apenas um recurso interno. Verifique novamente se há atualizações quando avança para o estágio Insider. 
+
+
+# <a name="pushed-to-public"></a>Enviado por push para público 
+
+Os recursos do Insider a seguir foram enviados por push para o público.
 
 ### <a name="reusable-sessions-vs-code"></a>**Sessões reutilizáveis (VS Code)**
 
 Agora Live Share pode hospedar sessões reutilizáveis! As sessões reutilizáveis oferecem a capacidade de reutilizar uma sessão de Live Share para vários cenários. Isso significa que você pode agendar uma sessão de Live Share com antecedência para suas entrevistas técnicas, sessão de Mob semanal, usar a mesma sessão ao mentor de um amigo e muito mais!
 
 Para criar uma sessão reutilizável, faça o seguinte:
-1. Vá para o `Command Palette` usando `Ctrl+Shift+P`
-1. Digite "Sha ao vivo..." e clique no comando ' **_Live share: criar link de sessão reutilizável_** '.
+1. Vá para o `Command Palette` usando`Ctrl+Shift+P`
+1. Digite "Sha ao vivo..." e clique no comando '**_Live share: criar link de sessão reutilizável_**'.
 
 ![vscode-reusablesessioncmd](../media/vscode-cmdpalette-createreusablelink.png)
 
@@ -52,11 +73,11 @@ Para criar uma sessão reutilizável, faça o seguinte:
  
 
 
-## Torne-se <a name="BecomeanInsider"></a> um insider
+## <a name="become-an-insider"></a>Torne-se <a name="BecomeanInsider"> </a> um insider
 
-Por padrão, depois de instalar a extensão de Visual Studio Live Share, você está usando o conjunto de recursos `Stable`, que inclui todos os recursos prontos para produção (por exemplo, coedição, depuração compartilhada, terminais). No entanto, se você quiser obter acesso antecipado ao recurso no qual estamos trabalhando, você pode aceitar o conjunto de recursos `Insiders` alterando a seguinte configuração em seu IDE:
+Por padrão, depois de instalar a extensão de Visual Studio Live Share, você está usando o `Stable` conjunto de recursos, que inclui todos os recursos prontos para produção (por exemplo, coedição, depuração compartilhada, terminais). No entanto, se você quiser obter acesso antecipado ao recurso no qual estamos trabalhando, você pode aceitar o conjunto de `Insiders` recursos alterando a seguinte configuração em seu IDE:
 
-* {1&gt;Visual Studio&lt;1}
+* Visual Studio
 
     ![conjunto de recursos-vs](../media/feature-set-vs.png)
 
@@ -64,11 +85,11 @@ Por padrão, depois de instalar a extensão de Visual Studio Live Share, você e
 
     ![recurso-Set-vscode](../media/feature-set-vscode.png)
 
-As seções a seguir descrevem o conjunto de recursos que estão atualmente dentro do conjunto de recursos `Insiders` e, portanto, estão prontas para avaliação quando você altera a configuração mencionada anteriormente:
+As seções a seguir descrevem o conjunto de recursos que estão atualmente dentro do `Insiders` conjunto de recursos e, portanto, estão prontas para avaliação quando você altera a configuração mencionada anteriormente:
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Suporte de idioma e plataforma](platform-support.md)
 - [Requisitos de conectividade do Live Share](connectivity.md)
