@@ -1,5 +1,5 @@
 ---
-title: Suporte a plataformas e idiomas-Visual Studio Live Share | Microsoft Docs
+title: Suporte a plataformas e idiomas | Microsoft Docs
 description: Uma visão geral do suporte de plataforma e idioma para o Visual Studio Live share.
 ms.custom: ''
 ms.date: 03/22/2018
@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 36cd7cc5923e593c6bbd3220b5f4ba92a7ca6130
-ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
+ms.openlocfilehash: 1b9cc09611262f9733ec4a675ce2967688cfa9a1
+ms.sourcegitcommit: 9deed590c0876b732c8eb150a9a23498a8243efc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73170072"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98870913"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -26,17 +26,17 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="contributing-feedback-and-support"></a>Contribuindo, comentários e suporte
 
-Tem uma pergunta ou um comentário? Há várias maneiras de contribuir. Queremos ouvir a sua opinião!
+Tem uma pergunta ou um comentário? Há várias maneiras de contribuir. Queremos ouvir você!
 
 ## <a name="tldr"></a>TLDR, comecem
 
 Em suma:
 
-- **Problemas conhecidos:** Consulte [bugs](https://aka.ms/vsls-bugs) ou [solicitações de recursos](https://aka.ms/vsls-feature-requests) e vote usando uma reação 👍.
+- **Problemas conhecidos:** Veja [bugs](https://aka.ms/vsls-bugs) ou [solicitações de recursos](https://aka.ms/vsls-feature-requests) e vote usando uma 👍 reação.
 - **Vs Code bugs:** [registre um novo problema](https://aka.ms/vsls-new-issue). Use o comando "Live Share: exportar logs" e [Arraste e solte o zip](https://help.github.com/articles/file-attachments-on-issues-and-pull-requests/) no bug ou envie-o [por email](mailto:vsls-feedback@microsoft.com).
-- **Vs bugs:** [Ajuda > enviar comentários > relatar um problema..](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) . Reproduza o problema antes de enviar e os logs serão anexados automaticamente.
-- **Solicitações de recursos:** [registre uma nova solicitação](https://aka.ms/vsls-new-issue) ou use uma reação 👍 para fazer [um voto](https://aka.ms/vsls-feature-requests)de uma existente.
-- **Entre em contato conosco:** [vsls-feedback@microsoft.com](mailto:vsls-feedback@microsoft.com), [#vsliveshare](https://aka.ms/vsls-twitter)ou a [margem de atraso](https://aka.ms/vsls-slack)de execução da Comunidade.
+- **Vs bugs:** [ajuda > enviar comentários > relatar um problema..](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) . Reproduza o problema antes de enviar e os logs serão anexados automaticamente.
+- **Solicitações de recursos:** [registre uma nova solicitação](https://aka.ms/vsls-new-issue) ou use uma 👍 reação para fazer um voto de [uma existente](https://aka.ms/vsls-feature-requests).
+- **Entre em contato conosco:** [vsls-feedback@microsoft.com](mailto:vsls-feedback@microsoft.com) , [#vsliveshare](https://aka.ms/vsls-twitter)ou a [margem de atraso](https://aka.ms/vsls-slack)de execução da Comunidade.
 
 Mais detalhes abaixo.
 
@@ -48,7 +48,7 @@ Alguns de nossos documentos de referência podem ter o que você precisa!
 - [Suporte de idioma e plataforma](reference/platform-support.md)
 - [Suporte de extensão](reference/extensions.md)
 - [Solução de problemas](troubleshooting.md)
-- [PERGUNTAS FREQUENTES](faq.md)
+- [perguntas frequentes](faq.md)
 
 ## <a name="issues-and-requests"></a>Problemas e solicitações
 
@@ -60,13 +60,13 @@ Os problemas do GitHub e os relatórios de problemas do Visual Studio são uma �
 - [Relatar um problema para VS Code ou o serviço geral](https://aka.ms/vsls-vscodeproblem)
 - [Confira dicas sobre como contribuir!](https://aka.ms/vsls-problemtips)
 
-## <a name="other"></a>Outros
+## <a name="other"></a>Outro
 
-- **Email:** [vsls-feedback@microsoft.com](mailto:vsls-feedback@microsoft.com)
+- **Email:**[vsls-feedback@microsoft.com](mailto:vsls-feedback@microsoft.com)
 - **Twitter:** Aperte-nos no Twitter usando [#vsliveshare](https://aka.ms/vsls-twitter)!
 - **Margem de atraso:** Também vamos parar na Comunidade [Live share margem de atraso](https://aka.ms/vsls-slack).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 Guias de Início Rápido
 
@@ -75,5 +75,5 @@ Guias de Início Rápido
 
 Instruções
 
-- [Colaborar usando o Visual Studio Code](how-to-guides/vscode.md)
-- [Colaborar usando o Visual Studio](how-to-guides/vs.md)
+- [Colaborar usando o Visual Studio Code](use/vscode.md)
+- [Colaborar usando o Visual Studio](use/vs.md)

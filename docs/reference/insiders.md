@@ -1,5 +1,5 @@
 ---
-title: Pessoas-Visual Studio Live Share | Microsoft Docs
+title: Insideres | Microsoft Docs
 description: Uma descrição do canal ' Insiders ' no Visual Studio Live Share.
 ms.custom: ''
 ms.date: 04/02/2019
@@ -11,12 +11,12 @@ ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: b343fb129952003f9c9fcab7dcb9f5e3b28660a1
-ms.sourcegitcommit: 6b1c502ba1763527aa69bad2e0c919d60a47153d
+ms.openlocfilehash: a58bf30ad1c6f4c4cecedb1a07ca0482a67f5ec7
+ms.sourcegitcommit: 9deed590c0876b732c8eb150a9a23498a8243efc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86300266"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98870715"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -57,7 +57,7 @@ Os recursos do Insider a seguir foram enviados por push para o público.
 Agora Live Share pode hospedar sessões reutilizáveis! As sessões reutilizáveis oferecem a capacidade de reutilizar uma sessão de Live Share para vários cenários. Isso significa que você pode agendar uma sessão de Live Share com antecedência para suas entrevistas técnicas, sessão de Mob semanal, usar a mesma sessão ao mentor de um amigo e muito mais!
 
 Para criar uma sessão reutilizável, faça o seguinte:
-1. Vá para o `Command Palette` usando`Ctrl+Shift+P`
+1. Vá para o `Command Palette` usando `Ctrl+Shift+P`
 1. Digite "Sha ao vivo..." e clique no comando '**_Live share: criar link de sessão reutilizável_**'.
 
 ![vscode-reusablesessioncmd](../media/vscode-cmdpalette-createreusablelink.png)
@@ -73,7 +73,7 @@ Para criar uma sessão reutilizável, faça o seguinte:
  
 
 
-## <a name="become-an-insider"></a>Torne-se <a name="BecomeanInsider"> </a> um insider
+## <a name="become-an-insider"></a>Torne-se <a name="BecomeanInsider"></a> um insider
 
 Por padrão, depois de instalar a extensão de Visual Studio Live Share, você está usando o `Stable` conjunto de recursos, que inclui todos os recursos prontos para produção (por exemplo, coedição, depuração compartilhada, terminais). No entanto, se você quiser obter acesso antecipado ao recurso no qual estamos trabalhando, você pode aceitar o conjunto de `Insiders` recursos alterando a seguinte configuração em seu IDE:
 

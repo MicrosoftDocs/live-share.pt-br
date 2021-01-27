@@ -1,5 +1,5 @@
 ---
-title: Visão geral – Visual Studio Live Share | Microsoft Docs
+title: Visão geral | Microsoft Docs
 description: Novos recursos e versões do Live Share
 ms.custom: ''
 ms.reviewer: ''
@@ -9,12 +9,12 @@ author: fubaduba
 ms.author: fubaduba
 ms.workload:
 - liveshare
-ms.openlocfilehash: 55425a7d57775a4e042e87b8dceb86532e1b966a
-ms.sourcegitcommit: 211b17e49e7343786bd6859b65444cedd5e24958
+ms.openlocfilehash: 70adacfbb8d5e3b4ca9a7b2652c7c455a977f2f7
+ms.sourcegitcommit: 9deed590c0876b732c8eb150a9a23498a8243efc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85796057"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98870468"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -51,7 +51,7 @@ O host de sua sessão de Live Share está usando o Visual Studio ou outras plata
 
 > A pessoa que você está tentando contatar não está disponível no momento ou usando uma versão do _Live share_ que não oferece suporte a esse recurso. [Saiba mais] 
 
->O serviço de chat está desconectado no momento.Tente novamente em breve.
+>O serviço de chat está desconectado no momento. Tente novamente em breve.
 
 O host de sua sessão de Live Share está usando o Visual Studio ou outras plataformas para hospedar uma sessão, que não oferece suporte a Live Share chat integrado ainda. Eles também podem estar indisponíveis no momento. Eles também podem estar vendo a mensagem de erro 1. listados acima.
 

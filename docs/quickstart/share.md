@@ -1,5 +1,5 @@
 ---
-title: Início Rápido sobre como compartilhar – Visual Studio Live Share | Microsoft Docs
+title: Compartilhar início rápido | Microsoft Docs
 description: Um passo a passo resumido sobre como compartilhar seu primeiro projeto usando uma sessão de colaboração do Visual Studio Live Share.
 ms.custom: ''
 ms.date: 03/22/2018
@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 9bee74ed4d494e948f2255321faab3fb5093d694
-ms.sourcegitcommit: 211b17e49e7343786bd6859b65444cedd5e24958
+ms.openlocfilehash: 6422168bcb3d73a660ac90a415388ef1f29459d4
+ms.sourcegitcommit: 9deed590c0876b732c8eb150a9a23498a8243efc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85796070"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98870814"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -56,8 +56,8 @@ Change the instructions to Install extension for VS Code and in-tool for VS?
 <tr style="border:none;">
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide-2019.svg" width="128px" alt="Visual Studio 2019 logo" /></td>
     <td  style="border:none;">
-        <strong>Visual Studio 2019</strong><br />
-        1.Instale o <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a>.<br/>
+        <strong>Visual Studio 2019 </strong><br />
+        1. Instale o <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a>.<br/>
         2. Instale uma <a href="../reference/platform-support.md">carga de trabalho compatível</a>. (por exemplo, ASP.NET, .NET Core, C++, Python e/ou Node.js)<br />
         3. O Visual Studio Live Share é instalado por padrão com essas cargas de trabalho. <br />
     </td>
@@ -182,7 +182,7 @@ Confira [Exigir aprovação do convidado](../reference/security.md#requiring-gue
 
 ## <a name="9-collaborate"></a>9. colabore!
 
-É isso! Algumas coisas para experimentar quando um convidado ingressar:
+Pronto! Algumas coisas para experimentar quando um convidado ingressar:
 
 1. Navegue pelos diferentes arquivos do projeto de maneira independente e faça algumas edições
 1. Siga o convidado e observe como ele navega, faz edições e acessa diferentes arquivos

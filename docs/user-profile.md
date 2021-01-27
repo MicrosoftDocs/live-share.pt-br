@@ -1,5 +1,5 @@
 ---
-title: Perfil do usuário-Visual Studio Live Share | Microsoft Docs
+title: Perfil do usuário | Microsoft Docs
 description: Uma visão geral de como exibir e remover seu perfil de usuário do Visual Studio Live Share.
 ms.custom: ''
 ms.date: 05/222/2018
@@ -11,12 +11,12 @@ ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 2f9f496b47db7efe260c1f09a2906c68c07762d5
-ms.sourcegitcommit: 6bf13781dc42a2bf51a19312ede37dff98ab33ea
+ms.openlocfilehash: c1c0363074c0737ae3aedb68952f3147e58cddb9
+ms.sourcegitcommit: 9deed590c0876b732c8eb150a9a23498a8243efc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80295934"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98870801"
 ---
 <!--
 Copyright &copy; Microsoft Corporation
@@ -41,14 +41,14 @@ Se Visual Studio Live Share atualmente não tiver um perfil armazenado para a id
 
 ## <a name="removing-your-profile"></a>Removendo seu perfil
 
-Se desejar remover seu perfil de usuário, você poderá clicar no botão `Delete your account` na [página perfil do usuário](#user-profile). Caso contrário, Visual Studio Live Share excluirá automaticamente o seu perfil 30 dias desde a última entrada bem-sucedida. Nesse contexto, uma "entrada bem-sucedida" refere-se ao seguinte (dependendo da ferramenta que você está usando):
+Se desejar remover seu perfil de usuário, você poderá clicar no `Delete your account` botão na [página perfil do usuário](#user-profile). Caso contrário, Visual Studio Live Share excluirá automaticamente o seu perfil 30 dias desde a última entrada bem-sucedida. Nesse contexto, uma "entrada bem-sucedida" refere-se ao seguinte (dependendo da ferramenta que você está usando):
 
 | IDE/Editor | Seu perfil de usuário será excluído 30 dias após a última vez que você... |
 |-|-|
-| {1&gt;Visual Studio&lt;1} | Inicie uma nova instância do IDE. Para dar suporte ao logon único, o Visual Studio Live Share atualiza sua sessão de autenticação toda vez que você abre uma nova instância do Visual Studio. |
-| Visual Studio Code | Conclua o fluxo de trabalho de autenticação baseada em navegador (por exemplo, clicando no botão `Sign In` ou executando o comando `Live Share: Sign in with browser`). Visual Studio Live Share se lembrará da sessão de autenticação no cliente, para impedir que você entre sempre que compartilhar. No entanto, essa sessão expira após 30 dias e nunca é atualizada automaticamente, até você explicitamente entrar no navegador. |
+| Visual Studio | Inicie uma nova instância do IDE. Para dar suporte ao logon único, o Visual Studio Live Share atualiza sua sessão de autenticação toda vez que você abre uma nova instância do Visual Studio. |
+| Visual Studio Code | Conclua o fluxo de trabalho de autenticação baseada em navegador (por exemplo, clicando no `Sign In` botão ou executando o `Live Share: Sign in with browser` comando). Visual Studio Live Share se lembrará da sessão de autenticação no cliente, para impedir que você entre sempre que compartilhar. No entanto, essa sessão expira após 30 dias e nunca é atualizada automaticamente, até você explicitamente entrar no navegador. |
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Suporte de idioma e plataforma](reference/platform-support.md)
 - [Requisitos de conectividade do Live Share](reference/connectivity.md)

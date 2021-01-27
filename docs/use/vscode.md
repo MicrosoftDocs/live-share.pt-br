@@ -12,11 +12,11 @@ manager: AmandaSilver
 ms.workload:
 - liveshare
 ms.openlocfilehash: 5db1e2f3afff93747685ade5ff46d0f814775563
-ms.sourcegitcommit: a48488302bc56abdedf7130ec22b4e21ac16a4ef
+ms.sourcegitcommit: 9deed590c0876b732c8eb150a9a23498a8243efc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84337232"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98871024"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -53,7 +53,7 @@ Antes de começar, será preciso confirmar se você tem uma versão do Visual St
 
 Depois disso, o download e a instalação da extensão do Visual Studio Live Share são muito simples:
 
-1. Instalar <a href="https://code.visualstudio.com/">Visual Studio Code</a>
+1. Instalar o <a href="https://code.visualstudio.com/">Visual Studio Code</a>
 2. [Baixe](https://aka.ms/vsls-dl/vscode) e instale a extensão de Visual Studio Live share do Marketplace.
 3. Recarregue o Visual Studio Code
 4. Aguarde que as dependências sejam baixadas e instaladas (veja a barra de status).<br/>
@@ -65,7 +65,7 @@ Depois disso, o download e a instalação da extensão do Visual Studio Live Sha
 
 Ao baixar e usar o Visual Studio Live Share, você concorda com os [termos de licença](https://aka.ms/vsls-license) e a [política de privacidade](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). Confira [Solução de problemas](../troubleshooting.md) caso tenha problemas.
 
-[![Baixar](../media/download.png)](https://aka.ms/vsls-dl/vscode)
+[![Download](../media/download.png)](https://aka.ms/vsls-dl/vscode)
 
 ### <a name="linux-install-steps"></a>Etapas de instalação do Linux
 
@@ -325,7 +325,7 @@ Melhor ainda, você e outros participantes podem navegar para qualquer arquivo n
 
 As edições resultantes são mantidas no computador do host no salvamento, de modo que não há necessidade de sincronizar, efetuar push nem de enviar arquivos depois de fazer a edição. As edições "estão lá".
 
-> **Dica de segurança:** Considerando que todos os participantes podem navegar e editar arquivos de forma independente, como um host, talvez você queira restringir quais arquivos os convidados podem acessar em seu projeto por meio de um arquivo. vsls. JSON. Como um convidado, também é importante entender que você talvez não veja determinados arquivos como consequência dessas configurações. Confira [Controlar o acesso a arquivos e visibilidade](../reference/security.md#controlling-file-access-and-visibility) para saber mais detalhes.
+> **Dica de segurança:** Considerando que todos os participantes podem navegar e editar arquivos de forma independente, como um host, talvez você queira restringir quais arquivos os convidados podem acessar em seu projeto por meio de um .vsls.jsno arquivo. Como um convidado, também é importante entender que você talvez não veja determinados arquivos como consequência dessas configurações. Confira [Controlar o acesso a arquivos e visibilidade](../reference/security.md#controlling-file-access-and-visibility) para saber mais detalhes.
 
 ### <a name="changing-participant-flag-behaviors"></a>Alterando os comportamentos do sinalizador do participante
 
@@ -333,7 +333,7 @@ Por padrão, o Visual Studio Live Share exibe automaticamente um "sinalizador" a
 
 Basta **editar settings.json** (Arquivo > Preferências > Configurações), adicionar uma das seguintes linhas e reinicializar o VS Code:
 
-| Configuração | Comportamento |
+| Setting | Comportamento |
 |---------|----------|
 | ``"liveshare.nameTagVisibility":"Never"`` | O sinalizador só fica visível quando você focaliza o cursor. |
 | ``"liveshare.nameTagVisibility":"Activity"`` | Este é o padrão. O sinalizador fica visível na focalização ou se o participante editar, realçar ou mover o próprio cursor. |
@@ -403,7 +403,7 @@ Eles poderão apenas clicar em "Seguir" diretamente na notificação quando esti
 
 O recurso de depuração colaborativa do Visual Studio Live Share é uma maneira exclusiva e avançada de depurar um problema. Além de proporcionar uma experiência colaborativa para a solução de problemas, ele também oferece a você e aos outros participantes a capacidade de investigar problemas que possam ser específicos do ambiente, fornecendo uma sessão de depuração compartilhada no computador do host.
 
-> **Dica de segurança:** Considerando que todos os participantes podem navegar e editar arquivos de forma independente, como um host, talvez você queira restringir quais arquivos os convidados podem acessar em seu projeto por meio de um arquivo. vsls. JSON. Você também deve estar ciente de que o acesso ao Console/REPL significa que os participantes podem executar comandos em seu computador, de modo que você só deve codepurar com as pessoas em quem confia. Como um convidado, também é importante entender que talvez você não possa seguir o depurador, uma vez que ele intervém em determinados arquivos que são restringidos como resultado dessas configurações. Confira [Controlar o acesso a arquivos e visibilidade](../reference/security.md#controlling-file-access-and-visibility) para saber mais detalhes.
+> **Dica de segurança:** Considerando que todos os participantes podem navegar e editar arquivos de forma independente, como um host, talvez você queira restringir quais arquivos os convidados podem acessar em seu projeto por meio de um .vsls.jsno arquivo. Você também deve estar ciente de que o acesso ao Console/REPL significa que os participantes podem executar comandos em seu computador, de modo que você só deve codepurar com as pessoas em quem confia. Como um convidado, também é importante entender que talvez você não possa seguir o depurador, uma vez que ele intervém em determinados arquivos que são restringidos como resultado dessas configurações. Confira [Controlar o acesso a arquivos e visibilidade](../reference/security.md#controlling-file-access-and-visibility) para saber mais detalhes.
 
 A utilização é simples.
 
@@ -440,7 +440,7 @@ Por padrão, como um convidado, você vai ser automaticamente anexado às sessõ
 
 Basta **editar settings.json** (Arquivo > Preferências > Configurações), adicionar uma das seguintes linhas e reinicializar o VS Code:
 
-| Configuração | Comportamento |
+| Setting | Comportamento |
 |---------|----------|
 |``"liveshare.joinDebugSessionOption":"Automatic"`` | O padrão. Como um convidado, você ingressará automaticamente em qualquer sessão de depuração compartilhada iniciada pelo host. |
 | ``"liveshare.joinDebugSessionOption":"Prompt"`` | Como um convidado, será perguntado se você deseja ingressar em uma sessão de depuração compartilhada quando ela for iniciada pelo host. |
@@ -470,7 +470,7 @@ Os convidados poderão então acessar o servidor compartilhado por você nessa p
 
 > **Dica de segurança:** Como um host, você deve ser muito seletivo com as portas que você compartilha com convidados e para portas de aplicativo (em vez de compartilhar uma porta do sistema). Para convidados, as portas compartilhadas se comportarão exatamente como fariam se o servidor/serviço estivesse em execução em seu próprio computador. Isso é muito útil, mas se a porta errada for compartilhada, isso também poderá ser um risco.
 
-Por motivos de segurança, somente servidores em execução em portas que você especifica são disponibilizadas para outros convidados. Felizmente, é fácil adicioná-los como o **host** da sessão de colaboração. Veja como:
+Por motivos de segurança, somente servidores em execução em portas que você especifica são disponibilizadas para outros convidados. Felizmente, é fácil adicioná-los como o **host** da sessão de colaboração. Este é o procedimento:
 
 1. Abra a guia personalizada Live Share na barra de atividade do VS Code ou a exibição Explorer do Live Share e selecione a entrada "Compartilhar servidor..." ou clique no ícone.
 
@@ -528,7 +528,7 @@ Estes são os estados que você normalmente verá:
 | Estado | Barra de Status | Descrição |
 |-------|--------------------|-------------|
 | Inativo | ![Status do VS Code: inativo](../media/vscode-status-share.png) | Nenhuma sessão de colaboração ativa e nada está compartilhado. |
-| Host: compartilhamento em andamento | ![Status do VS Code: compartilhar em andamento](../media/vscode-status-sharing.png)| Uma sessão de colaboração está iniciando e o compartilhamento do conteúdo começará em breve. |
+| Host: compartilhando In-Progress | ![Status do VS Code: compartilhar em andamento](../media/vscode-status-sharing.png)| Uma sessão de colaboração está iniciando e o compartilhamento do conteúdo começará em breve. |
 | Host: compartilhamento | ![Status do VS Code: compartilhamento ativo ](../media/vscode-status-active.png)| Uma sessão de colaboração está ativa e o conteúdo está compartilhado. |
 | Host: compartilhamento somente leitura | ![Status do VS Code: compartilhamento somente leitura](../media/vscode-status-sharing-read-only.png)| Compartilhando uma sessão de colaboração somente leitura. |
 | Convidado: ingressando na sessão | ![Status do VS Code: ingressando](../media/vscode-status-joining.png)| Ingressando em uma sessão de colaboração existente. |

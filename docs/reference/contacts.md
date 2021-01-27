@@ -1,5 +1,5 @@
 ---
-title: Presença-Visual Studio Live Share | Microsoft Docs
+title: Presença | Microsoft Docs
 description: Informações sobre o serviço de presença de contatos para Visual Studio Live Share.
 ms.custom: ''
 ms.date: 10/08/2019
@@ -11,12 +11,12 @@ ms.author: fubaduba
 manager: JonathanCarter
 ms.workload:
 - liveshare
-ms.openlocfilehash: b95e5f837d044b2b069f73478da40461268bdf3d
-ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
+ms.openlocfilehash: b13acd28ac7a13d90633bfdb6427a87c1c47609a
+ms.sourcegitcommit: 9deed590c0876b732c8eb150a9a23498a8243efc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73170004"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98870745"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -32,9 +32,9 @@ Você esteve usando Live Share e observou que o envio de links por meio de um ap
 
 Os contatos aparecerão na janela de Live Share como um painel separado, como mostrado na imagem abaixo: 
 
-![Contatos](../media/vscode-contacts-intro.png)
+![Contacts](../media/vscode-contacts-intro.png)
 
-<em>Mostrando o painel de contatos na janela de Live Share</em>
+<em> Mostrando o painel de contatos na janela de Live Share</em>
 ## <a name="who-shows-up-in-my-contacts"></a>Quem aparece em meus contatos?
 
 O painel contatos é exibido para exibir dois tipos de contatos que dão suporte a fluxos de trabalho naturais dos desenvolvedores enquanto trabalham.
@@ -45,8 +45,8 @@ Esses são os desenvolvedores que contribuíram para seu projeto aberto no momen
 
 ## <a name="direct-user-invitations"></a>Convites de usuário diretos 
 Todos os seus contatos podem ser convidados diretamente para uma sessão de Live Share de dentro de seu editor. Eles receberão uma notificação do sistema que lhes dá a opção de ingressar na sessão ou não. Isso elimina a necessidade de trocar totalmente as URLs de sessão.
-![DirectInvitationVSCode](https://user-images.githubusercontent.com/51928518/66443914-e59c5d00-e9f5-11e9-957a-b1a92949d660.gif)
-<em>um host Live share (à esquerda) convidando diretamente de um par (direito) em uma sessão</em>
+![DirectInvitationVSCode ](https://user-images.githubusercontent.com/51928518/66443914-e59c5d00-e9f5-11e9-957a-b1a92949d660.gif)
+ <em>um host de Live share (à esquerda) convidando diretamente um par (direito) em uma sessão</em>
 
 ## <a name="how-does-status-for-contacts-work"></a>Como o status dos contatos funciona?
 Depois que os desenvolvedores entrarem com Live Share, **seu status de disponibilidade será publicado em seus colegas.** Como resultado, você pode ver que alguém em sua equipe está online e, em seguida, começar a colaborar com eles imediatamente, usando o convite direto, como visto acima.
@@ -54,21 +54,21 @@ Seu status pode ser definido diretamente de dentro do editor para que você poss
 
 **1. disponível:** seu status padrão será `Available` se você tiver a extensão de Live share e estiver usando o editor ativamente, enquanto não estiver em uma sessão.
 
-**2. não incomodar:** seu status será definido como `Do not disturb` se você estiver atualmente em uma sessão ativa do Live share e todas as notificações de convite forem suprimidas.
+**2. não incomodar:** seu status é definido como `Do not disturb` se você estiver atualmente em uma sessão ativa do Live share e todas as notificações de convite forem suprimidas.
 
-**3. ausentes:** após 5 minutos de inatividade, seu status será alternado automaticamente para `Away`.
+**3. ausentes:** após 5 minutos de inatividade, seu status será alternado automaticamente para `Away` .
 
 **4. offline:** você estará offline quando estiver ausente por um longo período de tempo ou se optar por [recusar o status de compartilhamento](##ManagingPresence)
 
 
-## Gerenciando contatos e status<a name="ManagingPresence"> </a> de compartilhamento
+## <a name="managing-contacts-and-sharing-status"></a>Gerenciando contatos e status<a name="ManagingPresence"> </a> de compartilhamento
 
 Se você quiser recusar esse recurso, poderá fazê-lo de duas maneiras.
-1. Você pode desabilitar a configuração de status escolhendo ser `offline`. Depois de desabilitado, você ainda poderá ver o status de outro e convidá-los, mas seu status não será publicado e outros não poderão convidá-lo diretamente.
+1. Você pode desabilitar a configuração de status escolhendo `offline` . Depois de desabilitado, você ainda poderá ver o status de outro e convidá-los, mas seu status não será publicado e outros não poderão convidá-lo diretamente.
 Você pode optar por estar offline clicando no círculo de status que abrirá o seguinte menu suspenso:
 
-![dropdownstatus](../media/vscode-presence-opt-out.png)
-<em>mostrando a lista suspensa dos Estados de presença</em>
+![dropdownstatus ](../media/vscode-presence-opt-out.png)
+ <em> mostrando a lista suspensa dos Estados de presença</em>
 
 2. Você pode abrir `user settings` e ir para *extensões > Visual Studio Live Share > Live share: presença* e desabilitar o serviço de presença. Depois de desabilitado, você ainda poderá ver o status de outro e convidá-los, mas seu status não será publicado e outros não poderão convidá-lo diretamente.
 
