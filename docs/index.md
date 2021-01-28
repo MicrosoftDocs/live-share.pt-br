@@ -1,5 +1,5 @@
 ---
-title: Visão geral – Visual Studio Live Share | Microsoft Docs
+title: Visão geral | Microsoft Docs
 description: Uma visão geral do Visual Studio Live Share e suas funcionalidades.
 ms.custom: ''
 ms.date: 10/30/2019
@@ -11,12 +11,12 @@ ms.author: fubaduba
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: e74268abd215fd17ec67028d94de69f18685f808
-ms.sourcegitcommit: 6bf13781dc42a2bf51a19312ede37dff98ab33ea
-ms.translationtype: HT
+ms.openlocfilehash: 3ae7ba22225ce537c28daca0a9036872f227a8ce
+ms.sourcegitcommit: 9deed590c0876b732c8eb150a9a23498a8243efc
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "79508553"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98870585"
 ---
 <!--
 Copyright &copy; Microsoft Corporation
@@ -33,13 +33,13 @@ Bem-vindo ao Visual Studio Live Share! O Live Share permite que você edite e de
 Pronto para começar? Neste artigo, explicaremos alguns conceitos e como instalar as extensões necessárias. Caso esteja procurando uma versão resumida, confira os Inícios Rápidos [Compartilhar](quickstart/share.md) e [Ingressar](quickstart/join.md).
 
 > [!TIP]
-> Você sabia que agora é possível *ingressar em uma sessão de Live Share do navegador*? Isso significa que você não precisa mais instalar um cliente de desktop para colaborar! Basta clicar no link compartilhado com você para obter uma experiência extremamente fiel como editor do VS Code no navegador. Saiba mais [aqui](quickstart/browser-join.md)
+> Você sabia que agora é possível *ingressar em uma sessão de Live share do navegador*? Isso significa que você não precisa mais instalar um cliente de desktop para colaborar! Basta clicar no link compartilhado com você e você poderá obter uma experiência de editor de VS Code de fidelidade total no navegador. Saiba mais [aqui](quickstart/browser-join.md)
 
 ## <a name="install-visual-studio-live-share"></a>Instalar o Visual Studio Live Share
 
 Antes de começar, você precisa confirmar se tem uma versão do Visual Studio ou do Visual Studio Code instalada que atenda aos requisitos principais do Live Share.
 
-- **Visual Studio Code 1.22.0 ou posterior** – Windows 7, 8.1 ou 10, macOS *(somente High Sierra 10.13 ou posterior)* e Linux de 64 bits *(Ubuntu Desktop de 64 bits 16.04 ou posterior, Fedora 27 ou posterior, recomendado – [ver detalhes](use/vscode.md#installation))* .
+- **Visual Studio Code 1.22.0 ou posterior** – Windows 7, 8.1 ou 10, macOS *(somente High Sierra 10.13 ou posterior)* e Linux de 64 bits *(Ubuntu Desktop de 64 bits 16.04 ou posterior, Fedora 27 ou posterior, recomendado – [ver detalhes](use/vscode.md#installation))*.
 - **Visual Studio 2019** (qualquer edição) – Windows 7, 8.1 ou 10.
 - **Visual Studio 2017 15.6 ou posterior** (qualquer edição) – Windows 7, 8.1 ou 10.
 
@@ -53,7 +53,7 @@ Depois disso, o download e a instalação da extensão do Visual Studio Live Sha
         1.Instale o <a href="https://code.visualstudio.com/">Visual Studio Code</a> para Windows (7, 8.1 ou 10), macOS <b>(High Sierra 10.13 ou posterior)</b> e Linux 64 bits <b>(<a href="use/vscode.md#installation">detalhes</a>)</b><br />
         2. Baixe e instale a extensão do Visual Studio Live Share por meio do marketplace. <br />
         3. Recarregue-a e aguarde até as dependências serem baixadas e instaladas (veja a barra de status).<br />
-        4. <strong>Linux</strong>: Se precisar <a href="reference/linux.md#install-linux-prerequisites">instalar bibliotecas</a>, clique em Instalar, insira a senha e reinicie o VS Code quando terminar.<br />
+        4. <strong>Linux</strong>: se for solicitado a <a href="reference/linux.md#install-linux-prerequisites">instalar bibliotecas</a>, clique em instalar, digite a senha, reinicie vs Code quando terminar.<br />
         <a href="https://aka.ms/vsls-dl/vscode"><img src="media/download.png" alt="Download button"></a>
     </td>
 </tr>
@@ -80,7 +80,7 @@ Depois disso, o download e a instalação da extensão do Visual Studio Live Sha
 
 Ao baixar e usar o Visual Studio Live Share, você concorda com os [termos de licença](https://aka.ms/vsls-license) e a [política de privacidade](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). Confira [Solução de problemas](troubleshooting.md) caso tenha problemas.
 
-E isso é tudo! Agora você deverá ver uma barra de status de entrada no canto inferior esquerdo do VS Code e um botão de compartilhamento na parte superior direita do Visual Studio. Confira o restante da documentação para saber o que fazer em seguida.
+Isso é tudo! Agora você deverá ver uma barra de status de entrada no canto inferior esquerdo do VS Code e um botão de compartilhamento na parte superior direita do Visual Studio. Confira o restante da documentação para saber o que fazer em seguida.
 
 
 ## <a name="see-also"></a>Veja também
@@ -95,12 +95,12 @@ Instruções
 - [Colaborar usando o Visual Studio Code](use/vscode.md)
 - [Colaborar usando o Visual Studio](use/vs.md)
 
-reference
+Referência
 
 - [Requisitos de conectividade do Live Share](reference/connectivity.md)
 - [Funcionalidades de segurança do Live Share](reference/security.md)
 - [Suporte de idioma e plataforma](reference/platform-support.md)
 - [Suporte de extensão](reference/extensions.md)
-- [Notas de Versão](https://aka.ms/vsls-releases)
+- [Notas sobre a versão](https://aka.ms/vsls-releases)
 
 Está tendo problemas? Confira [Solução de problemas](troubleshooting.md) ou [envie comentários](support.md).

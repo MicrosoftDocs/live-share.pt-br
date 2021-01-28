@@ -38,10 +38,9 @@
 ## [Conectividade](reference/connectivity.md)
 ## [Suporte a idiomas](reference/platform-support.md)
 ## [Suporte de extensão](reference/extensions.md)
-
-
 ## [Detalhes de instalação do Linux](reference/linux.md)
 ## [Participante do Programa Windows Insider](reference/insiders.md)
+## [Notebooks](reference/notebooks.md)
 ## [Notas de Versão](https://aka.ms/vsls-releases)
 # Recursos
 ## [Solução de problemas](troubleshooting.md)
